@@ -44,8 +44,9 @@ adapters: `GEMINI.md` and `.gemini/` for Gemini, `AGENTS.md` and `.codex/`
 for Codex. Change a skill once, in `.claude/skills/`.
 
 **One folder per project** ("new project" makes another). Things true for all your work live in your global
-file (`~/.claude/CLAUDE.md`) and global skills (`~/.claude/skills/`), which
-every workspace shares.
+file (`~/.claude/CLAUDE.md`; Gemini: `~/.gemini/GEMINI.md`; Codex:
+`~/.codex/AGENTS.md`) and global skills (`~/.claude/skills/`), which every
+workspace shares.
 
 **Assessed work?** `/setup` can add the study pack in `extras/study-pack/`:
 you write, Claude teaches and questions, and AI use is logged.
@@ -57,4 +58,4 @@ tells you the cost first.
 
 **Work in other git repositories?** Say "link a repo": the pack in
 `extras/linked-repos/` keeps a register of them, read-only by default. Their
-code stays outside this folder.
+code stays outside this folder. (Claude Code only, for now.)

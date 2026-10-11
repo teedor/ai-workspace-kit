@@ -6,6 +6,9 @@ Never during first setup. Two parts; install only the part I ask for.
 
 1. Copy `skills/diagram` into `.claude/skills/`, and
    `files/templates/mermaid-preview.html` into `tools/`. Never overwrite.
+   For Gemini CLI and Codex, also copy `adapters/.gemini/commands/diagram.toml`
+   into `.gemini/commands/` and `adapters/.codex/skills/diagram/` into
+   `.codex/skills/`.
 2. Tell me in one line: "Say 'draw a diagram of…' any time."
 
 ## AI pictures (paid; only when I ask)
@@ -19,7 +22,8 @@ Never during first setup. Two parts; install only the part I ask for.
      can change it any time;
    - prompts on Google's free tier can be used to improve its products; on
      the paid tier they aren't.
-2. **Files.** Copy `skills/picture` into `.claude/skills/`,
+2. **Files.** Copy `skills/picture` into `.claude/skills/` (and its Gemini and
+   Codex files from `adapters/`, as for diagrams),
    `files/tools/make-image.sh` into `tools/`, and
    `files/notes/visuals-spend.md` into `notes/`. Never overwrite.
 3. **How to check the cost with me.** Ask once: "Shall I check the cost

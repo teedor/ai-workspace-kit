@@ -39,8 +39,9 @@ or go; it isn't needed.
    person's rhythm and sizes the next step to fit.
 7. **Plain English, British spelling.**
 8. **Tool-neutral:** one shared core (`CLAUDE.md`, `.claude/skills/`) with
-   thin adapters per tool (`GEMINI.md` and `.gemini/` for Gemini CLI; see
-   `docs/copilot-cli-plan.md` for Copilot). Change a skill once, in
+   thin adapters per tool (`GEMINI.md` and `.gemini/` for Gemini CLI;
+   `AGENTS.md` and `.codex/` for Codex; packs carry theirs in `adapters/`;
+   see `docs/copilot-cli-plan.md` for Copilot). Change a skill once, in
    `.claude/skills/`.
 
 ## How changes are made

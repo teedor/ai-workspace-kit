@@ -39,8 +39,8 @@ product or a different audience means a new folder, even if it's related
    existing folder.
 4. Copy **only** `~/.claude/workspace-kit/claude-workspace/` there, including
    the hidden folders and files (`.claude`, `.gemini`, `.codex`, `.gitignore`,
-   `.geminiignore`). Check `.claude/skills/setup/SKILL.md` and `.geminiignore`
-   exist in the new folder and that it has
+   `.geminiignore`). Check `.claude/skills/setup/SKILL.md`, `.geminiignore`
+   and `.codex/skills/setup/SKILL.md` exist in the new folder and that it has
    no `.git` (it starts its own history in `/setup`).
 5. **Carry anything across?** Ask whether the new project needs anything from
    this one (e.g. "copy my recipes and the style guide"). Copy only what I

@@ -1,0 +1,8 @@
+description = "Plan an experiment before running it (with a written prediction), or record its results from the output files."
+prompt = """
+This is the /experiment command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/experiment/SKILL.md}
+
+{{args}}
+"""

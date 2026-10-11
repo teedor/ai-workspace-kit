@@ -60,7 +60,8 @@ under "Open threads" as a question for next time.
      description of the session.
    - **Code in this project:** save the workspace files by name (`CLAUDE.md
      README.md .gitignore status.md handover.md done.md review-queue.md notes
-     ideas decisions drafts finished .claude/skills .claude/settings.json`,
+     ideas decisions drafts finished .claude/skills .claude/settings.json
+     .claude/agents GEMINI.md .gemini .geminiignore AGENTS.md .codex extras`,
      plus whichever of `experiments literature logbook data/README.md` exist).
      **If "Rules for this work" says `/handover` saves code too,** also save
      the other changed files, as "WIP: <session>"; their review status stays

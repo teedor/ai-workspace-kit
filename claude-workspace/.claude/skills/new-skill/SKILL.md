@@ -21,7 +21,11 @@ project. Before creating it, check no skill with that name exists here, in
 built-in command (like `/resume`, `/review`, `/help`); if one does, pick another name.
 You decide the scope; tell me which you chose and why, in one line.
 
-- **Project skill:** `.claude/skills/<name>/SKILL.md` in this folder.
+- **Project skill:** `.claude/skills/<name>/SKILL.md` in this folder. So it
+  also works in Gemini CLI and Codex, add a small pointer for each, copied
+  from an existing one (e.g. `.gemini/commands/start.toml` and
+  `.codex/skills/start/SKILL.md`) with the name and description changed; if
+  it's typed-only, copy `.codex/skills/setup/agents/` too.
 - **Global skill:** `~/.claude/skills/<name>/SKILL.md` in my home folder.
 
 ## 2. Write it
@@ -39,7 +43,7 @@ You decide the scope; tell me which you chose and why, in one line.
 ## 3. Show me, then save
 
 Show me the skill and where it'll go. Save when I say yes. Then ask me to
-type `/` and check it's in the list. (If it was the very first global skill,
+type `/` (Codex: `$`) and check it's in the list. (If it was the very first global skill,
 it may only appear in a new session.) If it still doesn't show up, offer to
 make it a project skill instead. For a project skill, record it
 with `/decide` ("Added skill /<name>"). For a global skill, add a line to a

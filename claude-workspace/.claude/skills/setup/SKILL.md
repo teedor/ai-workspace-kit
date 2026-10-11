@@ -36,8 +36,7 @@ keeping their paths: `CLAUDE.md`, `README.md`, `.gitignore`, `status.md`,
 `handover.md`, `done.md`, `review-queue.md`, `.claude/settings.json`,
 `.claude/skills/`, `.claude/agents/`, `GEMINI.md`, `.gemini/`,
 `.geminiignore`, `AGENTS.md`, `.codex/`, `extras/`, `notes/`, `ideas/`, `decisions/`,
-`drafts/.gitkeep`, `finished/.gitkeep`, `inbox/README.md`,
-`private/README.md`. (If the folder held a project before the kit arrived,
+`drafts/.gitkeep`, `finished/.gitkeep`, `inbox/README.md`. (If the folder held a project before the kit arrived,
 skip this; `/new-project` will fetch the kit instead.)
 
 ## 2. Git

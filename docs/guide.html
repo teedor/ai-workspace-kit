@@ -41,7 +41,7 @@ ol li, ul li { margin-bottom: 3pt; }
 
 <h2>What you need</h2>
 <ul>
-<li>A Mac or Windows computer.</li>
+<li>A Mac or Windows computer (Linux works too, in a terminal: see Part 3).</li>
 <li>A <b>paid Claude plan</b> (Pro or above), a monthly subscription you can cancel. The free plan doesn't include what you need. Prices are at <i>claude.com/pricing</i>.</li>
 <li>Nothing else to download: in Step 3, Claude fetches the <b>starter kit</b> for you from <i>github.com/teedor/ai-workspace-kit</i>.</li>
 <li><b>Optional, for later:</b> two or three examples of your own work to show Claude your style, like an email you were pleased with, an old menu, a chapter or a letter.</li>
@@ -97,15 +97,15 @@ ol li, ul li { margin-bottom: 3pt; }
 <div class="box"><b>How to tell you've got the right folder:</b> your project folder has a file called <code>CLAUDE.md</code> and a folder called <code>inbox</code> directly inside it.</div>
 
 <h3>During setup</h3>
-<p>Claude asks a handful of questions, one at a time. Answer by talking or typing. It notes which computer you're on (so every instruction it gives fits your Mac or PC), sets up the snapshots, then asks:</p>
+<p>Claude asks a handful of questions, one at a time. Answer by talking or typing. It notes which computer you're on (so every instruction it gives fits your Mac or PC), sets up the snapshots (asking, if none is set yet, for a name and email to label them), then asks:</p>
 <ul>
 <li>to confirm the project's <b>name</b> (it suggests the folder name), what it is, and whether it involves code;</li>
 <li>whether it's <b>new</b>, or something you've been working on for a while;</li>
-<li>whether it's <b>marked or assessed work</b> (coursework, a dissertation) or has rules about using AI. If it is, Claude adds the study pack (see Part 2);</li>
-<li>whether you'll put in <b>real people's details or data</b>: emails, orders, invoices, family records, or datasets about people. Those all count, so say yes if you'll use any of them;</li>
+<li>whether it's <b>marked or assessed work</b> (coursework, a dissertation) or has rules about using AI. If it's study or assessment, Claude adds the study pack (see Part 2); other rules are saved as they are;</li>
+<li>whether you'll put in <b>real people's details or data</b>: emails, orders, family records, datasets about people, recordings, or anything under a licence, contract or ethics approval. Those all count, so say yes if you'll use any of them;</li>
 <li>for <b>one small thing</b> you could do on it right now. Then it helps you do it. If you've already started, that thing is <b>catching up</b>: copy the three to five files that matter most into the inbox (right-click → Copy, then Paste, so your originals stay put), and Claude files them and writes up where things stand for you to check. The rest can come in later: say "catch up on this".</li>
 </ul>
-<p>Everything else (a check of how the setup fits your work, a file about you that all your projects share, a style guide from your examples, dictation, Word, and on Pro a lighter everyday model) is offered <b>later, one thing at a time</b>, at the end of a session that went well.</p>
+<p>Everything else (a check of how the setup fits your work, a file about you that all your projects share, a style guide from your examples, dictation, Word, default critics for <code>/red-team</code>, and on Pro a lighter everyday model) is offered <b>later, one thing at a time</b>, at the end of a session that went well.</p>
 <p><b>Expect permission requests</b>, some in technical words. A few are for things outside your project folder, such as saving your name for the snapshots. <b>Claude tells you before each of those that it's coming and why.</b> Allow them.</p>
 <div class="box ok"><b>You're set up when</b> Claude says <i>"You're set up."</i> If something goes wrong partway through, say <i>"something went wrong, explain in plain English"</i>. Or start a new session in the same folder and type <code>/setup</code> again: it picks up where it left off.</div>
 
@@ -197,7 +197,7 @@ ol li, ul li { margin-bottom: 3pt; }
 <h2>Assessed work (students)</h2>
 <p>If setup hears that your work is marked or assessed, it adds a <b>study pack</b>. It turns the usual arrangement round: <b>you write, and Claude teaches and questions.</b></p>
 <ul>
-<li><b>Your university's rules come first.</b> Policies differ between universities and between modules. Your first step is to put your module's AI rules into <code>notes/ai-policy.md</code>, and to show your supervisor the "Rules for this work" section of <code>CLAUDE.md</code>, ideally at your next meeting.</li>
+<li><b>Your university's rules come first.</b> Policies differ between universities and between modules. Your first step is to put your module's AI rules into <code>notes/ai-policy.md</code>, and to show your supervisor the "Rules for this work" section of <code>CLAUDE.md</code> and the full rules in <code>extras/study-pack/claude-section.md</code>, ideally at your next meeting.</li>
 <li><b>Claude won't write assessed text or project code for you to submit.</b> It explains, asks questions, reviews what you've written, and helps you find bugs in your own code. Dictation for your report comes back as a faithful transcript, not tidied prose. If you insist, it's your call, and it's logged.</li>
 <li><b>Everything is logged</b> in <code>notes/ai-use-log.md</code>, so your AI-use declaration is easy to write and accurate. Your git history, decisions log and experiment log show how the work developed.</li>
 <li><b>Viva practice:</b> say "quiz me on this". Claude asks examiner-style questions, one at a time. Assessed work isn't signed off until you can explain it.</li>
@@ -237,6 +237,7 @@ ol li, ul li { margin-bottom: 3pt; }
 <pre>status.md     Where things stand: current goal, next steps, dates.
 handover.md   The next step, ready for when you're back.
 done.md       Everything finished. Nothing is ever removed.
+review-queue.md  Work waiting for your sign-off.
 inbox         Put things here unsorted. Claude sorts them and empties it.
 notes         What Claude knows: style guide, glossary, open questions.
 ideas         Untested ideas, with the case against.
@@ -244,6 +245,7 @@ decisions     What you decided, why, and what it replaced.
 drafts        Work in progress.
 finished      Work you've approved.
 private       Confidential material and archived originals. Not in snapshots.
+              (Appears the first time the inbox is sorted.)
 CLAUDE.md     Claude's standing orders for this project (read every session).</pre>
 <p>Some setup files are hidden on purpose. You never need to touch them.</p>
 
