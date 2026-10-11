@@ -44,3 +44,25 @@ trustworthy. Two rules always come first:
 7. **Keep a receipt** in `private/archive/INTAKE-LOG.md`: date, what arrived, what it became.
 8. **Tell me:** what arrived, what changed as a result, what's still in the inbox and why,
    and anything I should look at myself.
+
+## Catch-up mode (work already under way)
+
+When I'm bringing in work I've already been doing (from `/setup`, or when I
+say "catch up on this"), do everything above, then:
+
+1. **File my own work as it is.** Drafts, chapters and code I wrote go into
+   `drafts/` (or where the code belongs) unchanged: don't rewrite, tidy or
+   merge them. Older versions go to the archive with the originals, and the
+   latest one is the working copy. If the study pack is installed, log what
+   came in in `notes/ai-use-log.md` as my own work, written before Claude.
+2. **Draft where things stand** in `status.md` from what you read: the
+   current goal, what's done, what's waiting on whom, dates (each with the
+   file it came from), and three to five next steps. Mark it *(drafted from
+   my files: please check)*. Never invent a date or a decision to fill a gap.
+3. **Ask at most three questions** about the gaps that matter most for the
+   next step (e.g. "Is the 2026-11-30 deadline still right?"). Everything
+   else goes in `notes/open-questions.md`.
+4. **Record decisions you find** with `/decide`, dated from the file, and
+   marked *(found in my files)*.
+5. Set the First step in `handover.md` to the most useful next step, and
+   say in one line where things stand.

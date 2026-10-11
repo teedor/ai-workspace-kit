@@ -59,6 +59,11 @@ then ask for one or two sentences on what it is and who it's
 for, and whether it involves **code**. Write them into "This project" in
 `CLAUDE.md` (fill in **Code in this project:** yes or no).
 
+Then ask: **"Is this something new, or something you've been working on for
+a while?"** Write **Started:** new, or already under way, under "This
+project". Don't ask for any files yet: they come in at step 6, once the
+rules and personal details are settled.
+
 ## 4. Rules for this work
 
 Ask: **"Is this marked or assessed work, like coursework, a dissertation or a
@@ -84,9 +89,23 @@ stays out of this folder unless its terms allow that.
 
 ## 6. One real step
 
-Ask: **"What's one small thing you could do on this right now?"** If I don't
-know, offer one, such as copying the next deadline into `status.md`, or
-dropping the project brief into the inbox. Help me do it. Add it to `done.md`.
+**New work:** ask **"What's one small thing you could do on this right
+now?"** If I don't know, offer one, such as copying the next deadline into
+`status.md`, or dropping the project brief into the inbox. Help me do it.
+
+**Work already under way:** the real step is catching up. Say:
+"Copy (don't move) what you've got into the inbox folder, and keep your
+originals where they are. Start with what matters most: the latest version,
+the brief or plan, any deadlines, your own notes. Twenty or so files is a
+good first batch; the rest can follow another day. Leave big folders,
+datasets and code where they are: just tell me where they live." Mention
+that a big batch uses a fair bit of the allowance. If the work is code that
+already lives in its own repository, don't copy it in: suggest bringing the
+kit into that repository instead (the guide's "Existing project?"), or
+linking it later with the linked repos pack. Then run `/intake` in catch-up
+mode.
+
+Either way, add what we did to `done.md`.
 
 ## 7. Finish
 
