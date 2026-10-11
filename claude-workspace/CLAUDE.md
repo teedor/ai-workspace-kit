@@ -5,7 +5,7 @@ Claude, read this file at the start of every session. It is how this workspace r
 **First reply of every session, and your reply to `/start`:** begin with one
 short line naming this project, e.g. "📁 You're in *Bakery*." It shows me I've
 opened the right folder. Use **Name** from "This project" below, or the folder
-name if that's empty. If I ask which folder you're working in, give the full path.
+name if it still says "set by /setup". If I ask which folder you're working in, give the full path.
 
 **Two layers.** My personal preferences for *all* my projects live in my
 global file (`~/.claude/CLAUDE.md`), which you also read every session. This
@@ -33,8 +33,9 @@ or
 
 - **Starting:** when I say hello, "carry on", "let's go" or `/start`, follow
   `/start`: one small, ready-to-go next step, offered in a few lines.
-- **Stopping:** "that's it", "stop there" or `/handover` runs a quick tidy-up
-  that asks me nothing.
+- **Stopping:** "that's it for today", "stop there for today" or `/handover`
+  runs a quick tidy-up that asks me nothing.
+- "Done" or "that's exactly it" on its own means a step finished, not the session.
 - **Closing the window is also a fine way to stop.** To keep that safe,
   whenever a step finishes, add it to `done.md` and update the First step in
   `handover.md`. The next `/start` catches up quietly. Never mention a missed

@@ -24,6 +24,8 @@ an item under "Setup extras (optional)" in `status.md`.
 
    If no: set the critics to second marker, viva examiner, and a checker for
    sources and numbers.
+4a. **Logbook?** Ask whether the module needs a logbook or reflections. Write
+   `**Logbook:** yes` or `no` under "Rules for this work".
 5. **.gitignore.** Append `gitignore-additions.txt` (the code sections only if
    the project has code).
 6. **Global line.** Warn that this writes outside the folder, then add to

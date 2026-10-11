@@ -30,7 +30,7 @@ ol li, ul li { margin-bottom: 3pt; }
 1. Open the Claude app → <b>Code</b> → <b>+ New session</b> → choose your project folder.<br>
 2. Say <b>hello</b>. Claude offers <b>one small next step</b>, already worked out. Say <b>"go"</b>.<br>
 3. Work by <b>talking</b>. Put new files in the <b>inbox</b> folder and say "process the inbox".<br>
-4. Stop whenever you like. Say <b>"that's it"</b> and Claude tidies up and saves, asking you nothing. Or just close the window: nothing's lost.</div>
+4. Stop whenever you like. Say <b>"that's it for today"</b> and Claude tidies up and saves, asking you nothing (for assessed work with a logbook, one question). Or just close the window: nothing's lost.</div>
 
 <div class="box"><b>Already comfortable with a terminal?</b> Skip to Part 3 for the terminal install (it also covers Linux), then come back for "Your first session". Setup is the same: <code>/setup</code>. If your work is marked or assessed (a dissertation, coursework), read "Assessed work" in Part 2 before you start.</div>
 
@@ -41,7 +41,7 @@ ol li, ul li { margin-bottom: 3pt; }
 <ul>
 <li>A Mac or Windows computer.</li>
 <li>A <b>paid Claude plan</b> (Pro or above), a monthly subscription you can cancel. The free plan doesn't include what you need. Prices are at <i>claude.com/pricing</i>.</li>
-<li>The <b>starter kit</b>, <code>claude-workspace.zip</code>, which came with this guide.</li>
+<li>The <b>starter kit</b>: on its GitHub page (<i>github.com/teedor/ai-workspace-kit</i>), click the green <b>Code</b> button, then <b>Download ZIP</b>.</li>
 <li><b>Optional, for later:</b> two or three examples of your own work to show Claude your style, like an email you were pleased with, an old menu, a chapter or a letter.</li>
 </ul>
 <p>Paid plans come with a usage allowance. If Claude says you've <b>reached your limit</b>, nothing is broken. It tells you when the allowance resets, and you won't be charged extra unless you've switched on "extra usage" in your account.</p>
@@ -67,8 +67,8 @@ ol li, ul li { margin-bottom: 3pt; }
 <ol>
 <li><b>Open your home folder.</b> Mac: in Finder, choose <b>Go → Home</b>. Windows: in File Explorer, click the address bar, type <code>%USERPROFILE%</code>, and press Enter. (Avoid Documents and Desktop. They're often synced to iCloud or OneDrive, and syncing can scramble the snapshots.)</li>
 <li>Make a new folder there called <b>Claude projects</b>. All your projects will live in it.</li>
-<li><b>Unzip the kit into it.</b> Mac: double-click the zip, then drag the folder it makes into <b>Claude projects</b>. Windows: <b>right-click</b> the zip → <b>Extract All…</b> → <b>Browse</b> → choose <b>Claude projects</b> → <b>Extract</b>. (Double-clicking a zip on Windows only <i>shows</i> what's inside.)</li>
-<li>You'll have a folder called <code>claude-workspace</code>. <b>Rename it after your project</b>, for example <i>Bakery</i> or <i>My novel</i>. That's your <b>project folder</b>.</li>
+<li><b>Unzip the download.</b> Mac: double-click it. Windows: <b>right-click</b> it → <b>Extract All…</b> → <b>Extract</b>. (Double-clicking a zip on Windows only <i>shows</i> what's inside.)</li>
+<li>Inside, find the folder called <code>claude-workspace</code> (you may need to open a folder or two to reach it) and drag it into <b>Claude projects</b>. <b>Rename it after your project</b>, for example <i>Bakery</i> or <i>My novel</i>. That's your <b>project folder</b>.</li>
 </ol>
 <div class="box"><b>How to tell you've got the right folder:</b> your project folder has a file called <code>CLAUDE.md</code> and a folder called <code>inbox</code> directly inside it.</div>
 
@@ -135,7 +135,7 @@ ol li, ul li { margin-bottom: 3pt; }
 <li><b>New material:</b> open your project folder, then <code>inbox</code>, and <b>copy</b> files in (right-click → Copy, then Paste) so your original stays put. Then say "process the inbox". Claude reads everything, files it, keeps the originals in an archive, and tells you what it did. <b>An empty inbox means everything's been dealt with.</b></li>
 <li><b>Finished documents:</b> Claude's drafts are plain text. Ask it to <i>"show me the draft"</i> to read it in the window, <i>"make a Word version"</i> for a document, or <i>"give me the text to paste into an email"</i>.</li>
 <li><b>A thought on the go:</b> say <i>"jot this: …"</i> and Claude notes it in one line and carries on.</li>
-<li><b>Stopping:</b> say "that's it". Claude writes down the next step and saves a snapshot, asking you nothing. If you just close the window instead, that's fine too.</li>
+<li><b>Stopping:</b> say "that's it for today". Claude writes down the next step and saves a snapshot, asking you nothing. If you just close the window instead, that's fine too.</li>
 </ul>
 <p>Almost everything works by just asking. Two commands only work when <b>typed</b>: <code>/setup</code> and <code>/red-team</code>.</p>
 
@@ -238,9 +238,9 @@ CLAUDE.md     Claude's standing orders for this project (read every session).</p
 
 <h2>If you already use Claude Code</h2>
 <ul>
-<li>The first <code>/setup</code> adds an "About me" section to <code>~/.claude/CLAUDE.md</code>, which applies in <b>every</b> project, including existing repos. It shows you the text first and never replaces existing content.</li>
-<li>A personal skill in <code>~/.claude/skills/</code> overrides a project skill of the same name. <code>/setup</code> checks for clashes with the kit's skills and offers to rename.</li>
-<li>A blank copy of the kit is kept in <code>~/.claude/workspace-kit/</code> for "new project". Give it a newer zip to refresh it.</li>
+<li>When you accept the "About me" extra (offered after a session that went well), Claude adds a section to <code>~/.claude/CLAUDE.md</code>, which applies in <b>every</b> project, including existing repos. It shows you the text first and never replaces existing content.</li>
+<li>A personal skill in <code>~/.claude/skills/</code> overrides a project skill of the same name. Claude checks for clashes with the kit's skills when it sets up "About me", and offers to rename.</li>
+<li>A blank copy of the kit is kept in <code>~/.claude/workspace-kit/</code> for "new project". Point it at a newer copy of the kit to refresh it.</li>
 </ul>
 
 <h2>If you write code</h2>

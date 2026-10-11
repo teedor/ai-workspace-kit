@@ -12,22 +12,22 @@ know it's expected. One question at a time. I can answer by talking or typing.
 
 ## 0. Pick up where we left off
 
-Setup is complete when D1 is in `decisions/decisions-log.md`. If it is, ask
+Setup is complete when `decisions/decisions-log.md` has a D1 that reads "Project set up". Example entries (DX1, DX2) don't count. If it is, ask
 whether I want to change something (e.g. add rules for assessed work, step 4),
 and do only that. Otherwise, resume from the first step below that isn't done.
 It's fine to stop partway: say "Good place to stop; `/setup` picks up here."
 whenever a step finishes.
 
-## 1. Keep a blank copy of the kit (first project only, quietly)
+## 1. Keep a blank copy of the kit (first project only; one line of warning, no question)
 
 Only if `~/.claude/workspace-kit/` doesn't exist **and** this folder holds
 nothing but the untouched kit. (If the folder held a project before the kit
-arrived, skip this; `/new-project` will ask for the original zip.) Copy
+arrived, skip this; `/new-project` will fetch a fresh kit instead.) Copy
 **only** the kit's own files, keeping their paths: `CLAUDE.md`, `README.md`,
 `.gitignore`, `status.md`, `handover.md`, `done.md`, `review-queue.md`,
 `.claude/settings.json`, `.claude/skills/`, `extras/`, `notes/`, `ideas/`,
 `decisions/`, `drafts/.gitkeep`, `finished/.gitkeep`, `inbox/README.md`,
-`private/README.md`. Check `workspace-kit/.claude/skills/setup/SKILL.md` exists.
+`private/README.md`. Check `~/.claude/workspace-kit/.claude/skills/setup/SKILL.md` exists.
 
 ## 2. Git
 
@@ -36,8 +36,8 @@ Check `git --version` **first**: on a Mac it may pop up a box offering
 finishes, then say done." On Windows, if git is missing, tell me how to
 install Git for Windows, and wait.
 - If this folder isn't a git repository, `git init`.
-- Check `git config --global user.name` / `user.email`. If set, show them and
-  ask whether to keep them. If not, ask for them, mention that GitHub can give
+- Check `git config --global user.name` / `user.email`. If set, show them in
+  one line and carry on unless I object. If not, ask for them, mention that GitHub can give
   a private "noreply" email if I might back up there one day, say this writes
   outside the folder, and set them with `--global`.
 - **If the folder already held a project:** tell me briefly what you found.
@@ -85,8 +85,9 @@ dropping the project brief into the inbox. Help me do it. Add it to `done.md`.
 
 - Delete the example rows in `review-queue.md` and `decisions/decisions-log.md`.
 - Record D1: "Project set up", with today's date.
-- Leave "Setup extras (optional)" in `status.md` as it is. They're offered
-  later, one at a time, at the end of a session that went well:
+- Leave "Setup extras (optional)" in `status.md` as it is (each extra's
+  instructions are there). They're offered later, one at a time, at the end
+  of a session that went well. For reference:
   - **About me**: create or extend `~/.claude/CLAUDE.md` with who I am, the
     work I do, whether I mostly talk or type, whether I use Word, and anything
     you must never do. Write these as preferences that make sense in any
@@ -100,6 +101,7 @@ dropping the project brief into the inbox. Help me do it. Add it to `done.md`.
   - **Dictation**: Mac, System Settings → Keyboard → Dictation, using the
     shortcut shown there; Windows, Windows key + H.
   - **Word export**: check you can make a `.docx`, and explain any install first.
-- Write `handover.md` with a proper First step, then save a snapshot ("Starting point").
+- Write `handover.md` with a proper First step (if the study pack set one, keep
+  it and put the other steps under "Then"), then save a snapshot ("Starting point").
 - End with: "You're set up. Next time: new session, choose this folder, say
   hello. For a different project, say 'new project'."

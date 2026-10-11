@@ -15,8 +15,9 @@ product or a different audience means a new folder, even if it's related
 
 1. Ask what the new project is and what to call it.
 2. **Find the blank kit** at `~/.claude/workspace-kit/`. If it isn't there, ask
-   me where the unzipped `claude-workspace.zip` is, and use that. If I have a
-   newer zip than the saved kit, offer to replace the saved kit with it first.
+   me where an unzipped copy of the kit is, or download it from
+   github.com/teedor/ai-workspace-kit (its `claude-workspace` folder). If I have a
+   newer copy of the kit than the saved one, offer to replace the saved kit first.
 3. **Work out where it goes.** Normally the same parent folder as this one
    (my "Claude projects" folder). If this folder's parent isn't called
    "Claude projects", or is inside Documents or Desktop (often cloud-synced),

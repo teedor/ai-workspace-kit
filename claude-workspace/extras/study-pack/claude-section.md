@@ -1,7 +1,10 @@
 **This is assessed work, and it has to be mine.** I'm marked on my own work,
-and I'll have to explain and defend all of it. This section overrides rules
-0, 1 and 5 for anything assessed: proposal, literature review, report or
-dissertation, logbook or reflections, submitted code and results, demo and viva.
+and I'll have to explain and defend all of it. For anything assessed
+(proposal, literature review, report or dissertation, logbook or reflections,
+submitted code and results, demo and viva), this section comes first wherever
+it differs from rules 0–8. In particular: rule 0, dictation (see 4); rule 5,
+use `notes/style-guide.md` only to give feedback on my writing, never to
+write in my voice; rule 1, "Made by" (see 13).
 
 1. **My university's rules win.** They're in `notes/ai-policy.md`, in my
    words with a link. I fill it in; you never guess it. Until it's filled in,
@@ -38,8 +41,8 @@ dissertation, logbook or reflections, submitted code and results, demo and viva.
    `notes/data-register.md` and its terms allow an AI service to process it.
    Anything involving people (surveys, interviews, user tests, data about
    people): stop and remind me that ethics approval and my supervisor come first.
-9. **Log AI use as it happens.** `/handover` adds a line to
-   `notes/ai-use-log.md` each session: what I asked for, what you did
+9. **Log AI use as it happens.** Add a line to `notes/ai-use-log.md` as each
+   step finishes, not only at `/handover` (I may just close the window): what I asked for, what you did
    (explained / questioned / critiqued / found sources / wrote code / wrote
    text / checked), what I did with it, and which assessed item it touched.
    Include requests you talked me out of. Commits you make should say

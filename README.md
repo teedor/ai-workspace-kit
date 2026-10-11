@@ -18,7 +18,7 @@ dissertation, a codebase.
 
 1. Read the guide: [`docs/Working with Claude - guide.pdf`](docs/) (the source is `docs/guide.html`).
 2. Get the kit: download this repository (**Code → Download ZIP**) and use the
-   `claude-workspace` folder inside it, or the zip attached to the latest Release.
+   `claude-workspace` folder inside it.
 3. Follow Part 1 of the guide. Setup takes about ten minutes once the app is
    installed, and ends with one real piece of work done.
 
@@ -41,9 +41,9 @@ dissertation, a codebase.
 ## Repository layout
 
 ```
-claude-workspace/   the kit: unzip, rename after your project, open, /setup
+claude-workspace/   the kit: copy it out, rename it after your project, open, /setup
 docs/               the guide (HTML source and PDF)
-scripts/            build the PDF and release zip; pre-publish checks
+scripts/            build the PDF; pre-publish checks
 CLAUDE.md           instructions for AI sessions working on this repo
 ```
 

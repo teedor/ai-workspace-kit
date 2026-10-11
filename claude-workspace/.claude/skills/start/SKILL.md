@@ -6,12 +6,18 @@ description: Start a working session with one small, ready-to-go next step. Use 
 Start this session. **Starting is the hardest part, so make it effortless:**
 one offer I can answer with a single word.
 
+0. **If setup isn't done** (no "Project set up" D1 in
+   `decisions/decisions-log.md`): skip everything below. Reply "📁 You're in
+   <folder name>." and "Type /setup to get started (about ten minutes)."
+
 1. **Read quietly:** `status.md`, `handover.md`, the last few lines of `done.md`.
-   Don't summarise them back to me.
+   Don't summarise them back to me. Note the time quietly; `/handover` uses it.
 2. **Catch up quietly.** If the last session ended without a handover (there
    are uncommitted changes), save them with the same checks `/handover` uses,
-   as "WIP: catch-up", and carry on. Never mention it.
-3. **Reply in at most four lines:**
+   as "WIP: catch-up", and carry on. Never mention it. If the study pack is
+   installed and that session has no line in `notes/ai-use-log.md`, add one
+   from `done.md` and the changes, marked "reconstructed".
+3. **Reply in four lines, plus at most one from step 5:**
    ```
    📁 You're in <Name>.
    Last time: <what I was in the middle of>.
@@ -20,7 +26,8 @@ one offer I can answer with a single word.
    ```
    If I've already said "carry on" or "let's go", treat that as "go".
 4. **After a gap of a week or more** (check `git log`): open with "Welcome
-   back." and **never say how long it's been**. In "Last time", include where
+   back." as part of the first line ("📁 Welcome back. You're in <Name>.") and
+   **never say how long it's been**. In "Last time", include where
    the current goal stands (e.g. "3 of 5 steps done on the baseline"). Offer
    a smaller re-entry step than usual, such as re-reading the last thing I
    wrote or running the code once. Check the First step isn't stale; replace

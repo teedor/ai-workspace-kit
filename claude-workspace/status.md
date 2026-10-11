@@ -26,9 +26,18 @@ description, not a target.*
 - Not enough sessions yet.
 
 ## Setup extras (optional)
-*Offered one at a time, at the end of a session that went well.*
-- About me (my global file, shared by all projects)
-- Style guide from samples of my work
-- Default critics for `/red-team`
-- Dictation
-- Word export
+*Offered one at a time, at the end of a session that went well. I can also
+ask for one any time ("set up About me").*
+- **About me:** create or extend `~/.claude/CLAUDE.md` with who I am, the work
+  I do, whether I mostly talk or type, whether I use Word, and anything you
+  must never do, written as preferences that make sense in any folder. Never
+  replace existing content; warn that it applies to every project; show me
+  the text first. Also list `~/.claude/skills/` and offer to rename any of
+  this kit's skills that clash (a global skill would win).
+- **Style guide:** from two or three samples (in the inbox, or pasted). If
+  this is assessed work, use samples only to give feedback, never to write in
+  my voice.
+- **Default critics** for `/red-team`.
+- **Dictation:** Mac, System Settings → Keyboard → Dictation, using the
+  shortcut shown there; Windows, Windows key + H.
+- **Word export:** check you can make a `.docx`, and explain any install first.
