@@ -25,33 +25,28 @@ and Codex (with a ChatGPT plan).
 
 ## Is this for you?
 
-It depends on the work, not on who you are.
+It depends on the shape of the work, not the subject or who you are.
 
-**A good fit** for work that:
-- runs over weeks or months, and that you come back to in fits and starts;
-- is mostly yours to write or build, rather than edited live by others;
-- lives in files on a computer;
-- needs to be right, with a record of where things came from.
+**A good fit:** work that runs over weeks or months, that you come back to
+in fits and starts, that lives in files on a computer, and that needs to be
+right.
 
-**Less of a fit** for work that:
-- is a quick question or a one-off task;
-- lives in shared online documents that others edit at the same time;
-- happens mostly on a phone;
-- involves other people's sensitive details, if you'd be using a personal
-  account.
+**Less of a fit:** quick questions; shared online documents others edit at
+the same time (Google Docs, Teams); work done mostly on a phone or tablet;
+pupils', patients' or clients' details on a personal account.
 
-**Compared with the apps' own Projects:** the Claude and ChatGPT apps both
-have Projects that keep your instructions and files for a piece of work,
-with no setup. If "remember me and this piece of work" is all you need,
-start there. This kit adds:
-- memory you own: plain files on your computer that you can read, correct,
-  roll back and take to another assistant;
-- a ready-made next step every time you come back, with no guilt about gaps;
-- decisions kept with their reasons, and snapshots you can go back to;
-- a record of where each claim came from, and of how AI was used;
-- an assistant that files things for you.
+**Or the chat apps' Projects?** The Claude and ChatGPT chat apps both have
+Projects that keep your instructions and files, with no setup beyond naming
+one. If that's all you need, start there, or use both. This kit adds memory
+you own (ordinary files in your folder, with no export step), a ready-made
+next step even after weeks away, decisions kept with their reasons, saved
+versions to go back to, and an assistant that files what you drop in, marks
+what it checked, and queues its work for your sign-off.
 
-The price: a computer, a little setup, and permission prompts along the way.
+**The price:** a paid plan (Claude Pro or above, or a ChatGPT plan that
+includes Codex; Gemini CLI works with a free Google account), a computer, a
+little typed setup, and saying yes when the assistant asks before changing
+things.
 
 ## Talk, in one place
 
