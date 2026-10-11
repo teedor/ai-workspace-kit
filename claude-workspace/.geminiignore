@@ -1,0 +1,30 @@
+# Gemini CLI's file tools never read these (the kit's secrets rule).
+# Git's own ignore list isn't used by Gemini here, so that it can read
+# inbox/ and private/; this file keeps the secrets out instead.
+.env
+.env.*
+*.pem
+*.p12
+*.pfx
+id_rsa*
+credentials*.json
+service-account*.json
+kaggle.json
+client_secret*.json
+secrets.toml
+.netrc
+*.key
+.npmrc
+.pypirc
+.git-credentials
+token.json
+
+# Folders programs rebuild themselves: not worth reading.
+node_modules/
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+wandb/
+mlruns/
+.cache/

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Make one image with a Gemini image model and save it as a PNG.
 #   tools/make-image.sh <model> drafts/images/<name>-ai.png "<prompt>"
-# Reads GEMINI_API_KEY from .env in the project folder. Never prints the key.
+# Reads GEMINI_IMAGE_KEY from .env in the project folder. Never prints the key.
 # Each run is ONE paid request: Claude asks before running it.
 # Tested against a mock of the API, not yet the live one: if it fails, read
 # the error it prints and check Google's current docs.
@@ -18,8 +18,8 @@ case "$out" in
 esac
 [ -e "$out" ] && { echo "Not overwriting $out: choose another name."; exit 2; }
 
-key="$(grep -E '^GEMINI_API_KEY=' .env 2>/dev/null | head -n1 | cut -d= -f2- | tr -d '\r" ' || true)"
-[ -n "$key" ] || { echo "No key found. Check .env yourself: the key goes on its own line, straight after GEMINI_API_KEY= (never paste it in the chat)."; exit 2; }
+key="$(grep -E '^GEMINI_IMAGE_KEY=' .env 2>/dev/null | head -n1 | cut -d= -f2- | tr -d '\r" ' || true)"
+[ -n "$key" ] || { echo "No key found. Check .env yourself: the key goes on its own line, straight after GEMINI_IMAGE_KEY= (never paste it in the chat)."; exit 2; }
 
 # Make the prompt safe to put inside JSON.
 esc="$(printf '%s' "$prompt" | sed -e 's/\\/\\\\/g' -e 's/"/\\"/g' | tr '\n\t' '  ')"

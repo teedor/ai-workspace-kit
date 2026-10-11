@@ -28,7 +28,9 @@ or go; it isn't needed.
    Domain-specific material goes in `claude-workspace/extras/<pack>/`, which
    `/setup` installs only when it applies.
 2. **Talk, don't type.** Dictation is the main way in.
-3. **The app first, the terminal optional.**
+3. **Talk in one place.** Encourage a terminal plus dictation: no menus,
+   buttons or settings screens to learn. The Claude app is a fine
+   alternative, and the guide covers both.
 4. **One folder per project**, with a global layer (about the person) and a
    project layer (about the work). Claude decides which is which.
 5. **Claude suggests skills** when something works well: one plain line, at
@@ -36,8 +38,10 @@ or go; it isn't needed.
 6. **No fixed session length, no streaks, no guilt.** Claude learns the
    person's rhythm and sizes the next step to fit.
 7. **Plain English, British spelling.**
-8. **Tool-neutral in future** (e.g. GitHub Copilot CLI): keep the core ideas
-   separate from tool-specific files where practical.
+8. **Tool-neutral:** one shared core (`CLAUDE.md`, `.claude/skills/`) with
+   thin adapters per tool (`GEMINI.md` and `.gemini/` for Gemini CLI; see
+   `docs/copilot-cli-plan.md` for Copilot). Change a skill once, in
+   `.claude/skills/`.
 
 ## How changes are made
 

@@ -32,7 +32,7 @@ ol li, ul li { margin-bottom: 3pt; }
 3. Work by <b>talking</b>. Put new files in the <b>inbox</b> folder and say "process the inbox".<br>
 4. Stop whenever you like. Say <b>"that's it for today"</b> and Claude tidies up and saves, asking you nothing (for assessed work with a logbook, one question). Or just close the window: nothing's lost.</div>
 
-<div class="box"><b>Already comfortable with a terminal?</b> Skip to Part 3 for the terminal install (it also covers Linux), then come back for Step 3 (open <code>claude</code> in your <b>Claude projects</b> folder and paste the sentence). Setup is the same: <code>/setup</code>. If your work is marked or assessed (a dissertation, coursework), read "Assessed work" in Part 2 before you start.</div>
+<div class="box"><b>Happy to try a terminal?</b> It's the simplest way of all once it's installed: one window, no menus or buttons, and you just talk to it. Part 3 covers the terminal install (including Linux, and Gemini CLI or Codex instead of Claude); then come back for Step 3 (start it in your <b>Claude projects</b> folder and paste the sentence). Setup is the same: <code>/setup</code>. If your work is marked or assessed (a dissertation, coursework), read "Assessed work" in Part 2 before you start.</div>
 
 <div class="part">Part 1 · Getting started</div>
 <p>Installing takes a little while. After that, setup takes about ten minutes and ends with a real piece of work done.</p>
@@ -285,6 +285,24 @@ Open a new window and type <code>claude --version</code> to check it worked.</li
 </ol>
 <p>Recent versions start the terminal in <b>auto</b> mode. The kit's settings ask for the asking mode instead; check the mode shown at the bottom, and press <kbd>Shift + Tab</kbd> to change it. Claude Code has its own dictation in the terminal: type <code>/voice</code>, then hold Space and talk. Your audio goes to Anthropic.</p>
 <p>Claude Code has built-in commands such as <code>/resume</code>, so the kit's skills are named <code>/start</code> and <code>/signoff</code> to avoid clashes.</p>
+
+<h2>Using Gemini CLI instead</h2>
+<p>The kit also works with Google's <b>Gemini CLI</b>, in a terminal. Each project folder carries a small adapter (<code>GEMINI.md</code>, a <code>.gemini</code> folder and <code>.geminiignore</code>), so the same rules and the same commands (<code>/start</code>, <code>/setup</code>, <code>/handover</code>…) work there.</p>
+<ul>
+<li><b>Install:</b> on a Mac with Homebrew, <code>brew install gemini-cli</code>; otherwise install Node.js 20 or later from <i>nodejs.org</i>, then <code>npm install -g @google/gemini-cli</code>. On Windows you also need Git for Windows, as in Step 2.</li>
+<li><b>Start:</b> open a terminal in your <b>Claude projects</b> folder (see "Prefer the terminal?" above), type <code>gemini</code>, choose <b>Sign in with Google</b> with a personal account (school and work accounts need extra Google Cloud set-up), and trust the folder when asked. Then paste the sentence from Step 3. In your project folder later, choose <b>Acknowledge and Enable</b> when Gemini asks about new agents (that's the kit's read-only critic).</li>
+<li><b>Privacy:</b> on a free personal account, Google may use your prompts to improve its products, and people may read them. Type <code>/privacy</code> to choose.</li>
+<li><b>What's different:</b> the kit's safety settings are Claude Code's, so with Gemini they're rules it's told to follow rather than locks. Gemini still asks before changing files or running commands. The linked repos pack is Claude-only for now.</li>
+</ul>
+
+<h2>Using Codex (ChatGPT) instead</h2>
+<p>If you have a ChatGPT plan, OpenAI's <b>Codex</b> works too, in a terminal. Each project folder carries a small adapter for it (<code>AGENTS.md</code> and a <code>.codex</code> folder).</p>
+<ul>
+<li><b>Install:</b> Mac: <code>curl -fsSL https://chatgpt.com/codex/install.sh | sh</code>, or <code>brew install --cask codex</code>. Windows, in a terminal (see "Prefer the terminal?"): <code>powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"</code>.</li>
+<li><b>Start:</b> open a terminal in your <b>Claude projects</b> folder, type <code>codex</code>, choose <b>Sign in with ChatGPT</b> (Codex comes with Plus, Pro, Business, Edu and Enterprise plans), and <b>Trust and continue</b> when asked. In ChatGPT's settings, check whether OpenAI may use your conversations to improve its models, and turn that off if you'd rather it didn't. Then paste the sentence from Step 3.</li>
+<li><b>One difference to remember:</b> commands start with <code>$</code>, not <code>/</code>: <code>$setup</code>, <code>$start</code>, <code>$handover</code>.</li>
+<li><b>What's different:</b> inside the project folder, Codex can run commands without asking. The kit adds rules so it always asks before deleting, pushing, or anything that could throw work away, and asks before stepping outside the folder; the rest of the kit's safety settings are rules it's told to follow rather than locks. Check your ChatGPT data settings before bringing in other people's details. The linked repos pack is Claude-only for now.</li>
+</ul>
 
 <h2>Off-computer backup with GitHub</h2>
 <p>Optional. Make a free <b>private</b> repository on github.com and ask Claude to "back this up to GitHub". Sign in through your browser when asked, and never paste passwords or tokens into the chat. Your name and email go with every snapshot (GitHub offers a private "noreply" email for this), and anything once saved stays in the history, even if deleted later. The <code>private</code> and <code>inbox</code> folders are never included.</p>

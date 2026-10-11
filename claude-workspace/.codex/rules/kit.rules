@@ -1,0 +1,27 @@
+# The kit's guard rails for Codex: always ask before these, even inside the
+# project folder (private/ has no snapshot). Loaded once the folder is trusted.
+prefix_rule(
+    pattern = ["rm"],
+    decision = "prompt",
+    justification = "Deleting files: the kit asks first (rule 8).",
+    match = ["rm notes.md", "rm -rf private"],
+)
+prefix_rule(
+    pattern = ["git", ["push", "reset", "clean", "checkout", "restore", "switch", "stash"]],
+    decision = "prompt",
+    justification = "Publishing, or git commands that can throw away work: the kit asks first (rule 8).",
+    match = ["git push", "git clean -fdx", "git reset --hard"],
+    not_match = ["git status", "git commit -m x"],
+)
+prefix_rule(
+    pattern = ["git", "-C"],
+    decision = "prompt",
+    justification = "Git in another folder: the kit asks first.",
+    match = ["git -C ../site push"],
+)
+prefix_rule(
+    pattern = ["Remove-Item"],
+    decision = "prompt",
+    justification = "Deleting files: the kit asks first (rule 8).",
+    match = ["Remove-Item notes.md"],
+)

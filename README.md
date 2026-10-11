@@ -9,31 +9,111 @@ It works for anything: a book, a business, a website, a family history, a
 dissertation, a codebase.
 
 > **Using the kit? Ignore the green Code button.** Follow "Start here"
-> below: Claude gets the kit for you and makes your project its own folder.
-> Already downloaded or cloned this? No harm done: just follow "Start here".
-> **Improving the kit itself?** Clone as usual; `CLAUDE.md` is for you.
+> below: your assistant gets the kit for you and makes your project its own
+> folder. Already downloaded or cloned this? No harm done: just follow
+> "Start here". **Improving the kit itself?** Clone as usual; `CLAUDE.md`
+> is for you.
 
-> **Status: early (v0.x).**
-> Today it's built for **Claude Code** (the `claude-workspace/` kit).
-> Support for other tools, such as GitHub Copilot CLI, is being explored.
+**Works with:** Claude Code (the Claude app, or a terminal), Gemini CLI,
+and Codex (with a ChatGPT plan).
+
+> **Status: early (v0.x).** Built and tested most with **Claude Code**. The
+> Gemini CLI and Codex routes are new: tell us how they go.
 >
-> **Unofficial.** Not affiliated with or endorsed by Anthropic or GitHub.
+> **Unofficial.** Not affiliated with or endorsed by Anthropic, Google,
+> OpenAI or GitHub.
+
+## Talk, in one place
+
+Once it's installed, the simplest way to use this is a **terminal window
+and your voice**. A terminal is just a window where you say what you want
+and the assistant does it. There are no menus to find, no buttons to learn,
+no settings screens: you talk in one place, and the work happens. Use your computer's
+own dictation (Mac: System Settings → Keyboard → Dictation, then the
+shortcut shown there; Windows: Windows key + H), or, in Claude Code, type
+`/voice`. We haven't yet tried dictation in every terminal: if yours
+doesn't take it, tell us.
+
+It works the same whichever assistant you use. Installing takes a few typed
+commands the first time; we give you each one exactly. With ChatGPT or
+Gemini, the terminal is the way in; with Claude, if you'd rather click, the
+Claude app's Code tab works too.
 
 ## Start here
 
-1. Install the Claude app from **claude.com/download** and sign in (a paid plan
-   is needed). On Windows, also install Git from **git-scm.com** (the kit uses
-   it for snapshots), then restart the app.
-2. In your home folder, make an empty folder called **Claude projects**.
-3. In the app, open the **Code** tab and start a new session on that folder
-   (Environment: Local, Permission mode: Manual). Paste this (don't dictate it):
-   > Set me up with the AI Workspace Kit: clone github.com/teedor/ai-workspace-kit into ~/.claude/workspace-kit (or update it if it's already there, deleting nothing), then follow its INSTALL.md; if Git is missing, stop and tell me how to install it.
-4. Claude makes your first project folder and tells you how to open it and
-   type `/setup`.
+**First, on Windows only:** install Git from **git-scm.com** (click **Next**
+on every screen; the defaults are right). Macs offer to install it the
+first time it's needed.
 
-Only if your work laptop blocks Claude's download: use **Code → Download
-ZIP**, unzip it in Downloads, and use the ZIP sentence in the guide's Step 3. The full
-walkthrough is in the guide:
+**Then make your projects folder.** Windows: open File Explorer, click the
+address bar, type `%USERPROFILE%` and press Enter. Mac: in Finder, choose
+**Go → Home**. Make a new folder there called **Claude projects** and leave
+it empty. (It's just a label: keep the name even with ChatGPT or Gemini,
+because the setup looks for it.)
+
+**To open a terminal in that folder:** Windows: open it in File Explorer,
+click the address bar, type `powershell` and press Enter. Mac: open
+**Terminal** (press Cmd + Space, type Terminal, press Enter), type `cd`
+and a space, drag the folder into the window, and press Enter.
+
+> **School or work laptop?** If an install is blocked, or asks for an
+> administrator password, stop and use your own computer or ask IT. And
+> never bring pupils', patients' or clients' details into a personal AI
+> account: check your employer's rules first.
+
+Then pick one:
+
+### Claude (the app or a terminal)
+
+1. Get a paid Claude plan and install the app from **claude.com/download**.
+   (For the terminal instead, see "Prefer the terminal?" in the guide.)
+2. In the app, open the **Code** tab and start a new session on your Claude
+   projects folder (Environment: Local, Permission mode: Manual).
+
+### Gemini CLI
+
+1. Install it: on a Mac with Homebrew, `brew install gemini-cli`; otherwise
+   install Node.js (version 20 or later) from **nodejs.org**, then
+   `npm install -g @google/gemini-cli`. Then close the terminal and open a
+   new one.
+2. Open a terminal in your Claude projects folder and type `gemini`. Choose
+   **Sign in with Google** and use a personal Google account (school and
+   work accounts need extra Google Cloud set-up). Trust the folder when
+   asked, and in your project folder later, choose **Acknowledge and
+   Enable** when it asks about new agents.
+3. Free personal accounts: Google may use your prompts to improve its
+   products, and people may read them. Type `/privacy` to choose.
+
+### Codex (with a ChatGPT plan)
+
+1. Install it. Mac: `curl -fsSL https://chatgpt.com/codex/install.sh | sh`
+   (or `brew install --cask codex`). Windows, in a terminal
+   (see above): `powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`.
+   Then close the terminal and open a new one.
+2. Open a terminal in your Claude projects folder and type `codex`. Choose
+   **Sign in with ChatGPT** (Codex comes with Plus, Pro, Business, Edu and
+   Enterprise plans), and choose **Trust and continue** when asked.
+3. In ChatGPT's settings, check whether OpenAI may use your conversations
+   to improve its models, and turn that off if you'd rather it didn't.
+4. With Codex, the kit's commands start with `$` instead of `/`: `$setup`,
+   `$start`, and so on. Codex will ask before downloading the kit into a
+   hidden folder: say yes.
+
+### Then, whichever you chose
+
+Paste this (don't dictate it: the web address has to be exact):
+
+> Set me up with the AI Workspace Kit: clone github.com/teedor/ai-workspace-kit into ~/.claude/workspace-kit (or update it if it's already there, deleting nothing), then follow its INSTALL.md; if Git is missing, stop and tell me how to install it.
+
+Your assistant makes your first project folder and tells you how to open it
+and type `/setup`. **Next time:** open a terminal in your project's folder
+(not Claude projects), start `claude`, `gemini` or `codex`, and say hello.
+
+Only if a work laptop blocks the download: use the green **Code → Download
+ZIP** button (this is the one time you need it), unzip it in Downloads, and
+use the ZIP sentence in the guide's Step 3.
+
+The full walkthrough is in the guide:
 [`docs/Working with Claude - guide.pdf`](docs/) (source: `docs/guide.html`).
 
 ## What's in it
@@ -47,7 +127,7 @@ walkthrough is in the guide:
   when replaced; ideas carry the case against them and a test.
 - **Red-teaming:** independent critics with fresh eyes pick holes before
   anyone else does.
-- **Talk, don't type:** built for dictation.
+- **Talk, don't type:** built for dictation, in a terminal or the app.
 - **A study pack** for assessed work: you write, the AI teaches and
   questions, and AI use is logged for your declaration. It includes viva
   practice, an honest sources register and, for ML projects, an experiment log.
@@ -56,7 +136,10 @@ walkthrough is in the guide:
 
 ```
 claude-workspace/   the kit: the blank template each project folder is copied from
-INSTALL.md          what Claude follows to make the first project folder
+                    (CLAUDE.md and .claude/ for Claude Code; GEMINI.md, .gemini/
+                    and .geminiignore for Gemini CLI; AGENTS.md and .codex/
+                    for Codex)
+INSTALL.md          what the assistant follows to make the first project folder
 docs/               the guide (HTML source and PDF)
 scripts/            build the PDF; pre-publish checks
 CLAUDE.md           instructions for AI sessions working on this repo

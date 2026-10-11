@@ -1,0 +1,8 @@
+description = "Check how this workspace's setup fits the work I'm actually doing, and suggest at most three concrete changes, each made only if I say yes."
+prompt = """
+This is the /tailor command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/tailor/SKILL.md}
+
+{{args}}
+"""
