@@ -3,15 +3,22 @@
 Keep it quick: one question at a time, and anything not needed today becomes
 an item under "Setup extras (optional)" in `status.md`.
 
-1. **Rules.** Put `claude-section.md` under "Rules for this work" in this
-   folder's `CLAUDE.md`, replacing the placeholder.
+1. **Rules.** Put `claude-summary.md` under "Rules for this work" in this
+   folder's `CLAUDE.md`, replacing the placeholder. (It points to the full
+   rules in `claude-section.md`, which stay in this pack folder: never
+   delete them.)
 2. **Skills.** Copy `skills/explain-back` and `skills/sources` into
    `.claude/skills/`.
+   For Gemini CLI and Codex, also copy the matching files from this pack's
+   `adapters/.gemini/commands/` into `.gemini/commands/`, and from
+   `adapters/.codex/skills/` into `.codex/skills/`.
 3. **Files.** Copy `files/notes/*` and `files/literature/` into the folder,
    keeping paths. Never overwrite existing files.
 4. **Code?** Check **Code in this project** in `CLAUDE.md`. If yes:
-   - append `code-section.md` to "Rules for this work";
-   - copy `skills/experiment` into `.claude/skills/` and `files/experiments/`
+   - append `code-summary.md` to "Rules for this work" (it points to the
+     full `code-section.md`, which stays here);
+   - copy `skills/experiment` into `.claude/skills/` (and its Gemini and
+     Codex files from `adapters/`, as in step 2) and `files/experiments/`
      into the folder; create `data/README.md` pointing to `notes/data-register.md`;
    - check `uv --version`. If uv is missing, add "Install uv" to Setup extras;
    - set `/red-team`'s default critics to: **second marker** (marks against
@@ -38,4 +45,5 @@ an item under "Setup extras (optional)" in `status.md`.
    Word; where training runs (laptop, Colab, university machines). Never
    guess any of them.
 8. Tell me in two lines what changed, and that my supervisor should see the
-   "Rules for this work" section.
+   "Rules for this work" section of `CLAUDE.md` and the full rules in
+   `extras/study-pack/claude-section.md`.

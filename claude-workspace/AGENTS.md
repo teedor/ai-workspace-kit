@@ -31,6 +31,9 @@ Codex: wherever the kit says "Claude", it means you. The differences:
   switch`, `git stash`, `git -C` and `Remove-Item`; ask first anyway for
   anything else hard to undo (rule 8): `private/` has no snapshot. Never
   open `.env`, `.pem` or key files (rule 3).
+- **Snapshots ask.** Your sandbox keeps `.git` read-only, so `git init` and
+  every snapshot need my yes. Warn me before the first one that this is
+  expected.
 - **Trusting this folder.** Tell me to choose "Trust and continue" when
   Codex asks, or the `critic` agent and this folder's guard-rail rules won't
   load.

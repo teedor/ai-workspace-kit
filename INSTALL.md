@@ -73,8 +73,8 @@ here. Include the hidden folders and files (`.claude`, `.gemini`, `.codex`,
 listing files or testing they exist, **without opening any file inside the new
 folder** (opening one loads that project's rules into this session):
 
-- `<new folder>/.claude/skills/setup/SKILL.md` and `<new folder>/.geminiignore`
-  exist;
+- `<new folder>/.claude/skills/setup/SKILL.md`, `<new folder>/.geminiignore`
+  and `<new folder>/.codex/skills/setup/SKILL.md` exist;
 - there is **no** `.git` in the new folder. The project starts its own fresh
   history when `/setup` runs. Never clone this repository into a project
   folder, and never copy anything from outside `claude-workspace/`.

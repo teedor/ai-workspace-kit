@@ -36,8 +36,7 @@ keeping their paths: `CLAUDE.md`, `README.md`, `.gitignore`, `status.md`,
 `handover.md`, `done.md`, `review-queue.md`, `.claude/settings.json`,
 `.claude/skills/`, `.claude/agents/`, `GEMINI.md`, `.gemini/`,
 `.geminiignore`, `AGENTS.md`, `.codex/`, `extras/`, `notes/`, `ideas/`, `decisions/`,
-`drafts/.gitkeep`, `finished/.gitkeep`, `inbox/README.md`,
-`private/README.md`. (If the folder held a project before the kit arrived,
+`drafts/.gitkeep`, `finished/.gitkeep`, `inbox/README.md`. (If the folder held a project before the kit arrived,
 skip this; `/new-project` will fetch the kit instead.)
 
 ## 2. Git
@@ -136,7 +135,9 @@ where the left-behind things live in `notes/where-things-are.md`. If the
 work is code in its own repository: if the code *is* the project, suggest
 the guide's "Existing project?" instead; if it's only part of the work,
 leave it where it is and link it later ("link a repo").
-Then run `/intake` in catch-up mode.
+Say they'll see a permission request each time a file moves to the
+archive: that's what keeps their copy safe. Then run `/intake` in catch-up
+mode.
 
 Either way, add what we did to `done.md`.
 
@@ -168,5 +169,9 @@ Either way, add what we did to `done.md`.
 - Write `handover.md` with a proper First step (if the study pack set one, keep
   it and put the other steps under "Then"), then save a snapshot ("Starting
   point"), running `/handover` step 5's checks first.
-- End with: "You're set up. Next time: new session, choose this folder, say
-  hello. For a different project, say 'new project'."
+- End with "You're set up. Next time:" and how to come back, for how I'm
+  working now: in the Claude app, "start a new session on this folder and
+  say hello"; in a terminal, "open a terminal in <full path>, type <claude,
+  gemini or codex>, and say hello" (Windows: open the folder in File
+  Explorer and type `powershell` in the address bar). Then: "For a different
+  project, say 'new project'."

@@ -82,7 +82,8 @@ click the address bar, type `powershell` and press Enter. Mac: open
 and a space, drag the folder into the window, and press Enter.
 
 > **School or work laptop?** If an install is blocked, or asks for an
-> administrator password, stop and use your own computer or ask IT. And
+> administrator password you don't have, stop and use your own computer or
+> ask IT. And
 > never bring pupils', patients' or clients' details into a personal AI
 > account: check your employer's rules first.
 
@@ -90,10 +91,14 @@ Then pick one:
 
 ### Claude (the app or a terminal)
 
-1. Get a paid Claude plan and install the app from **claude.com/download**.
-   (For the terminal instead, see "Prefer the terminal?" in the guide.)
-2. In the app, open the **Code** tab and start a new session on your Claude
-   projects folder (Environment: Local, Permission mode: Manual).
+You need a paid Claude plan (Pro or above). Then either:
+- **In a terminal:** install Claude Code. Mac: `curl -fsSL https://claude.ai/install.sh | bash`.
+  Windows: `irm https://claude.ai/install.ps1 | iex`. Close the terminal,
+  open a new one in your Claude projects folder, and type `claude` (it opens
+  your browser to sign in the first time).
+- **Or in the app:** install it from **claude.com/download**, open the
+  **Code** tab, and start a new session on your Claude projects folder
+  (Environment: Local, Permission mode: Manual).
 
 ### Gemini CLI
 
@@ -117,7 +122,10 @@ Then pick one:
    Then close the terminal and open a new one.
 2. Open a terminal in your Claude projects folder and type `codex`. Choose
    **Sign in with ChatGPT** (Codex comes with Plus, Pro, Business, Edu and
-   Enterprise plans), and choose **Trust and continue** when asked.
+   Enterprise plans), and choose **Trust and continue** when asked. On
+   Windows, Codex then offers to set up its sandbox: choose **Set up default
+   sandbox** and say yes to the Windows box that follows. That one
+   administrator prompt is expected.
 3. In ChatGPT's settings, check whether OpenAI may use your conversations
    to improve its models, and turn that off if you'd rather it didn't.
 4. With Codex, the kit's commands start with `$` instead of `/`: `$setup`,
@@ -128,18 +136,19 @@ Then pick one:
 
 Paste this (don't dictate it: the web address has to be exact):
 
-> Set me up with the AI Workspace Kit: clone github.com/teedor/ai-workspace-kit into ~/.claude/workspace-kit (or update it if it's already there, deleting nothing), then follow its INSTALL.md; if Git is missing, stop and tell me how to install it.
+> Set me up with the AI Workspace Kit: clone github.com/teedor/ai-workspace-kit into ~/.claude/workspace-kit (on Windows use $HOME instead of ~), or update it if it's already there, deleting nothing. Then read its INSTALL.md (with the shell if your file tools can't reach it) and follow it. If Git is missing, stop and tell me how to install it.
 
 Your assistant makes your first project folder and tells you how to open it
-and type `/setup`. **Next time:** open a terminal in your project's folder
-(not Claude projects), start `claude`, `gemini` or `codex`, and say hello.
+and type `/setup`. **Next time:** in a terminal, open one in your project's
+folder (not Claude projects), start `claude`, `gemini` or `codex`, and say
+hello; in the Claude app, start a new session on your project's folder.
 
 Only if a work laptop blocks the download: use the green **Code → Download
 ZIP** button (this is the one time you need it), unzip it in Downloads, and
 use the ZIP sentence in the guide's Step 3.
 
 The full walkthrough is in the guide:
-[`docs/Working with Claude - guide.pdf`](docs/) (source: `docs/guide.html`).
+[`docs/Working with Claude - guide.pdf`](docs/Working%20with%20Claude%20-%20guide.pdf) (source: `docs/guide.html`).
 
 ## What's in it
 
@@ -165,7 +174,8 @@ claude-workspace/   the kit: the blank template each project folder is copied fr
                     and .geminiignore for Gemini CLI; AGENTS.md and .codex/
                     for Codex)
 INSTALL.md          what the assistant follows to make the first project folder
-docs/               the guide (HTML source and PDF)
+claude-workspace/extras/  optional packs: study, visuals, linked repos
+docs/               the guide (HTML source and PDF), and the Copilot CLI plan
 scripts/            build the PDF; pre-publish checks
 CLAUDE.md           instructions for AI sessions working on this repo
 ```

@@ -41,9 +41,10 @@ ol li, ul li { margin-bottom: 3pt; }
 
 <h2>What you need</h2>
 <ul>
-<li>A Mac or Windows computer.</li>
+<li>A Mac or Windows computer (Linux works too, in a terminal: see Part 3).</li>
 <li>A <b>paid Claude plan</b> (Pro or above), a monthly subscription you can cancel. The free plan doesn't include what you need. Prices are at <i>claude.com/pricing</i>.</li>
 <li>Nothing else to download: in Step 3, Claude fetches the <b>starter kit</b> for you from <i>github.com/teedor/ai-workspace-kit</i>.</li>
+<li><b>Using ChatGPT (Codex) or Gemini instead of Claude?</b> Read "Using Gemini CLI instead" or "Using Codex (ChatGPT) instead" in Part 3 first; Steps 3 and 4 are then the same, in a terminal.</li>
 <li><b>Optional, for later:</b> two or three examples of your own work to show Claude your style, like an email you were pleased with, an old menu, a chapter or a letter.</li>
 </ul>
 <p>Paid plans come with a usage allowance, shared between the Code tab and ordinary chats. If Claude says you've <b>reached your limit</b>, nothing is broken. It tells you when the allowance resets, and you won't be charged extra unless you've turned on <b>usage credits</b> in your account.</p>
@@ -75,15 +76,15 @@ ol li, ul li { margin-bottom: 3pt; }
 <li>Around the box where you type, at the bottom, are a few settings. Set:
   <ul><li><b>Environment:</b> <b>Local</b> (it means "on this computer").</li>
   <li><b>Project folder</b> (it may say <b>Select folder</b>): click it and choose <b>Claude projects</b>. To reach your home folder in that window: on a Mac, press <kbd>Cmd + Shift + H</kbd>; on Windows, click the address bar at the top, type <code>%USERPROFILE%</code> and press Enter. If the app asks whether you trust this folder, say yes: it's your own.</li>
-  <li><b>Permission mode:</b> <b>Manual</b> (older versions say <i>Ask permissions</i>). Claude then asks before every change.</li></ul>
+  <li><b>Permission mode:</b> <b>Manual</b> (older versions say <i>Ask permissions</i>). Claude then asks before every change, apart from its own notes.</li></ul>
   The app gets updated, so it may look slightly different, but those choices will be there.</li>
 <li>Copy this sentence, paste it into the typing box, and press <b>Enter</b>. Paste it rather than dictating it: the web address has to be exact. (Line breaks don't matter.)
-<pre>Set me up with the AI Workspace Kit: clone github.com/teedor/ai-workspace-kit into ~/.claude/workspace-kit (or update it if it's already there, deleting nothing), then follow its INSTALL.md; if Git is missing, stop and tell me how to install it.</pre></li>
+<pre>Set me up with the AI Workspace Kit: clone github.com/teedor/ai-workspace-kit into ~/.claude/workspace-kit (on Windows use $HOME instead of ~), or update it if it's already there, deleting nothing. Then read its INSTALL.md (with the shell if your file tools can't reach it) and follow it. If Git is missing, stop and tell me how to install it.</pre></li>
 <li>Claude asks what your project is called, makes a <b>project folder</b> for it inside <b>Claude projects</b> (for example <i>Bakery</i> or <i>My novel</i>), and tells you how to open it.</li>
 </ol>
 <p><b>Expect several permission requests</b>, and Claude says what each one is for. The first saves the kit in Claude's own settings folder (<code>.claude</code> in your home folder); Claude always asks before writing there. Choose the plain <b>Yes</b> each time, not an option that stops it asking. If Claude gives you commands to type yourself, you're in the <b>Chat</b> tab: switch to <b>Code</b> and start again.</p>
 <p>Only ever paste a "fetch this and follow it" sentence from somewhere you trust, like this guide. Claude follows what it finds there, within the permissions you give it.</p>
-<div class="box"><b>Can't download the kit?</b> Some work laptops block it, and if a GitHub sign-in box pops up, close it: the kit doesn't need an account. Instead, go to <i>github.com/teedor/ai-workspace-kit</i>, click the green <b>Code</b> button → <b>Download ZIP</b>, and unzip it where it lands, in Downloads (Mac: double-click it; Windows: <b>right-click</b> → <b>Extract All…</b> → <b>Extract</b>). Then paste this instead: <i>"Set me up with the AI Workspace Kit from the ZIP I've unzipped in my Downloads folder: move the kit folder (the one with INSTALL.md in it) to ~/.claude/workspace-kit, deleting nothing, then follow its INSTALL.md."</i></div>
+<div class="box"><b>Can't download the kit?</b> Some work laptops block it, and if a GitHub sign-in box pops up, close it: the kit doesn't need an account. Instead, go to <i>github.com/teedor/ai-workspace-kit</i>, click the green <b>Code</b> button → <b>Download ZIP</b>, and unzip it where it lands, in Downloads (Mac: double-click it; Windows: <b>right-click</b> → <b>Extract All…</b> → <b>Extract</b>). Then paste this instead: <i>"Set me up with the AI Workspace Kit from the ZIP I've unzipped in my Downloads folder: move the kit folder (the one with INSTALL.md in it) to ~/.claude/workspace-kit (on Windows use $HOME instead of ~), deleting nothing, then read its INSTALL.md and follow it."</i></div>
 
 <p class="step">Step 4</p>
 <h3>Your first session</h3>
@@ -97,15 +98,15 @@ ol li, ul li { margin-bottom: 3pt; }
 <div class="box"><b>How to tell you've got the right folder:</b> your project folder has a file called <code>CLAUDE.md</code> and a folder called <code>inbox</code> directly inside it.</div>
 
 <h3>During setup</h3>
-<p>Claude asks a handful of questions, one at a time. Answer by talking or typing. It notes which computer you're on (so every instruction it gives fits your Mac or PC), sets up the snapshots, then asks:</p>
+<p>Claude asks a handful of questions, one at a time. Answer by talking or typing. It notes which computer you're on (so every instruction it gives fits your Mac or PC), sets up the snapshots (asking, if none is set yet, for a name and email to label them), then asks:</p>
 <ul>
 <li>to confirm the project's <b>name</b> (it suggests the folder name), what it is, and whether it involves code;</li>
 <li>whether it's <b>new</b>, or something you've been working on for a while;</li>
-<li>whether it's <b>marked or assessed work</b> (coursework, a dissertation) or has rules about using AI. If it is, Claude adds the study pack (see Part 2);</li>
-<li>whether you'll put in <b>real people's details or data</b>: emails, orders, invoices, family records, or datasets about people. Those all count, so say yes if you'll use any of them;</li>
+<li>whether it's <b>marked or assessed work</b> (coursework, a dissertation) or has rules about using AI. If it's study or assessment, Claude adds the study pack (see Part 2); other rules are saved as they are;</li>
+<li>whether you'll put in <b>real people's details or data</b>: emails, orders, family records, datasets about people, recordings, or anything under a licence, contract or ethics approval. Those all count, so say yes if you'll use any of them;</li>
 <li>for <b>one small thing</b> you could do on it right now. Then it helps you do it. If you've already started, that thing is <b>catching up</b>: copy the three to five files that matter most into the inbox (right-click → Copy, then Paste, so your originals stay put), and Claude files them and writes up where things stand for you to check. The rest can come in later: say "catch up on this".</li>
 </ul>
-<p>Everything else (a check of how the setup fits your work, a file about you that all your projects share, a style guide from your examples, dictation, Word, and on Pro a lighter everyday model) is offered <b>later, one thing at a time</b>, at the end of a session that went well.</p>
+<p>Everything else (a check of how the setup fits your work, a file about you that all your projects share, a style guide from your examples, dictation, Word, default critics for <code>/red-team</code>, and on Pro a lighter everyday model) is offered <b>later, one thing at a time</b>, at the end of a session that went well.</p>
 <p><b>Expect permission requests</b>, some in technical words. A few are for things outside your project folder, such as saving your name for the snapshots. <b>Claude tells you before each of those that it's coming and why.</b> Allow them.</p>
 <div class="box ok"><b>You're set up when</b> Claude says <i>"You're set up."</i> If something goes wrong partway through, say <i>"something went wrong, explain in plain English"</i>. Or start a new session in the same folder and type <code>/setup</code> again: it picks up where it left off.</div>
 
@@ -120,6 +121,7 @@ ol li, ul li { margin-bottom: 3pt; }
 <ol>
 <li>Claude app → <b>Code</b> → <b>+ New session</b>.</li>
 <li>Choose your project folder (it'll be in the recent list), Local, Manual.</li>
+<li><i>In a terminal instead:</i> open one in your project folder and type <code>claude</code>, <code>gemini</code> or <code>codex</code>.</li>
 <li>Say <b>hello</b> (or <code>/start</code>). Check the 📁 line names the right folder.</li>
 <li>Claude offers one next step. Say <b>"go"</b>, <b>"something else"</b>, <b>"I've got longer"</b> or <b>"low day"</b>.</li>
 </ol>
@@ -197,7 +199,7 @@ ol li, ul li { margin-bottom: 3pt; }
 <h2>Assessed work (students)</h2>
 <p>If setup hears that your work is marked or assessed, it adds a <b>study pack</b>. It turns the usual arrangement round: <b>you write, and Claude teaches and questions.</b></p>
 <ul>
-<li><b>Your university's rules come first.</b> Policies differ between universities and between modules. Your first step is to put your module's AI rules into <code>notes/ai-policy.md</code>, and to show your supervisor the "Rules for this work" section of <code>CLAUDE.md</code>, ideally at your next meeting.</li>
+<li><b>Your university's rules come first.</b> Policies differ between universities and between modules. Your first step is to put your module's AI rules into <code>notes/ai-policy.md</code>, and to show your supervisor the "Rules for this work" section of <code>CLAUDE.md</code> and the full rules in <code>extras/study-pack/claude-section.md</code>, ideally at your next meeting.</li>
 <li><b>Claude won't write assessed text or project code for you to submit.</b> It explains, asks questions, reviews what you've written, and helps you find bugs in your own code. Dictation for your report comes back as a faithful transcript, not tidied prose. If you insist, it's your call, and it's logged.</li>
 <li><b>Everything is logged</b> in <code>notes/ai-use-log.md</code>, so your AI-use declaration is easy to write and accurate. Your git history, decisions log and experiment log show how the work developed.</li>
 <li><b>Viva practice:</b> say "quiz me on this". Claude asks examiner-style questions, one at a time. Assessed work isn't signed off until you can explain it.</li>
@@ -237,6 +239,7 @@ ol li, ul li { margin-bottom: 3pt; }
 <pre>status.md     Where things stand: current goal, next steps, dates.
 handover.md   The next step, ready for when you're back.
 done.md       Everything finished. Nothing is ever removed.
+review-queue.md  Work waiting for your sign-off.
 inbox         Put things here unsorted. Claude sorts them and empties it.
 notes         What Claude knows: style guide, glossary, open questions.
 ideas         Untested ideas, with the case against.
@@ -244,6 +247,7 @@ decisions     What you decided, why, and what it replaced.
 drafts        Work in progress.
 finished      Work you've approved.
 private       Confidential material and archived originals. Not in snapshots.
+              (Appears the first time the inbox is sorted.)
 CLAUDE.md     Claude's standing orders for this project (read every session).</pre>
 <p>Some setup files are hidden on purpose. You never need to touch them.</p>
 
@@ -303,7 +307,7 @@ Open a new window and type <code>claude --version</code> to check it worked.</li
 <li><b>Install:</b> Mac: <code>curl -fsSL https://chatgpt.com/codex/install.sh | sh</code>, or <code>brew install --cask codex</code>. Windows, in a terminal (see "Prefer the terminal?"): <code>powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"</code>.</li>
 <li><b>Start:</b> open a terminal in your <b>Claude projects</b> folder, type <code>codex</code>, choose <b>Sign in with ChatGPT</b> (Codex comes with Plus, Pro, Business, Edu and Enterprise plans), and <b>Trust and continue</b> when asked. In ChatGPT's settings, check whether OpenAI may use your conversations to improve its models, and turn that off if you'd rather it didn't. Then paste the sentence from Step 3.</li>
 <li><b>One difference to remember:</b> commands start with <code>$</code>, not <code>/</code>: <code>$setup</code>, <code>$start</code>, <code>$handover</code>.</li>
-<li><b>What's different:</b> inside the project folder, Codex can run commands without asking. The kit adds rules so it always asks before deleting, pushing, or anything that could throw work away, and asks before stepping outside the folder; the rest of the kit's safety settings are rules it's told to follow rather than locks. Check your ChatGPT data settings before bringing in other people's details. The linked repos pack is Claude-only for now.</li>
+<li><b>What's different:</b> inside the project folder, Codex edits files and runs most commands without asking, but saving snapshots asks each time (expected: Codex protects the snapshot folder). On Windows, after you trust the folder, Codex offers to set up its sandbox: choose <b>Set up default sandbox</b> and say yes to the Windows administrator box. The kit adds rules so it always asks before deleting, pushing, or anything that could throw work away, and asks before stepping outside the folder; the rest of the kit's safety settings are rules it's told to follow rather than locks. Check your ChatGPT data settings before bringing in other people's details. The linked repos pack is Claude-only for now.</li>
 </ul>
 
 <h2>Off-computer backup with GitHub</h2>

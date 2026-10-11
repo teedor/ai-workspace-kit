@@ -148,13 +148,14 @@ not allowed, and ask me.
 status.md     where things stand: current goal, next steps, dates, my rhythm
 handover.md   the First step for next time
 done.md       everything finished, never removed
+review-queue.md  work waiting for my sign-off
 inbox/        I drop things here unsorted; you sort them, and it ends up empty
 notes/        what we know: style guide, glossary, open questions, background
 ideas/        thoughts not tested yet, with the case against and a way to test it
 decisions/    what we decided, why, and what it replaced
 drafts/       work in progress
 finished/     work I have checked and approved
-private/      confidential; never saved to git
+private/      confidential; never saved to git (made when first needed)
 ```
 
 Things only move one way: **inbox → notes → drafts → finished**, and nothing
@@ -166,9 +167,8 @@ means reviewed, tested where possible and committed, not moved into `finished/`.
 Install one only when I ask, or clearly need it and say yes, by following its
 `INSTALL.md`; never during first setup, except the study pack.
 
-**One person.** In a shared team repository, put the personal parts of this file
-in `CLAUDE.local.md` (git ignores it), and ask me before committing workspace
-files others will see.
+**One person.** In a shared team repository, put my personal parts of this file
+in `CLAUDE.local.md` (git ignores it), and ask before committing shared files.
 
 ## Suggest skills; don't wait to be asked
 

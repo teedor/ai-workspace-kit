@@ -1,0 +1,8 @@
+description = "Draw a diagram (flowchart, timeline, small family tree, org chart, process map) as Mermaid or SVG, free and with no sign-up."
+prompt = """
+This is the /diagram command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/diagram/SKILL.md}
+
+{{args}}
+"""

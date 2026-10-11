@@ -11,7 +11,8 @@ is on record.
 **Your university's rules come first.** Policies differ between institutions
 and between modules. Read yours, put it in `notes/ai-policy.md`, and agree
 with your supervisor what's allowed, ideally at your first meeting. Show them
-the "Rules for this work" section of `CLAUDE.md`.
+the "Rules for this work" section of `CLAUDE.md` and the full rules in
+`extras/study-pack/claude-section.md`.
 
 **What it adds:** rules for assessed work (in `CLAUDE.md`), an AI-use log, a
 sources register with per-paper notes, a data register, a marking-scheme page,

@@ -1,3 +1,4 @@
+<!-- Full text of the study rules. CLAUDE.md holds a short version that points here; read this when it says to. -->
 **This is assessed work, and it has to be mine.** I'm marked on my own work,
 and I'll have to explain and defend all of it. For anything assessed
 (proposal, literature review, report or dissertation, logbook or reflections,

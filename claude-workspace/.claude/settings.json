@@ -17,12 +17,16 @@
       "Edit(./done.md)",
       "Edit(./review-queue.md)",
       "Edit(./inbox/jots.md)",
+      "Edit(./ideas/**)",
+      "Edit(./decisions/**)",
+      "Edit(./notes/**)",
       "Bash(git ls-files:*)",
       "Bash(git grep:*)",
       "PowerShell(git ls-files *)",
       "PowerShell(git grep *)"
     ],
     "ask": [
+      "Edit(./notes/ai-policy.md)",
       "Bash(git push:*)",
       "Bash(git reset:*)",
       "Bash(git clean:*)",

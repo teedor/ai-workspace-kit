@@ -15,7 +15,12 @@ with the differences below.
   each has a slash command here (`/start`, `/handover`, `/intake` …). When I
   ask in my own words for something a skill covers (each file's
   `description` says when), read that file and follow it. `/setup` and
-  `/red-team` only run when I type them.
+  `/red-team` only run when I type them. Phrases to skills: hello or "carry
+  on" → start; "that's it for today" → handover; "process the inbox" or
+  "catch up on this" → intake; "I've had an idea" → idea; "let's go with…" →
+  decide; "make it plainer" → plain; "let's sign things off" → signoff; "I've
+  got a meeting" → meeting; "check the fit" → tailor; "new project" →
+  new-project; "remember how to do that" → new-skill.
 - **Critics.** Where a skill says to use the `critic` sub-agent, use
   `@critic` (in `.gemini/agents/`), one per critic. It can only read.
 - **My global file** is `~/.gemini/GEMINI.md` wherever the kit says

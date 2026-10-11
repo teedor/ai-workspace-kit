@@ -1,0 +1,8 @@
+description = "Keep my reference list honest."
+prompt = """
+This is the /sources command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/sources/SKILL.md}
+
+{{args}}
+"""

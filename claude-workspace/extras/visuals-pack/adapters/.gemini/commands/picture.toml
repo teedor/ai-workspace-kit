@@ -1,0 +1,8 @@
+description = "Make an AI-generated picture through Google's Gemini image API, which costs money per image."
+prompt = """
+This is the /picture command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/picture/SKILL.md}
+
+{{args}}
+"""

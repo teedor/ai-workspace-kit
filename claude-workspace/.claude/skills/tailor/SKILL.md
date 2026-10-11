@@ -66,7 +66,8 @@ concrete (an exact edit to a named file) and doable in this folder.
   project"); anything in `.claude/settings.json` except adding to `ask` or
   `deny`; any line in `.gitignore`; any skill's safety steps, or its
   `allowed-tools`; or, with the study pack in, its skills,
-  `notes/ai-policy.md` and `notes/ai-use-log.md`. Tailoring can only add to
+  `extras/study-pack/` (the full rules), `notes/ai-policy.md` and
+  `notes/ai-use-log.md`. Tailoring can only add to
   these or tighten them. If unsure, it counts;
 - anything that lets Claude write assessed work, if the study pack is in;
 - changes to my global files (`~/.claude/`), except through the "About me"

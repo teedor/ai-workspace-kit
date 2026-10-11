@@ -1,0 +1,8 @@
+description = "Viva practice."
+prompt = """
+This is the /explain-back command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/explain-back/SKILL.md}
+
+{{args}}
+"""
