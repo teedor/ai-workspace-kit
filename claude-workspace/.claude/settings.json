@@ -30,6 +30,7 @@
       "Bash(git restore:*)",
       "Bash(git switch:*)",
       "Bash(git stash:*)",
+      "Bash(git -C *)",
       "Bash(rm:*)",
       "PowerShell(git push *)",
       "PowerShell(git reset *)",
@@ -38,7 +39,8 @@
       "PowerShell(git restore *)",
       "PowerShell(git switch *)",
       "PowerShell(git stash *)",
-      "PowerShell(Remove-Item *)"
+      "PowerShell(Remove-Item *)",
+      "PowerShell(git -C *)"
     ],
     "deny": [
       "Read(.env)",

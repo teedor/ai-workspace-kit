@@ -43,3 +43,7 @@ every workspace shares.
 
 **Assessed work?** `/setup` can add the study pack in `extras/study-pack/`:
 you write, Claude teaches and questions, and AI use is logged.
+
+**Work in other git repositories?** Say "link a repo": the pack in
+`extras/linked-repos/` keeps a register of them, read-only by default. Their
+code stays outside this folder.

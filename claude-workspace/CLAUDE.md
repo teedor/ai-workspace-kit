@@ -197,6 +197,11 @@ the usual layout for its language). The folders above sit alongside it. For
 code, "finished" means reviewed, tested where possible, and committed, not
 moved into `finished/`.
 
+**Packs for later.** `extras/` holds packs this project may need one day,
+each with a `README.md` saying what it's for. Install one only when I ask,
+or when I clearly need it and say yes, by following its `INSTALL.md`. Never
+during first setup, except the study pack.
+
 This workspace is for **one person**. If this is a shared team repository,
 put the personal parts of this file in `CLAUDE.local.md` instead (it isn't
 shared), and ask me before committing workspace files others will see.
