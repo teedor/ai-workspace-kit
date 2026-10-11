@@ -1,3 +1,4 @@
+<!-- Full text of the code rules. CLAUDE.md holds a short version that points here; read this when it says to. -->
 
 **Code and machine learning** (installed because this project has code):
 - **"Checked" for ML code** means: it ran end to end on a small sample, the

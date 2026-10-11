@@ -3,14 +3,17 @@
 Keep it quick: one question at a time, and anything not needed today becomes
 an item under "Setup extras (optional)" in `status.md`.
 
-1. **Rules.** Put `claude-section.md` under "Rules for this work" in this
-   folder's `CLAUDE.md`, replacing the placeholder.
+1. **Rules.** Put `claude-summary.md` under "Rules for this work" in this
+   folder's `CLAUDE.md`, replacing the placeholder. (It points to the full
+   rules in `claude-section.md`, which stay in this pack folder: never
+   delete them.)
 2. **Skills.** Copy `skills/explain-back` and `skills/sources` into
    `.claude/skills/`.
 3. **Files.** Copy `files/notes/*` and `files/literature/` into the folder,
    keeping paths. Never overwrite existing files.
 4. **Code?** Check **Code in this project** in `CLAUDE.md`. If yes:
-   - append `code-section.md` to "Rules for this work";
+   - append `code-summary.md` to "Rules for this work" (it points to the
+     full `code-section.md`, which stays here);
    - copy `skills/experiment` into `.claude/skills/` and `files/experiments/`
      into the folder; create `data/README.md` pointing to `notes/data-register.md`;
    - check `uv --version`. If uv is missing, add "Install uv" to Setup extras;
