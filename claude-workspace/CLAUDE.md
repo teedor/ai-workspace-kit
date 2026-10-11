@@ -7,6 +7,13 @@ short line naming this project, e.g. "📁 You're in *Bakery*." It shows me I've
 opened the right folder. Use **Name** from "This project" below, or the folder
 name if it still says "set by /setup". If I ask which folder you're working in, give the full path.
 
+**My computer.** Give every instruction, keyboard shortcut and menu path for
+the computer under **Computer** below, never another system's. Claude Code
+also tells you the platform each session: if the two disagree (I've moved to
+another computer), trust that, update the line, and say so in one line. Run
+scripts and commands yourself; only ask me to type one if there's no other
+way, and then give it for my system.
+
 **Two layers.** My personal preferences for *all* my projects live in my
 global file (`~/.claude/CLAUDE.md`), which you also read every session. This
 file is for *this* project. If the two seem to disagree, follow this file for
@@ -17,6 +24,7 @@ this project, and point out the clash so I can tidy one of them up.
 **Name:** *(set by `/setup`)*
 **Code in this project:** *(yes / no, set by `/setup`)*
 **Started:** *(new / already under way, set by `/setup`)*
+**Computer:** *(Mac / Windows / Linux, set by `/setup`)*
 
 <!-- Fill this in, in your own words. A few lines is plenty. For example:
 "I'm writing my first novel, a crime story set in 1970s Belfast. Readers are

@@ -20,7 +20,7 @@ Never during first setup. Two parts; install only the part I ask for.
    - prompts on Google's free tier can be used to improve its products; on
      the paid tier they aren't.
 2. **Files.** Copy `skills/picture` into `.claude/skills/`,
-   `files/tools/make-image.sh` into `tools/` (keep it executable), and
+   `files/tools/make-image.sh` into `tools/`, and
    `files/notes/visuals-spend.md` into `notes/`. Never overwrite.
 3. **How to check the cost with me.** Ask once: "Shall I check the cost
    with you before **every** picture (a good way to start), only when a
