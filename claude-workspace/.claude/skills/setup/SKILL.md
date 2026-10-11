@@ -93,17 +93,30 @@ stays out of this folder unless its terms allow that.
 now?"** If I don't know, offer one, such as copying the next deadline into
 `status.md`, or dropping the project brief into the inbox. Help me do it.
 
-**Work already under way:** the real step is catching up. Say:
-"Copy (don't move) what you've got into the inbox folder, and keep your
-originals where they are. Start with what matters most: the latest version,
-the brief or plan, any deadlines, your own notes. Twenty or so files is a
-good first batch; the rest can follow another day. Leave big folders,
-datasets and code where they are: just tell me where they live." Mention
-that a big batch uses a fair bit of the allowance. If the work is code that
-already lives in its own repository, don't copy it in: suggest bringing the
-kit into that repository instead (the guide's "Existing project?"), or
-linking it later with the linked repos pack. Then run `/intake` in catch-up
-mode.
+**Work already under way:** the real step is catching up. If the inbox
+already holds files (we stopped partway), carry on with those instead of
+asking again. Otherwise say, in a few short lines:
+- "Pick the **three to five** files that matter most right now: the latest
+  version, the brief or plan, anything with a deadline, your own notes. The
+  rest can come in later: just say 'catch up on this'."
+- "**Copy** them, so your originals stay where they are: open your project
+  folder in Finder (Mac) or File Explorer (Windows), then `inbox`, and
+  right-click → Copy each file, then Paste in the inbox. (Or hold Option on
+  a Mac, Ctrl on Windows, while you drag.) Say 'done' when they're in."
+- "Emails: open each one and save it as a PDF (Print, then Save as PDF) or
+  use Save As, into the inbox. Files kept online only (Dropbox, OneDrive,
+  Google Drive): open them once first, so they're really on this computer."
+- "Leave where they are: big folders, folders of scans, family-tree files,
+  datasets and code. Just tell me where they live."
+- "For now, leave out other people's emails, records and anything about
+  research participants, unless you said yes at step 5 and we need them
+  today. Everything I read is sent to Anthropic."
+Mention that scans, photos and long PDFs use the most allowance. Write
+where the left-behind things live in `notes/where-things-are.md`. If the
+work is code in its own repository: if the code *is* the project, suggest
+the guide's "Existing project?" instead; if it's only part of the work,
+leave it where it is and link it later ("link a repo").
+Then run `/intake` in catch-up mode.
 
 Either way, add what we did to `done.md`.
 
@@ -133,6 +146,7 @@ Either way, add what we did to `done.md`.
     model, saved in my own settings (`~/.claude/settings.json`), never this
     project's. Offered straight away if I mention hitting my limit.
 - Write `handover.md` with a proper First step (if the study pack set one, keep
-  it and put the other steps under "Then"), then save a snapshot ("Starting point").
+  it and put the other steps under "Then"), then save a snapshot ("Starting
+  point"), running `/handover` step 5's checks first.
 - End with: "You're set up. Next time: new session, choose this folder, say
   hello. For a different project, say 'new project'."

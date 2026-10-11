@@ -1,10 +1,11 @@
 ---
 name: picture
-description: Make an AI-generated picture through Google's Gemini image API, which costs money per image. Always states the cost and waits for a yes first. Use when I say "make a picture of…", "generate an image", "illustrate this".
+description: Make an AI-generated picture through Google's Gemini image API, which costs money per image. Always states the cost, and checks with me first as often as I've chosen. Use when I say "make a picture of…", "generate an image", "illustrate this".
 ---
 
-Make a picture with the paid image API. **Every request costs money, so
-nothing is sent without my yes.** If AI pictures aren't set up (no
+Make a picture with the paid image API. **Every request costs money.** How
+often you check the cost with me is my choice: it's the **Asking:** line at
+the top of `notes/visuals-spend.md`. If AI pictures aren't set up (no
 `tools/make-image.sh`), offer to set them up with
 `extras/visuals-pack/INSTALL.md` instead, and stop.
 
@@ -22,11 +23,16 @@ nothing is sent without my yes.** If AI pictures aren't set up (no
    of real people, living or dead, or of real events, that could be
    mistaken for a photograph or a record. No logos, brands, copyrighted
    characters, or copies of a named living artist's style.
-4. **Ask, every time,** in one message: "That's <n> image(s) with <model>,
-   about US$<x> (roughly £<y>) (<source>, <date>). Go ahead?" For several
-   images, give the total. A yes covers exactly what you described, nothing
-   more. Remind me the first time that Claude Code's approval box after
-   this is the actual send button: choose **Yes**, never "don't ask again".
+4. **Check the cost with me, as I've chosen.** Work out the estimate:
+   "<n> image(s) with <model>, about US$<x> (roughly £<y>) (<source>,
+   <date>)", with the total for several images.
+   - **Every picture:** say it and ask "Go ahead?". A yes covers exactly
+     what you described, nothing more.
+   - **Over an amount:** ask only if the request's total is over it;
+     otherwise say the estimate in one line and go ahead.
+   - **Never:** say the estimate in one line and go ahead.
+   Whatever I've chosen, check if a request looks like a slip (500 images
+   when the conversation was about 5, say).
 5. **Log it first** in `notes/visuals-spend.md`, then run
    `tools/make-image.sh <model> drafts/images/<name>-ai.png "<prompt>"`
    once per image, and fill in the Result column.
