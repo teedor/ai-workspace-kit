@@ -1,0 +1,10 @@
+# Build outputs
+/dist/
+/docs/*.txt
+/docs/pg-*.png
+
+# Local-only list of words that must never appear in this repo (see scripts/check-terms.sh)
+/.private-terms
+
+.DS_Store
+Thumbs.db

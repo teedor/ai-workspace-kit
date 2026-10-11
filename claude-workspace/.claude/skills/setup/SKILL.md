@@ -1,0 +1,105 @@
+---
+name: setup
+description: Set up this project folder in about ten minutes, ending with one real piece of work. Everything optional is offered later, one thing at a time. Run once per project; run again to pick up where it left off or to add rules for assessed work.
+disable-model-invocation: true
+---
+
+Set up this project folder. **Fast: about ten minutes, and it ends with one
+real step done on the actual project.** Don't assume I'm technical: before
+each step, say in one plain sentence what you're about to do, and **warn me
+when the next permission prompt is for something outside this folder**, so I
+know it's expected. One question at a time. I can answer by talking or typing.
+
+## 0. Pick up where we left off
+
+Setup is complete when D1 is in `decisions/decisions-log.md`. If it is, ask
+whether I want to change something (e.g. add rules for assessed work, step 4),
+and do only that. Otherwise, resume from the first step below that isn't done.
+It's fine to stop partway: say "Good place to stop; `/setup` picks up here."
+whenever a step finishes.
+
+## 1. Keep a blank copy of the kit (first project only, quietly)
+
+Only if `~/.claude/workspace-kit/` doesn't exist **and** this folder holds
+nothing but the untouched kit. (If the folder held a project before the kit
+arrived, skip this; `/new-project` will ask for the original zip.) Copy
+**only** the kit's own files, keeping their paths: `CLAUDE.md`, `README.md`,
+`.gitignore`, `status.md`, `handover.md`, `done.md`, `review-queue.md`,
+`.claude/settings.json`, `.claude/skills/`, `extras/`, `notes/`, `ideas/`,
+`decisions/`, `drafts/.gitkeep`, `finished/.gitkeep`, `inbox/README.md`,
+`private/README.md`. Check `workspace-kit/.claude/skills/setup/SKILL.md` exists.
+
+## 2. Git
+
+Check `git --version` **first**: on a Mac it may pop up a box offering
+"command line developer tools". If so: "Click Install, wait until it
+finishes, then say done." On Windows, if git is missing, tell me how to
+install Git for Windows, and wait.
+- If this folder isn't a git repository, `git init`.
+- Check `git config --global user.name` / `user.email`. If set, show them and
+  ask whether to keep them. If not, ask for them, mention that GitHub can give
+  a private "noreply" email if I might back up there one day, say this writes
+  outside the folder, and set them with `--global`.
+- **If the folder already held a project:** tell me briefly what you found.
+  Don't overwrite anything: append the kit's `.gitignore` lines to the
+  existing one, and show me changes to an existing `CLAUDE.md` or `README.md`
+  before saving.
+- Check `private/` and `inbox/` are ignored (`git check-ignore -v private inbox/x`).
+
+## 3. This project
+
+Ask for a short **Name**, one or two sentences on what it is and who it's
+for, and whether it involves **code**. Write them into "This project" in
+`CLAUDE.md` (fill in **Code in this project:** yes or no).
+
+## 4. Rules for this work
+
+Ask: **"Is this marked or assessed work, like coursework, a dissertation or a
+qualification, or does an employer, publisher or client have rules about
+using AI on it?"**
+- **No:** write "None" under "Rules for this work" in `CLAUDE.md`.
+- **Yes, and it's study or assessment:** install the study pack (follow
+  `extras/study-pack/INSTALL.md`). Tell me in two lines what it changes: I
+  write, Claude teaches and questions, and AI use is logged for my declaration.
+- **Yes, other rules:** ask me to paste the rules or a link, save them as
+  `notes/ai-policy.md`, and write a one-line summary under "Rules for this work".
+
+## 5. Personal details and data
+
+Ask with examples: **"Will anything here include real people's details or
+data, like emails, orders, family records, spreadsheets, datasets about
+people (posts, photos, health records, survey answers), recordings, or
+anything covered by a licence, a contract or an ethics approval?"** Write the answer under "Personal details in this
+project" in `CLAUDE.md`. If yes, note which kinds; that living people get more
+care than the dead; that names, dates and places must be spelled exactly; and
+that anything you read is sent to Anthropic, so licensed or restricted data
+stays out of this folder unless its terms allow that.
+
+## 6. One real step
+
+Ask: **"What's one small thing you could do on this right now?"** If I don't
+know, offer one, such as copying the next deadline into `status.md`, or
+dropping the project brief into the inbox. Help me do it. Add it to `done.md`.
+
+## 7. Finish
+
+- Delete the example rows in `review-queue.md` and `decisions/decisions-log.md`.
+- Record D1: "Project set up", with today's date.
+- Leave "Setup extras (optional)" in `status.md` as it is. They're offered
+  later, one at a time, at the end of a session that went well:
+  - **About me**: create or extend `~/.claude/CLAUDE.md` with who I am, the
+    work I do, whether I mostly talk or type, whether I use Word, and anything
+    you must never do. Write these as preferences that make sense in any
+    folder. Never replace existing content, warn that it applies to every
+    project, and show me the text first. Also list `~/.claude/skills/` and
+    offer to rename any of this kit's skills that clash.
+  - **Style guide**: from two or three samples (dropped in the inbox or
+    pasted). For assessed work, the study pack's rules apply: use samples only
+    to give feedback, never to write in my voice.
+  - **Default critics** for `/red-team`.
+  - **Dictation**: Mac, System Settings → Keyboard → Dictation, using the
+    shortcut shown there; Windows, Windows key + H.
+  - **Word export**: check you can make a `.docx`, and explain any install first.
+- Write `handover.md` with a proper First step, then save a snapshot ("Starting point").
+- End with: "You're set up. Next time: new session, choose this folder, say
+  hello. For a different project, say 'new project'."

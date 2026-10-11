@@ -1,0 +1,54 @@
+{
+  "permissions": {
+    "defaultMode": "default",
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "PowerShell(git status *)",
+      "PowerShell(git log *)",
+      "PowerShell(git diff *)",
+      "PowerShell(git add *)",
+      "PowerShell(git commit *)",
+      "Edit(./status.md)",
+      "Edit(./handover.md)",
+      "Edit(./done.md)",
+      "Edit(./review-queue.md)",
+      "Edit(./inbox/jots.md)",
+      "Bash(git ls-files:*)",
+      "Bash(git grep:*)",
+      "PowerShell(git ls-files *)",
+      "PowerShell(git grep *)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(git reset:*)",
+      "Bash(git clean:*)",
+      "Bash(git checkout:*)",
+      "Bash(git restore:*)",
+      "Bash(git switch:*)",
+      "Bash(git stash:*)",
+      "Bash(rm:*)",
+      "PowerShell(git push *)",
+      "PowerShell(git reset *)",
+      "PowerShell(git clean *)",
+      "PowerShell(git checkout *)",
+      "PowerShell(git restore *)",
+      "PowerShell(git switch *)",
+      "PowerShell(git stash *)",
+      "PowerShell(Remove-Item *)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/*.pem)",
+      "Read(**/kaggle.json)",
+      "Read(**/secrets.toml)",
+      "Read(**/client_secret*.json)"
+    ]
+  }
+}

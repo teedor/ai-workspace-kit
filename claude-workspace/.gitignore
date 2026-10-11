@@ -1,0 +1,41 @@
+# Confidential folder: never saved to git or GitHub.
+# (Claude can still read it, so it isn't secret from Claude.)
+/private/
+
+# The drop folder. Nothing in it is saved to git until Claude has sorted it.
+/inbox/*
+!/inbox/README.md
+
+# Secrets: never saved to git.
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+id_rsa*
+credentials*.json
+service-account*.json
+
+# Computer clutter
+.DS_Store
+Thumbs.db
+.claude/settings.local.json
+
+# Working folders that programs rebuild themselves: never worth saving
+__pycache__/
+.venv/
+venv/
+node_modules/
+.ipynb_checkpoints/
+desktop.ini
+
+# "File is open" markers left by Word / LibreOffice
+~$*
+.~lock.*#
+
+# More secret files
+kaggle.json
+client_secret*.json
+secrets.toml
+.netrc
