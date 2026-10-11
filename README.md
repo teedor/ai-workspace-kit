@@ -66,6 +66,14 @@ Claude app's Code tab works too.
 
 ## Start here
 
+**Use whichever you already have:**
+- **Claude** (Pro or above): the Claude app, or Claude Code in a terminal
+- **ChatGPT** (Plus or above): Codex, in a terminal
+- **A Google account** (free is fine): Gemini CLI, in a terminal
+
+Do it on your own computer, not a work or school one, and keep other
+people's private details out of it.
+
 **First, on Windows only:** install Git from **git-scm.com** (click **Next**
 on every screen; the defaults are right). Macs offer to install it the
 first time it's needed.
@@ -89,7 +97,7 @@ and a space, drag the folder into the window, and press Enter.
 
 Then pick one:
 
-### Claude (the app or a terminal)
+### If you have Claude
 
 You need a paid Claude plan (Pro or above). Then either:
 - **In a terminal:** install Claude Code. Mac: `curl -fsSL https://claude.ai/install.sh | bash`.
@@ -100,21 +108,7 @@ You need a paid Claude plan (Pro or above). Then either:
   **Code** tab, and start a new session on your Claude projects folder
   (Environment: Local, Permission mode: Manual).
 
-### Gemini CLI
-
-1. Install it: on a Mac with Homebrew, `brew install gemini-cli`; otherwise
-   install Node.js (version 20 or later) from **nodejs.org**, then
-   `npm install -g @google/gemini-cli`. Then close the terminal and open a
-   new one.
-2. Open a terminal in your Claude projects folder and type `gemini`. Choose
-   **Sign in with Google** and use a personal Google account (school and
-   work accounts need extra Google Cloud set-up). Trust the folder when
-   asked, and in your project folder later, choose **Acknowledge and
-   Enable** when it asks about new agents.
-3. Free personal accounts: Google may use your prompts to improve its
-   products, and people may read them. Type `/privacy` to choose.
-
-### Codex (with a ChatGPT plan)
+### If you have ChatGPT: Codex
 
 1. Install it. Mac: `curl -fsSL https://chatgpt.com/codex/install.sh | sh`
    (or `brew install --cask codex`). Windows, in a terminal
@@ -131,6 +125,20 @@ You need a paid Claude plan (Pro or above). Then either:
 4. With Codex, the kit's commands start with `$` instead of `/`: `$setup`,
    `$start`, and so on. Codex will ask before downloading the kit into a
    hidden folder: say yes.
+
+### If you have a Google account: Gemini CLI
+
+1. Install it: on a Mac with Homebrew, `brew install gemini-cli`; otherwise
+   install Node.js (version 20 or later) from **nodejs.org**, then
+   `npm install -g @google/gemini-cli`. Then close the terminal and open a
+   new one.
+2. Open a terminal in your Claude projects folder and type `gemini`. Choose
+   **Sign in with Google** and use a personal Google account (school and
+   work accounts need extra Google Cloud set-up). Trust the folder when
+   asked, and in your project folder later, choose **Acknowledge and
+   Enable** when it asks about new agents.
+3. Free personal accounts: Google may use your prompts to improve its
+   products, and people may read them. Type `/privacy` to choose.
 
 ### Then, whichever you chose
 
