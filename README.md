@@ -71,9 +71,6 @@ Claude app's Code tab works too.
 - **ChatGPT** (Plus or above): Codex, in a terminal
 - **A Google account** (free is fine): Gemini CLI, in a terminal
 
-Do it on your own computer, not a work or school one, and keep other
-people's private details out of it.
-
 **First, on Windows only:** install Git from **git-scm.com** (click **Next**
 on every screen; the defaults are right). Macs offer to install it the
 first time it's needed.
