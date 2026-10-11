@@ -1,6 +1,9 @@
 # Spending on AI pictures
 
-*Claude adds a row before every paid request, with the estimate I agreed to,
+**Asking:** *(set when pictures are set up: before every picture, over an
+amount, or never. I can change it any time.)*
+
+*Claude adds a row before every paid request, with the estimate,
 and fills in the result afterwards. Prices change: each estimate says where
 its price came from. A failed request may still be charged: check the Spend
 page in Google AI Studio.*

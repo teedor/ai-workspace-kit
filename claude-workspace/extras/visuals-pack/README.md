@@ -20,13 +20,13 @@ need a Google AI Studio API key with billing switched on: Google's pricing
 page lists no free tier for the recommended model. Prices run from a few US
 cents to tens of US cents per image, depending on the model and size;
 Claude checks the current price for you.
-- Before **every** paid request, Claude tells you the model, how many
-  images and the estimated cost, and waits for your yes. Then Claude Code
-  shows an approval box: that's the actual send button. Choose **Yes**,
-  never "don't ask again".
-- Set a monthly spend cap in Google AI Studio (Claude helps). Google's
-  spending figures can lag by a few minutes, so it's a safety net, not a
-  hard stop.
+- You choose how often Claude checks the cost with you: before every
+  picture (a good way to start), only above an amount you set, or never.
+  When it checks, it tells you the model, how many images and the estimated
+  cost, and waits for your yes. Change your mind any time by saying so.
+- If you'd like one, Claude helps you set a monthly spend cap in Google AI
+  Studio. Google's spending figures can lag by a few minutes, so it's a
+  safety net, not a hard stop.
 - Every request is logged in `notes/visuals-spend.md`.
 
 **Good to know**
