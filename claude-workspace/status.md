@@ -26,8 +26,16 @@ description, not a target.*
 - Not enough sessions yet.
 
 ## Setup extras (optional)
-*Offered one at a time, at the end of a session that went well. I can also
-ask for one any time ("set up About me").*
+*Offered one at a time, at the end of a session that went well, each one
+once: note "offered YYYY-MM-DD" beside it and move on to the next. None
+while a date under "Dates" is less than two weeks away. I can also ask for
+one any time ("set up About me").*
+- **Check the fit** (`/tailor`): offer this first, at the end of the first
+  session after setup that went well, with an example that fits my work:
+  "Next time, say 'check the fit' and I'll suggest up to three small
+  changes so this suits your work better, like <example>. You approve each
+  one, and it uses a little of your allowance." One critic by default, all
+  three if I ask.
 - **About me:** create or extend `~/.claude/CLAUDE.md` with who I am, the work
   I do, whether I mostly talk or type, whether I use Word, and anything you
   must never do, written as preferences that make sense in any folder. Never

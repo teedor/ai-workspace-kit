@@ -102,7 +102,7 @@ ol li, ul li { margin-bottom: 3pt; }
 <li>whether you'll put in <b>real people's details or data</b>: emails, orders, invoices, family records, or datasets about people. Those all count, so say yes if you'll use any of them;</li>
 <li>for <b>one small thing</b> you could do on it right now. Then it helps you do it.</li>
 </ul>
-<p>Everything else (a file about you that all your projects share, a style guide from your examples, dictation, Word, and on Pro a lighter everyday model) is offered <b>later, one thing at a time</b>, at the end of a session that went well.</p>
+<p>Everything else (a check of how the setup fits your work, a file about you that all your projects share, a style guide from your examples, dictation, Word, and on Pro a lighter everyday model) is offered <b>later, one thing at a time</b>, at the end of a session that went well.</p>
 <p><b>Expect permission requests</b>, some in technical words. A few are for things outside your project folder, such as saving your name for the snapshots. <b>Claude tells you before each of those that it's coming and why.</b> Allow them.</p>
 <div class="box ok"><b>You're set up when</b> Claude says <i>"You're set up."</i> If something goes wrong partway through, say <i>"something went wrong, explain in plain English"</i>. Or start a new session in the same folder and type <code>/setup</code> again: it picks up where it left off.</div>
 
@@ -180,10 +180,13 @@ ol li, ul li { margin-bottom: 3pt; }
 <p>Claude keeps one file <b>about you</b> that every project shares (what you do, how you like to work), and separate notes <b>for each project</b>. It decides which things go where and tells you; you don't need to manage it. If something really matters, say "remember that for all my projects" or "…for this project".</p>
 
 <h2>Skills: Claude remembers how</h2>
-<p>A skill is a saved set of instructions, like <code>/start</code>. The kit comes with twelve, and you can make more. <b>You don't have to think of them yourself.</b> When you've asked for the same thing twice, or something works brilliantly, Claude offers, in one line:</p>
+<p>A skill is a saved set of instructions, like <code>/start</code>. The kit comes with thirteen, and you can make more. <b>You don't have to think of them yourself.</b> When you've asked for the same thing twice, or something works brilliantly, Claude offers, in one line:</p>
 <pre>Want me to remember how to do this, so next time you can just say
 "chase the supplier"?</pre>
 <p>Say yes and it's done. Claude decides whether it's for this project or all of them. Say no and it won't ask again. You can also ask outright: "can you remember how to do that?"</p>
+
+<h2>Checking the setup fits</h2>
+<p>The kit starts the same for everyone. After your first good session, Claude mentions that you can <b>check how the setup fits what you're doing</b>. Say <i>"check the fit"</i>, then or any time. Another Claude, which hasn't seen your chats, reads your project's notes and suggests at most <b>three small changes</b>, such as a folder for each family line or something to check before saving. Claude explains each one in plain words and makes it only if you say yes. It never loosens the ground rules. Unlike <code>/red-team</code>, which checks a piece of <i>work</i>, this checks the <i>setup</i>. Say <i>"the full check"</i> for three critics instead of one; each critic is a separate run, so it uses noticeably more of your allowance.</p>
 
 <h2>Meetings</h2>
 <p>Got a meeting with a supervisor, manager, client or editor? Say so. Claude builds a one-page update from what you've done since last time, with your questions in your words. Afterwards, dictate your notes: Claude files them faithfully, puts actions and dates in your status, and records anything agreed.</p>
@@ -205,6 +208,7 @@ ol li, ul li { margin-bottom: 3pt; }
 <tr><th style="width:22%">Say</th><th>What happens</th></tr>
 <tr><td>"make it plainer"</td><td><b>De-jargoning.</b> Claude lists hard words, long sentences and assumed knowledge, then rewrites in plain English, without making anything sound more certain than it is.</td></tr>
 <tr><td><code>/red-team</code> <i>(typed)</i></td><td><b>Red-teaming</b> means attacking your own work before anyone else does. Claude sends it to three separate critics who haven't seen your conversation (say, a regular customer, a fussy chef and a fact-checker), sifts their points, and gives you one list: must fix, should fix, optional. It uses a fair bit of your allowance, so save it for things that matter.</td></tr>
+<tr><td>"check the fit"</td><td><b>Tailoring.</b> A fresh-eyes check of how the setup suits your work, with at most three small changes, each only if you say yes.</td></tr>
 <tr><td>"let's sign things off"</td><td>Claude walks you through work waiting for your approval, one item at a time, showing exactly what needs checking.</td></tr>
 </table>
 
@@ -259,6 +263,7 @@ CLAUDE.md     Claude's standing orders for this project (read every session).</p
 <li><b>One person per folder.</b> In a team repo, keep personal rules in <code>CLAUDE.local.md</code>, and agree with the team before committing workspace files.</li>
 <li>Code keeps its own layout. "Handover" commits only workspace files. "Sign off" runs your tests, commits reviewed code, and asks before committing to <code>main</code>. The red team's checker runs code only against test data.</li>
 <li><code>.claude/settings.json</code> blocks Claude's file tools from reading <code>.env</code> and <code>.pem</code> files (including <code>.env.example</code>), and makes it ask before <code>git push</code>, <code>rm</code>, <code>git reset</code>, <code>git checkout</code> and similar, in Bash and PowerShell. It sets the starting permission mode to asking. These are guard rails, not a sandbox.</li>
+<li><code>.claude/agents/critic.md</code> is a sub-agent limited to reading (Read, Grep, Glob). <code>/tailor</code> uses it for every critic, and <code>/red-team</code> for critics that don't need to run anything.</li>
 </ul>
 
 <h2>Prefer the terminal?</h2>

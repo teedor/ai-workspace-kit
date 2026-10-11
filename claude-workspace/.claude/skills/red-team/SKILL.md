@@ -13,6 +13,9 @@ changed files or the `git diff`), its role, and `notes/style-guide.md`, not
 your summary.
 
 **Every critic is read-only:** it must not edit, create or delete any file.
+For critics that only need to read, use the **`critic`** sub-agent (in
+`.claude/agents/`), which can't do anything else. A checker that runs tests
+needs more, so tell it plainly what it may run.
 
 ## Default critics
 

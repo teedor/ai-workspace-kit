@@ -73,5 +73,8 @@ under "Open threads" as a question for next time.
    say 'remember how to do that' if you'd like me to keep it", or "Next time,
    say 'set up About me' if you'd like."
    Skip it if you've already offered something this session, if it's in
-   "Declined suggestions", or if nothing stands out.
+   "Declined suggestions", or if nothing stands out. Offer each Setup extra
+   once: note "offered YYYY-MM-DD" beside it in `status.md`, and next time
+   move on to the next one. No extras while a date under "Dates" is less
+   than two weeks away.
 7. End with one line: "Saved. Next time: <First step>."

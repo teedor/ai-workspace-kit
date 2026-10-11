@@ -29,6 +29,7 @@ you type.
 | `/new-skill` | Turn something that worked into a reusable skill, for this project or all of them |
 | `/meeting` | Prepare for a meeting, or file the notes afterwards |
 | `/new-project` | Start a separate workspace folder for a different project |
+| `/tailor` | Check how this setup fits your work; at most three changes, each only if you say yes |
 
 The standing rules are in `CLAUDE.md`. Skills live in `.claude/skills/`, one
 folder each, and are plain text. Edit them, or ask Claude to make new ones.

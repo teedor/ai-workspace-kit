@@ -27,7 +27,7 @@ If it doesn't, **and** this folder holds nothing but the untouched kit, copy
 **only** the kit's own files into `~/.claude/workspace-kit/claude-workspace/`,
 keeping their paths: `CLAUDE.md`, `README.md`, `.gitignore`, `status.md`,
 `handover.md`, `done.md`, `review-queue.md`, `.claude/settings.json`,
-`.claude/skills/`, `extras/`, `notes/`, `ideas/`, `decisions/`,
+`.claude/skills/`, `.claude/agents/`, `extras/`, `notes/`, `ideas/`, `decisions/`,
 `drafts/.gitkeep`, `finished/.gitkeep`, `inbox/README.md`,
 `private/README.md`. (If the folder held a project before the kit arrived,
 skip this; `/new-project` will fetch the kit instead.)
@@ -95,6 +95,8 @@ dropping the project brief into the inbox. Help me do it. Add it to `done.md`.
 - Leave "Setup extras (optional)" in `status.md` as it is (each extra's
   instructions are there). They're offered later, one at a time, at the end
   of a session that went well. For reference:
+  - **Check the fit** (`/tailor`), offered first: a fresh-eyes check of how
+    this setup fits the work, with at most three changes, each only if I say yes.
   - **About me**: create or extend `~/.claude/CLAUDE.md` with who I am, the
     work I do, whether I mostly talk or type, whether I use Word, and anything
     you must never do. Write these as preferences that make sense in any
