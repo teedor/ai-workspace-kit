@@ -20,8 +20,8 @@ trustworthy. Two rules always come first:
    PDFs, and PNG/JPG images are straightforward. If you can't read something
    (an iPhone .heic photo, an audio file, a Pages or Keynote file), leave it in
    the inbox and tell me how to export it (as JPG, PDF or a transcript).
-   Secret files (`.env`, `.pem`) are blocked from reading on purpose: tell me
-   to move them out.
+   Secret files (`.env`, `.pem`) are never opened, on purpose: tell me to
+   move them out.
 3. **Check for things that shouldn't be here.** Passwords and keys, and any
    personal details `CLAUDE.md` says this project doesn't hold, are **not
    filed**. Leave them where they are, tell me, and ask me to move them out of
