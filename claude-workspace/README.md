@@ -35,7 +35,13 @@ The standing rules are in `CLAUDE.md`. Skills live in `.claude/skills/`, one
 folder each, and are plain text. Edit them, or ask Claude to make new ones.
 
 **Start here:** in the Claude app, Code tab, start a new session with this
-folder as the project folder, then type `/setup`.
+folder as the project folder, then type `/setup`. In a terminal, start
+`claude`, `gemini` or `codex` in this folder, then type `/setup` (with
+Codex, `$setup`).
+
+**Gemini CLI and Codex** read the same rules and skills through small
+adapters: `GEMINI.md` and `.gemini/` for Gemini, `AGENTS.md` and `.codex/`
+for Codex. Change a skill once, in `.claude/skills/`.
 
 **One folder per project** ("new project" makes another). Things true for all your work live in your global
 file (`~/.claude/CLAUDE.md`) and global skills (`~/.claude/skills/`), which

@@ -44,7 +44,11 @@ product or a different audience means a new folder, even if it's related
 5. **Carry anything across?** Ask whether the new project needs anything from
    this one (e.g. "copy my recipes and the style guide"). Copy only what I
    name, into the new folder's `notes/` or `inbox/`, and never anything from `private/`.
-6. Tell me exactly how to open it:
+6. Tell me exactly how to open it. In a terminal (Claude Code, Gemini CLI or
+   Codex): "Type `/exit`, then `cd "<full path>"`, then `claude`, `gemini` or
+   `codex` as usual. Say hello, check the 📁 line, then type /setup (with
+   Codex, $setup). It already knows you, so it'll only ask about the new
+   project." In the Claude app:
    "Start a **+ New session** (Cmd+N on a Mac, Ctrl+N on Windows). Set
    Environment to **Local**, choose **<full path>** as the project folder, set
    Permission mode to **Manual**. Type hello: the reply should start

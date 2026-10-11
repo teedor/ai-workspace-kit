@@ -101,12 +101,13 @@ Tell them, in these words or close to them. **In the Claude app:**
 **In a terminal** (Claude Code, Gemini CLI or Codex CLI), with `<tool>` being
 `claude`, `gemini` or `codex`:
 
-> Your project folder is ready: **<full path>**. To start it, type `/quit`
-> (Codex: `/exit`), then type `cd "<Name>"` and press Enter, then type
+> Your project folder is ready: **<full path>**. To start it, type `/exit`,
+> then type `cd "<Name>"` and press Enter, then type
 > `<tool>` and press Enter. (A fresh start is needed because I only read a
 > project's notes and rules when I'm started in that folder.) If it asks
 > whether to trust the folder, say yes: it's your own. Then say **hello**:
-> the reply should start "📁 You're in <Name>." Then type **/setup**.
+> the reply should start "📁 You're in <Name>." Then type **/setup**
+> (with Codex, **$setup**).
 >
 > For another project later, say "new project" inside any project, or come
 > back to this folder and paste the same sentence again.
