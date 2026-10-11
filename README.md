@@ -8,6 +8,11 @@ and picks up where you left off every time.
 It works for anything: a book, a business, a website, a family history, a
 dissertation, a codebase.
 
+> **Using the kit? Ignore the green Code button.** Follow "Start here"
+> below: Claude gets the kit for you and makes your project its own folder.
+> Already downloaded or cloned this? No harm done: just follow "Start here".
+> **Improving the kit itself?** Clone as usual; `CLAUDE.md` is for you.
+
 > **Status: early (v0.x).**
 > Today it's built for **Claude Code** (the `claude-workspace/` kit).
 > Support for other tools, such as GitHub Copilot CLI, is being explored.
@@ -26,8 +31,8 @@ dissertation, a codebase.
 4. Claude makes your first project folder and tells you how to open it and
    type `/setup`.
 
-Work laptop blocks the download? Use **Code → Download ZIP**, unzip it in
-Downloads, and use the ZIP sentence in the guide's Step 3. The full
+Only if your work laptop blocks Claude's download: use **Code → Download
+ZIP**, unzip it in Downloads, and use the ZIP sentence in the guide's Step 3. The full
 walkthrough is in the guide:
 [`docs/Working with Claude - guide.pdf`](docs/) (source: `docs/guide.html`).
 
