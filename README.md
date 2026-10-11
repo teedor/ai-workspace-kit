@@ -82,7 +82,8 @@ click the address bar, type `powershell` and press Enter. Mac: open
 and a space, drag the folder into the window, and press Enter.
 
 > **School or work laptop?** If an install is blocked, or asks for an
-> administrator password, stop and use your own computer or ask IT. And
+> administrator password you don't have, stop and use your own computer or
+> ask IT. And
 > never bring pupils', patients' or clients' details into a personal AI
 > account: check your employer's rules first.
 
@@ -121,7 +122,10 @@ You need a paid Claude plan (Pro or above). Then either:
    Then close the terminal and open a new one.
 2. Open a terminal in your Claude projects folder and type `codex`. Choose
    **Sign in with ChatGPT** (Codex comes with Plus, Pro, Business, Edu and
-   Enterprise plans), and choose **Trust and continue** when asked.
+   Enterprise plans), and choose **Trust and continue** when asked. On
+   Windows, Codex then offers to set up its sandbox: choose **Set up default
+   sandbox** and say yes to the Windows box that follows. That one
+   administrator prompt is expected.
 3. In ChatGPT's settings, check whether OpenAI may use your conversations
    to improve its models, and turn that off if you'd rather it didn't.
 4. With Codex, the kit's commands start with `$` instead of `/`: `$setup`,
@@ -132,7 +136,7 @@ You need a paid Claude plan (Pro or above). Then either:
 
 Paste this (don't dictate it: the web address has to be exact):
 
-> Set me up with the AI Workspace Kit: clone github.com/teedor/ai-workspace-kit into ~/.claude/workspace-kit (or update it if it's already there, deleting nothing), then follow its INSTALL.md; if Git is missing, stop and tell me how to install it.
+> Set me up with the AI Workspace Kit: clone github.com/teedor/ai-workspace-kit into ~/.claude/workspace-kit (on Windows use $HOME instead of ~), or update it if it's already there, deleting nothing. Then read its INSTALL.md (with the shell if your file tools can't reach it) and follow it. If Git is missing, stop and tell me how to install it.
 
 Your assistant makes your first project folder and tells you how to open it
 and type `/setup`. **Next time:** in a terminal, open one in your project's

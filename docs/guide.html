@@ -44,6 +44,7 @@ ol li, ul li { margin-bottom: 3pt; }
 <li>A Mac or Windows computer (Linux works too, in a terminal: see Part 3).</li>
 <li>A <b>paid Claude plan</b> (Pro or above), a monthly subscription you can cancel. The free plan doesn't include what you need. Prices are at <i>claude.com/pricing</i>.</li>
 <li>Nothing else to download: in Step 3, Claude fetches the <b>starter kit</b> for you from <i>github.com/teedor/ai-workspace-kit</i>.</li>
+<li><b>Using ChatGPT (Codex) or Gemini instead of Claude?</b> Read "Using Gemini CLI instead" or "Using Codex (ChatGPT) instead" in Part 3 first; Steps 3 and 4 are then the same, in a terminal.</li>
 <li><b>Optional, for later:</b> two or three examples of your own work to show Claude your style, like an email you were pleased with, an old menu, a chapter or a letter.</li>
 </ul>
 <p>Paid plans come with a usage allowance, shared between the Code tab and ordinary chats. If Claude says you've <b>reached your limit</b>, nothing is broken. It tells you when the allowance resets, and you won't be charged extra unless you've turned on <b>usage credits</b> in your account.</p>
@@ -75,15 +76,15 @@ ol li, ul li { margin-bottom: 3pt; }
 <li>Around the box where you type, at the bottom, are a few settings. Set:
   <ul><li><b>Environment:</b> <b>Local</b> (it means "on this computer").</li>
   <li><b>Project folder</b> (it may say <b>Select folder</b>): click it and choose <b>Claude projects</b>. To reach your home folder in that window: on a Mac, press <kbd>Cmd + Shift + H</kbd>; on Windows, click the address bar at the top, type <code>%USERPROFILE%</code> and press Enter. If the app asks whether you trust this folder, say yes: it's your own.</li>
-  <li><b>Permission mode:</b> <b>Manual</b> (older versions say <i>Ask permissions</i>). Claude then asks before every change.</li></ul>
+  <li><b>Permission mode:</b> <b>Manual</b> (older versions say <i>Ask permissions</i>). Claude then asks before every change, apart from its own notes.</li></ul>
   The app gets updated, so it may look slightly different, but those choices will be there.</li>
 <li>Copy this sentence, paste it into the typing box, and press <b>Enter</b>. Paste it rather than dictating it: the web address has to be exact. (Line breaks don't matter.)
-<pre>Set me up with the AI Workspace Kit: clone github.com/teedor/ai-workspace-kit into ~/.claude/workspace-kit (or update it if it's already there, deleting nothing), then follow its INSTALL.md; if Git is missing, stop and tell me how to install it.</pre></li>
+<pre>Set me up with the AI Workspace Kit: clone github.com/teedor/ai-workspace-kit into ~/.claude/workspace-kit (on Windows use $HOME instead of ~), or update it if it's already there, deleting nothing. Then read its INSTALL.md (with the shell if your file tools can't reach it) and follow it. If Git is missing, stop and tell me how to install it.</pre></li>
 <li>Claude asks what your project is called, makes a <b>project folder</b> for it inside <b>Claude projects</b> (for example <i>Bakery</i> or <i>My novel</i>), and tells you how to open it.</li>
 </ol>
 <p><b>Expect several permission requests</b>, and Claude says what each one is for. The first saves the kit in Claude's own settings folder (<code>.claude</code> in your home folder); Claude always asks before writing there. Choose the plain <b>Yes</b> each time, not an option that stops it asking. If Claude gives you commands to type yourself, you're in the <b>Chat</b> tab: switch to <b>Code</b> and start again.</p>
 <p>Only ever paste a "fetch this and follow it" sentence from somewhere you trust, like this guide. Claude follows what it finds there, within the permissions you give it.</p>
-<div class="box"><b>Can't download the kit?</b> Some work laptops block it, and if a GitHub sign-in box pops up, close it: the kit doesn't need an account. Instead, go to <i>github.com/teedor/ai-workspace-kit</i>, click the green <b>Code</b> button → <b>Download ZIP</b>, and unzip it where it lands, in Downloads (Mac: double-click it; Windows: <b>right-click</b> → <b>Extract All…</b> → <b>Extract</b>). Then paste this instead: <i>"Set me up with the AI Workspace Kit from the ZIP I've unzipped in my Downloads folder: move the kit folder (the one with INSTALL.md in it) to ~/.claude/workspace-kit, deleting nothing, then follow its INSTALL.md."</i></div>
+<div class="box"><b>Can't download the kit?</b> Some work laptops block it, and if a GitHub sign-in box pops up, close it: the kit doesn't need an account. Instead, go to <i>github.com/teedor/ai-workspace-kit</i>, click the green <b>Code</b> button → <b>Download ZIP</b>, and unzip it where it lands, in Downloads (Mac: double-click it; Windows: <b>right-click</b> → <b>Extract All…</b> → <b>Extract</b>). Then paste this instead: <i>"Set me up with the AI Workspace Kit from the ZIP I've unzipped in my Downloads folder: move the kit folder (the one with INSTALL.md in it) to ~/.claude/workspace-kit (on Windows use $HOME instead of ~), deleting nothing, then read its INSTALL.md and follow it."</i></div>
 
 <p class="step">Step 4</p>
 <h3>Your first session</h3>
@@ -120,6 +121,7 @@ ol li, ul li { margin-bottom: 3pt; }
 <ol>
 <li>Claude app → <b>Code</b> → <b>+ New session</b>.</li>
 <li>Choose your project folder (it'll be in the recent list), Local, Manual.</li>
+<li><i>In a terminal instead:</i> open one in your project folder and type <code>claude</code>, <code>gemini</code> or <code>codex</code>.</li>
 <li>Say <b>hello</b> (or <code>/start</code>). Check the 📁 line names the right folder.</li>
 <li>Claude offers one next step. Say <b>"go"</b>, <b>"something else"</b>, <b>"I've got longer"</b> or <b>"low day"</b>.</li>
 </ol>
@@ -305,7 +307,7 @@ Open a new window and type <code>claude --version</code> to check it worked.</li
 <li><b>Install:</b> Mac: <code>curl -fsSL https://chatgpt.com/codex/install.sh | sh</code>, or <code>brew install --cask codex</code>. Windows, in a terminal (see "Prefer the terminal?"): <code>powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"</code>.</li>
 <li><b>Start:</b> open a terminal in your <b>Claude projects</b> folder, type <code>codex</code>, choose <b>Sign in with ChatGPT</b> (Codex comes with Plus, Pro, Business, Edu and Enterprise plans), and <b>Trust and continue</b> when asked. In ChatGPT's settings, check whether OpenAI may use your conversations to improve its models, and turn that off if you'd rather it didn't. Then paste the sentence from Step 3.</li>
 <li><b>One difference to remember:</b> commands start with <code>$</code>, not <code>/</code>: <code>$setup</code>, <code>$start</code>, <code>$handover</code>.</li>
-<li><b>What's different:</b> inside the project folder, Codex can run commands without asking. The kit adds rules so it always asks before deleting, pushing, or anything that could throw work away, and asks before stepping outside the folder; the rest of the kit's safety settings are rules it's told to follow rather than locks. Check your ChatGPT data settings before bringing in other people's details. The linked repos pack is Claude-only for now.</li>
+<li><b>What's different:</b> inside the project folder, Codex edits files and runs most commands without asking, but saving snapshots asks each time (expected: Codex protects the snapshot folder). On Windows, after you trust the folder, Codex offers to set up its sandbox: choose <b>Set up default sandbox</b> and say yes to the Windows administrator box. The kit adds rules so it always asks before deleting, pushing, or anything that could throw work away, and asks before stepping outside the folder; the rest of the kit's safety settings are rules it's told to follow rather than locks. Check your ChatGPT data settings before bringing in other people's details. The linked repos pack is Claude-only for now.</li>
 </ul>
 
 <h2>Off-computer backup with GitHub</h2>
