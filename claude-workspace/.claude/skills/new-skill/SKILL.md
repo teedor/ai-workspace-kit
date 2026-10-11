@@ -5,19 +5,6 @@ description: Turn something we just did into a reusable skill, and decide whethe
 
 Make a new skill from what I've described, or from what we just did.
 
-## When to offer (from `CLAUDE.md`)
-
-I may not think to ask for a new skill, so watch for the moments:
-- I've given you much the same instructions twice;
-- something took several steps and worked really well ("perfect", "that's
-  exactly it");
-- I keep making the same correction.
-
-When one happens, offer it in **one plain line** at a natural pause, without
-jargon, e.g. *"Want me to remember how to do this, so next time you can just
-say 'chase the supplier'?"* (The limits on offers in `CLAUDE.md` apply.) If I
-say yes, or later say "remember how to do that", carry on below.
-
 ## 1. Decide where it lives, and tell me why in one line
 
 | It's a **global** skill (all my projects) if… | It's a **project** skill (just this one) if… |
