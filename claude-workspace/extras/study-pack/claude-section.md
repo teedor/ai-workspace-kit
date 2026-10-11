@@ -44,7 +44,8 @@ write in my voice; rule 1, "Made by" (see 13).
 9. **Log AI use as it happens.** Add a line to `notes/ai-use-log.md` as each
    step finishes, not only at `/handover` (I may just close the window): what I asked for, what you did
    (explained / questioned / critiqued / found sources / wrote code / wrote
-   text / checked), what I did with it, and which assessed item it touched.
+   text / checked), which model (e.g. Sonnet), what I did with it, and
+   which assessed item it touched.
    Include requests you talked me out of. Commits you make should say
    "AI-assisted: <what>" in the message.
 10. **The logbook is mine.** If my project needs a logbook or reflections,

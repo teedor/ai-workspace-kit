@@ -41,3 +41,22 @@ ask for one any time ("set up About me").*
 - **Dictation:** Mac, System Settings → Keyboard → Dictation, using the
   shortcut shown there; Windows, Windows key + H.
 - **Word export:** check you can make a `.docx`, and explain any install first.
+- **Make the allowance last** (Pro plan): offer it unprompted only if I've
+  mentioned hitting my limit or use Claude most days; otherwise wait to be
+  asked. If I mention hitting the limit, note it under "How I tend to work".
+  Ask which plan I'm on. **On Pro:** Claude Code starts on Opus, which uses
+  the allowance fastest. Suggest Sonnet as my everyday model, and say
+  honestly that it handles most work well but can be a little less thorough
+  on the hardest problems, when I can switch back for one piece of work.
+  To make it my default, offer to save `"model": "sonnet"` in my own
+  settings (`~/.claude/settings.json`, which the app and the terminal both
+  use, for every project): say it's outside this folder and wait for my
+  yes. If that file exists, add only the `model` line and keep everything
+  else exactly as it is; if it already sets a model, tell me
+  which and ask; if it isn't valid JSON, don't touch it and tell me. Never
+  put a model in this project's `.claude/settings.json`. Show me the
+  **Model** dropdown next to the send button: it shows which model I'm on,
+  and I can switch there for one piece of work. If I've turned on usage
+  credits, say once that a bigger model spends them faster too.
+  If I ask about a bigger model, say whether my plan charges extra for it.
+  **On any other plan,** change nothing.

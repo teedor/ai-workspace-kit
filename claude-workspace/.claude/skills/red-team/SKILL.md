@@ -29,7 +29,10 @@ your summary.
 
 1. Tell me which three critics you'll use. Adjust them to this piece if the
    defaults don't fit, and let me change them. (Three critics use a fair bit
-   of my plan's allowance, so save this for work that matters.)
+   of my plan's allowance, so save this for work that matters.) If I'm on
+   a lighter everyday model and this is going out or being handed in, say
+   once that a bigger one from the Model dropdown may give sharper critics, at
+   more cost.
 2. Each critic returns its problems, worst first, with the exact passage or
    line and a suggested fix. Tell them to be blunt: politeness wastes everyone's time.
 3. **If this is assessed work** ("Rules for this work" in `CLAUDE.md`), show

@@ -217,7 +217,9 @@ projects, and just tell me which.
 
 - At most one offer per session (a skill, a preference, or a setup extra),
   never at the start of a session, never during `/setup`, and only when
-  things are going well.
+  things are going well. One exception: if I mention hitting my usage limit,
+  offer "Make the allowance last" there and then, even at the start of a
+  session. It still counts as that session's one offer.
 - If I say no, add it to "Declined suggestions" in `notes/style-guide.md` and
   never offer it again.
 - Same for preferences: if something I've said sounds true for all my work,

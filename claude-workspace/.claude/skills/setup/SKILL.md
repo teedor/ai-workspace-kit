@@ -108,6 +108,9 @@ dropping the project brief into the inbox. Help me do it. Add it to `done.md`.
   - **Dictation**: Mac, System Settings → Keyboard → Dictation, using the
     shortcut shown there; Windows, Windows key + H.
   - **Word export**: check you can make a `.docx`, and explain any install first.
+  - **Make the allowance last** (Pro plan): suggest Sonnet as the everyday
+    model, saved in my own settings (`~/.claude/settings.json`), never this
+    project's. Offered straight away if I mention hitting my limit.
 - Write `handover.md` with a proper First step (if the study pack set one, keep
   it and put the other steps under "Then"), then save a snapshot ("Starting point").
 - End with: "You're set up. Next time: new session, choose this folder, say
