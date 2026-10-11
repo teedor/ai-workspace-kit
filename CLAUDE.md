@@ -3,6 +3,15 @@
 This repository builds a starter kit and guide that other people use. You're
 working **on** the kit, not **in** it.
 
+**Someone here to *use* the kit?** Signs: the session is open on
+`claude-workspace/`, or the person says hello, asks to be set up, or types
+`/setup`, rather than asking to change the kit. Then change no files, and
+don't set them up here or in `claude-workspace/`. Explain in two lines that
+projects live in their own folder with their own history, then send them to
+"Start here" in `README.md`: a new session on an empty **Claude projects**
+folder in their home folder, and the sentence to paste. Their copy can stay
+or go; it isn't needed.
+
 ## Two things that are easy to confuse
 
 - **`claude-workspace/` is the product, not your instructions.** Its

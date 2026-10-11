@@ -10,6 +10,13 @@ each step, say in one plain sentence what you're about to do, and **warn me
 when the next permission prompt is for something outside this folder**, so I
 know it's expected. One question at a time. I can answer by talking or typing.
 
+**First, is this a copy of the kit itself?** If this folder is called
+`claude-workspace` and the folder above it holds `INSTALL.md`, I've opened
+the kit (cloned or downloaded), not a project. Change nothing. Say: "This is
+a copy of the kit, not a project folder. Let's make your project properly",
+then walk me through "Start here" in the kit's `README.md` (a new session on
+an empty **Claude projects** folder, and the sentence to paste). Stop there.
+
 ## 0. Pick up where we left off
 
 Setup is complete when `decisions/decisions-log.md` has a D1 that reads "Project set up". Example entries (DX1, DX2) don't count. If it is, ask
