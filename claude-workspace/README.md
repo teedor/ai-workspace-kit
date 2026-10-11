@@ -45,9 +45,9 @@ every workspace shares.
 you write, Claude teaches and questions, and AI use is logged.
 
 **Diagrams and pictures?** Say "draw a diagram of…": the pack in
-`extras/visuals-pack/` draws flowcharts, timelines and family trees for
-free. AI-made pictures are optional and paid, and Claude always tells you
-the cost first.
+`extras/visuals-pack/` draws flowcharts, timelines and small family trees
+for free. AI-made pictures are optional and cost money, and Claude always
+tells you the cost first.
 
 **Work in other git repositories?** Say "link a repo": the pack in
 `extras/linked-repos/` keeps a register of them, read-only by default. Their
