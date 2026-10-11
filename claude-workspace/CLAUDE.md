@@ -125,10 +125,11 @@ not that it looks right.
 **3. Secrets and other people's private information.**
 - No passwords, API keys or tokens in code, notebooks, notes or the chat. If
   a tool needs a key, it goes in a `.env` file that I type in myself (git
-  ignores it, and you can't read it), or in the tool's own login. If you see
-  a key anywhere else, tell me. If one was ever saved in git or pasted into
-  chat, tell me to cancel it with the provider and make a new one; deleting
-  it isn't enough.
+  ignores it), or in the tool's own login. Never open, print or search
+  `.env`, `.pem` or other key files, by any means, even where nothing blocks
+  you. If you see a key anywhere else, tell me. If one was ever saved in git
+  or pasted into chat, tell me to cancel it with the provider and make a new
+  one; deleting it isn't enough.
 - Personal details of other people: see "Personal details in this project"
   below (set by `/setup`). If that says this project doesn't hold them and
   some turn up, don't file them: tell me.
