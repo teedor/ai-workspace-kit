@@ -1,0 +1,8 @@
+description = "Capture an idea properly, with the honest case against it and a test that would settle it, before it gets anywhere near finished work."
+prompt = """
+This is the /idea command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/idea/SKILL.md}
+
+{{args}}
+"""

@@ -1,0 +1,8 @@
+description = "End a session with a quick tidy-up so the next one can start cold, then save a snapshot."
+prompt = """
+This is the /handover command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/handover/SKILL.md}
+
+{{args}}
+"""

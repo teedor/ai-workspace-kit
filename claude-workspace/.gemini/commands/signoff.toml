@@ -1,0 +1,8 @@
+description = "Walk me through the review queue one item at a time so I can approve, change or bin each piece of work."
+prompt = """
+This is the /signoff command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/signoff/SKILL.md}
+
+{{args}}
+"""

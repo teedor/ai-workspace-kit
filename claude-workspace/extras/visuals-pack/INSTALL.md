@@ -43,7 +43,9 @@ Never during first setup. Two parts; install only the part I ask for.
 5. **The key.** Check `.env` is ignored (`git check-ignore -v .env`).
    - Tell me to make a key: Google AI Studio → **API keys** → **Create API
      key**. (Check that page's current wording first.)
-   - If `.env` doesn't exist, create it with one line: `GEMINI_API_KEY=`.
+   - If `.env` doesn't exist, create it with one line: `GEMINI_IMAGE_KEY=`.
+     (Not `GEMINI_API_KEY`: Gemini CLI reads that name from this folder's
+     `.env` and could start billing your chats to the key.)
    - Open it for me to edit, without reading it yourself: Mac
      `open -e .env`; Windows `notepad .env`. "Paste your key straight after
      the = sign (add that line if it isn't there), save, and close."

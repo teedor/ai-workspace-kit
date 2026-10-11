@@ -1,0 +1,8 @@
+description = "Start a separate project folder for a different piece of work, next to this one, with the same setup."
+prompt = """
+This is the /new-project command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/new-project/SKILL.md}
+
+{{args}}
+"""

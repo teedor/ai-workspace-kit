@@ -1,0 +1,8 @@
+description = "Set up this project folder in about ten minutes, ending with one real piece of work."
+prompt = """
+This is the /setup command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/setup/SKILL.md}
+
+{{args}}
+"""

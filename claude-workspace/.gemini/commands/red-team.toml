@@ -1,0 +1,8 @@
+description = "Stress-test a piece of work before it goes out or gets relied on."
+prompt = """
+This is the /red-team command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/red-team/SKILL.md}
+
+{{args}}
+"""

@@ -1,0 +1,8 @@
+description = "Start a working session with one small, ready-to-go next step."
+prompt = """
+This is the /start command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/start/SKILL.md}
+
+{{args}}
+"""

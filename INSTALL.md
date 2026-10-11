@@ -1,15 +1,18 @@
-# Installing the kit: instructions for Claude
+# Installing the kit: instructions for the assistant
 
-Claude, you're reading this because someone pasted the sentence from the
-README (or the guide) into a Claude Code session, asking you to fetch this kit
-and follow this file. Your job: **make their first project folder from the
+You're reading this because someone pasted the sentence from the README (or
+the guide) into a session with an AI assistant (Claude Code, in the app or
+a terminal, or Gemini CLI or Codex CLI in a terminal), asking you to fetch
+this kit and follow this file. The kit's files say "Claude": if you're
+another assistant, that means you. Your job: **make their first project folder from the
 kit, then hand over to `/setup`.** Nothing else.
 
 They are probably not technical. Use plain English, one step at a time, and
 keep replies short. Before each permission request, say in one line what it's
 for, especially anything **outside the folder this session was opened on**
-(the kit lives in Claude's own settings folder, `.claude`, and Claude Code
-always asks before writing there).
+(the kit lives in a hidden folder in their home folder, `.claude`, which
+Claude Code always asks before writing to). If your file tools can't read
+outside this folder, read this kit's files with the shell instead.
 
 **On Windows,** PowerShell may pass `~` to git unexpanded. Use the full home
 path in commands (`$HOME/.claude/workspace-kit`) rather than `~`.
@@ -80,7 +83,7 @@ project folder itself, so it uses that folder's rules and settings.
 
 ## 5. Hand over
 
-Tell them, in these words or close to them:
+Tell them, in these words or close to them. **In the Claude app:**
 
 > Your project folder is ready: **<full path>**. To start it:
 > 1. Start a **+ New session** (Cmd+N on a Mac, Ctrl+N on Windows). A new
@@ -94,3 +97,16 @@ Tell them, in these words or close to them:
 >
 > For another project later, say "new project" inside any project, or paste
 > the same sentence here again.
+
+**In a terminal** (Claude Code, Gemini CLI or Codex CLI), with `<tool>` being
+`claude`, `gemini` or `codex`:
+
+> Your project folder is ready: **<full path>**. To start it, type `/quit`
+> (Codex: `/exit`), then type `cd "<Name>"` and press Enter, then type
+> `<tool>` and press Enter. (A fresh start is needed because I only read a
+> project's notes and rules when I'm started in that folder.) If it asks
+> whether to trust the folder, say yes: it's your own. Then say **hello**:
+> the reply should start "📁 You're in <Name>." Then type **/setup**.
+>
+> For another project later, say "new project" inside any project, or come
+> back to this folder and paste the same sentence again.

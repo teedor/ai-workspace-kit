@@ -1,0 +1,8 @@
+description = "Turn something we just did into a reusable skill, and decide whether it belongs to this project or to all my projects."
+prompt = """
+This is the /new-skill command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/new-skill/SKILL.md}
+
+{{args}}
+"""
