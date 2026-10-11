@@ -25,20 +25,25 @@ and Codex (with a ChatGPT plan).
 
 ## Is this for you?
 
-**Probably yes** if you're one person doing a long piece of work in fits and
-starts (a dissertation, a book, a family history, a solo codebase), mostly
-at a computer, and you care about getting things right, knowing where they
-came from, and picking up easily after a gap.
+It depends on the work, not on who you are.
 
-**Probably not** if you mostly work on your phone, your work lives in shared
-Google Docs or Teams files, you want quick answers rather than help with a
-long project, or the work involves other people's sensitive details and
-you'd be using a personal account.
+**A good fit** for work that:
+- runs over weeks or months, and that you come back to in fits and starts;
+- is mostly yours to write or build, rather than edited live by others;
+- lives in files on a computer;
+- needs to be right, with a record of where things came from.
+
+**Less of a fit** for work that:
+- is a quick question or a one-off task;
+- lives in shared online documents that others edit at the same time;
+- happens mostly on a phone;
+- involves other people's sensitive details, if you'd be using a personal
+  account.
 
 **Compared with the apps' own Projects:** the Claude and ChatGPT apps both
 have Projects that keep your instructions and files for a piece of work,
-with no setup. If "remember me and my project" is all you need, start there.
-This kit adds:
+with no setup. If "remember me and this piece of work" is all you need,
+start there. This kit adds:
 - memory you own: plain files on your computer that you can read, correct,
   roll back and take to another assistant;
 - a ready-made next step every time you come back, with no guilt about gaps;
