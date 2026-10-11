@@ -18,16 +18,19 @@ and do only that. Otherwise, resume from the first step below that isn't done.
 It's fine to stop partway: say "Good place to stop; `/setup` picks up here."
 whenever a step finishes.
 
-## 1. Keep a blank copy of the kit (first project only; one line of warning, no question)
+## 1. Keep a copy of the kit for new projects (one line of warning, no question)
 
-Only if `~/.claude/workspace-kit/` doesn't exist **and** this folder holds
-nothing but the untouched kit. (If the folder held a project before the kit
-arrived, skip this; `/new-project` will fetch a fresh kit instead.) Copy
-**only** the kit's own files, keeping their paths: `CLAUDE.md`, `README.md`,
-`.gitignore`, `status.md`, `handover.md`, `done.md`, `review-queue.md`,
-`.claude/settings.json`, `.claude/skills/`, `extras/`, `notes/`, `ideas/`,
-`decisions/`, `drafts/.gitkeep`, `finished/.gitkeep`, `inbox/README.md`,
-`private/README.md`. Check `~/.claude/workspace-kit/.claude/skills/setup/SKILL.md` exists.
+Usually already done: the install keeps the kit in `~/.claude/workspace-kit/`,
+with the blank template in its `claude-workspace/` folder. Check
+`~/.claude/workspace-kit/claude-workspace/.claude/skills/setup/SKILL.md` exists.
+If it doesn't, **and** this folder holds nothing but the untouched kit, copy
+**only** the kit's own files into `~/.claude/workspace-kit/claude-workspace/`,
+keeping their paths: `CLAUDE.md`, `README.md`, `.gitignore`, `status.md`,
+`handover.md`, `done.md`, `review-queue.md`, `.claude/settings.json`,
+`.claude/skills/`, `extras/`, `notes/`, `ideas/`, `decisions/`,
+`drafts/.gitkeep`, `finished/.gitkeep`, `inbox/README.md`,
+`private/README.md`. (If the folder held a project before the kit arrived,
+skip this; `/new-project` will fetch the kit instead.)
 
 ## 2. Git
 
@@ -35,11 +38,14 @@ Check `git --version` **first**: on a Mac it may pop up a box offering
 "command line developer tools". If so: "Click Install, wait until it
 finishes, then say done." On Windows, if git is missing, tell me how to
 install Git for Windows, and wait.
-- If this folder isn't a git repository, `git init`.
+- If `git rev-parse --show-toplevel` succeeds but names a different folder,
+  this folder is inside another git repository: stop, tell me which one, and
+  ask. Otherwise, if this folder isn't a git repository, `git init`.
 - Check `git config --global user.name` / `user.email`. If set, show them in
-  one line and carry on unless I object. If not, ask for them, mention that GitHub can give
-  a private "noreply" email if I might back up there one day, say this writes
-  outside the folder, and set them with `--global`.
+  one line and carry on unless I object. If not, ask for them: any name and email are
+  fine, since they're only labels on each snapshot (if I might back up to
+  GitHub one day, it offers a private "noreply" email to use instead). Say
+  this writes outside the folder, and set them with `--global`.
 - **If the folder already held a project:** tell me briefly what you found.
   Don't overwrite anything: append the kit's `.gitignore` lines to the
   existing one, and show me changes to an existing `CLAUDE.md` or `README.md`
@@ -48,7 +54,8 @@ install Git for Windows, and wait.
 
 ## 3. This project
 
-Ask for a short **Name**, one or two sentences on what it is and who it's
+Suggest the folder name as the **Name** ("I'll call this Bakery: right?"),
+then ask for one or two sentences on what it is and who it's
 for, and whether it involves **code**. Write them into "This project" in
 `CLAUDE.md` (fill in **Code in this project:** yes or no).
 

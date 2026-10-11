@@ -32,7 +32,7 @@ ol li, ul li { margin-bottom: 3pt; }
 3. Work by <b>talking</b>. Put new files in the <b>inbox</b> folder and say "process the inbox".<br>
 4. Stop whenever you like. Say <b>"that's it for today"</b> and Claude tidies up and saves, asking you nothing (for assessed work with a logbook, one question). Or just close the window: nothing's lost.</div>
 
-<div class="box"><b>Already comfortable with a terminal?</b> Skip to Part 3 for the terminal install (it also covers Linux), then come back for "Your first session". Setup is the same: <code>/setup</code>. If your work is marked or assessed (a dissertation, coursework), read "Assessed work" in Part 2 before you start.</div>
+<div class="box"><b>Already comfortable with a terminal?</b> Skip to Part 3 for the terminal install (it also covers Linux), then come back for Step 3 (open <code>claude</code> in your <b>Claude projects</b> folder and paste the sentence). Setup is the same: <code>/setup</code>. If your work is marked or assessed (a dissertation, coursework), read "Assessed work" in Part 2 before you start.</div>
 
 <div class="part">Part 1 · Getting started</div>
 <p>Installing takes a little while. After that, setup takes about ten minutes and ends with a real piece of work done.</p>
@@ -41,7 +41,7 @@ ol li, ul li { margin-bottom: 3pt; }
 <ul>
 <li>A Mac or Windows computer.</li>
 <li>A <b>paid Claude plan</b> (Pro or above), a monthly subscription you can cancel. The free plan doesn't include what you need. Prices are at <i>claude.com/pricing</i>.</li>
-<li>The <b>starter kit</b>: on its GitHub page (<i>github.com/teedor/ai-workspace-kit</i>), click the green <b>Code</b> button, then <b>Download ZIP</b>.</li>
+<li>Nothing else to download: in Step 3, Claude fetches the <b>starter kit</b> for you from <i>github.com/teedor/ai-workspace-kit</i>.</li>
 <li><b>Optional, for later:</b> two or three examples of your own work to show Claude your style, like an email you were pleased with, an old menu, a chapter or a letter.</li>
 </ul>
 <p>Paid plans come with a usage allowance. If Claude says you've <b>reached your limit</b>, nothing is broken. It tells you when the allowance resets, and you won't be charged extra unless you've switched on "extra usage" in your account.</p>
@@ -58,40 +58,45 @@ ol li, ul li { margin-bottom: 3pt; }
 <h3>Git (Windows only; Mac users skip this)</h3>
 <p>Git is a free tool that saves snapshots of your work, so you can go back. Claude runs it for you.</p>
 <ul>
-<li><b>Windows:</b> go to <b>git-scm.com</b>, download Git for Windows and install it. You'll see a dozen screens full of technical words. Ignore them all and keep clicking <b>Next</b>; the defaults are right.</li>
-<li><b>Mac:</b> nothing to do now. During setup, Claude will warn you before a box pops up offering to install "command line developer tools". Click <b>Install</b>, wait until it finishes (it can take a while), then say "done".</li>
+<li><b>Windows:</b> go to <b>git-scm.com</b>, download Git for Windows and install it. You'll see a dozen screens full of technical words. Ignore them all and keep clicking <b>Next</b>; the defaults are right. When it's finished, <b>close the Claude app completely and open it again</b>, so it notices Git.</li>
+<li><b>Mac:</b> nothing to do now. The first time Claude uses Git (in Step 3), a box may pop up offering to install "command line developer tools". Click <b>Install</b>, wait until it finishes (it can take a while), then tell Claude "done". If nothing seems to happen, look behind the Claude window.</li>
 </ul>
 
 <p class="step">Step 3</p>
-<h3>Make your first project folder</h3>
+<h3>Get the kit and make your first project folder</h3>
 <ol>
 <li><b>Open your home folder.</b> Mac: in Finder, choose <b>Go → Home</b>. Windows: in File Explorer, click the address bar, type <code>%USERPROFILE%</code>, and press Enter. (Avoid Documents and Desktop. They're often synced to iCloud or OneDrive, and syncing can scramble the snapshots.)</li>
-<li>Make a new folder there called <b>Claude projects</b>. All your projects will live in it.</li>
-<li><b>Unzip the download.</b> Mac: double-click it. Windows: <b>right-click</b> it → <b>Extract All…</b> → <b>Extract</b>. (Double-clicking a zip on Windows only <i>shows</i> what's inside.)</li>
-<li>Inside, find the folder called <code>claude-workspace</code> (you may need to open a folder or two to reach it) and drag it into <b>Claude projects</b>. <b>Rename it after your project</b>, for example <i>Bakery</i> or <i>My novel</i>. That's your <b>project folder</b>.</li>
+<li>Make a new folder there called <b>Claude projects</b>. All your projects will live in it. Leave it empty.</li>
+<li>In the Claude app, click the <b>Code</b> tab at the top. Despite the name, it's for any kind of work.</li>
+<li>Click <b>+ New session</b> in the left-hand list, or press <kbd>Cmd + N</kbd> (Mac) or <kbd>Ctrl + N</kbd> (Windows).</li>
+<li>Around the box where you type, at the bottom, are a few settings. Set:
+  <ul><li><b>Environment:</b> <b>Local</b> (it means "on this computer").</li>
+  <li><b>Project folder</b> (it may say <b>Select folder</b>): click it and choose <b>Claude projects</b>. To reach your home folder in that window: on a Mac, press <kbd>Cmd + Shift + H</kbd>; on Windows, click the address bar at the top, type <code>%USERPROFILE%</code> and press Enter. If the app asks whether you trust this folder, say yes: it's your own.</li>
+  <li><b>Permission mode:</b> <b>Manual</b> (older versions say <i>Ask permissions</i>). Claude then asks before every change.</li></ul>
+  The app gets updated, so it may look slightly different, but those choices will be there.</li>
+<li>Copy this sentence, paste it into the typing box, and press <b>Enter</b>. Paste it rather than dictating it: the web address has to be exact. (Line breaks don't matter.)
+<pre>Set me up with the AI Workspace Kit: clone github.com/teedor/ai-workspace-kit into ~/.claude/workspace-kit (or update it if it's already there, deleting nothing), then follow its INSTALL.md; if Git is missing, stop and tell me how to install it.</pre></li>
+<li>Claude asks what your project is called, makes a <b>project folder</b> for it inside <b>Claude projects</b> (for example <i>Bakery</i> or <i>My novel</i>), and tells you how to open it.</li>
 </ol>
-<div class="box"><b>How to tell you've got the right folder:</b> your project folder has a file called <code>CLAUDE.md</code> and a folder called <code>inbox</code> directly inside it.</div>
+<p><b>Expect several permission requests</b>, and Claude says what each one is for. The first saves the kit in Claude's own settings folder (<code>.claude</code> in your home folder); Claude always asks before writing there. Choose the plain <b>Yes</b> each time, not an option that stops it asking. If Claude gives you commands to type yourself, you're in the <b>Chat</b> tab: switch to <b>Code</b> and start again.</p>
+<p>Only ever paste a "fetch this and follow it" sentence from somewhere you trust, like this guide. Claude follows what it finds there, within the permissions you give it.</p>
+<div class="box"><b>Can't download the kit?</b> Some work laptops block it, and if a GitHub sign-in box pops up, close it: the kit doesn't need an account. Instead, go to <i>github.com/teedor/ai-workspace-kit</i>, click the green <b>Code</b> button → <b>Download ZIP</b>, and unzip it where it lands, in Downloads (Mac: double-click it; Windows: <b>right-click</b> → <b>Extract All…</b> → <b>Extract</b>). Then paste this instead: <i>"Set me up with the AI Workspace Kit from the ZIP I've unzipped in my Downloads folder: move the kit folder (the one with INSTALL.md in it) to ~/.claude/workspace-kit, deleting nothing, then follow its INSTALL.md."</i></div>
 
 <p class="step">Step 4</p>
 <h3>Your first session</h3>
 <p>Claude works on <b>one project folder at a time</b>, and you choose it at the start of each session. No rush, and you can stop halfway: setup picks up where it left off.</p>
 <ol>
-<li>In the Claude app, click the <b>Code</b> tab at the top. Despite the name, it's for any kind of work.</li>
-<li>Click <b>+ New session</b> in the left-hand list, or press <kbd>Cmd + N</kbd> (Mac) or <kbd>Ctrl + N</kbd> (Windows).</li>
-<li>Around the box where you type, at the bottom, are a few settings. Set:
-  <ul><li><b>Environment:</b> <b>Local</b> (it means "on this computer").</li>
-  <li><b>Project folder</b> (it may say <b>Select folder</b>): click it and find your project folder in <b>Claude projects</b>. On a Mac, pressing <kbd>Cmd + Shift + H</kbd> in that window jumps to your home folder. Choose the project folder itself (<i>Bakery</i>), not <i>Claude projects</i>.</li>
-  <li><b>Permission mode:</b> <b>Manual</b> (older versions say <i>Ask permissions</i>). Claude then asks before every change.</li></ul>
-  The app gets updated, so it may look slightly different, but those choices will be there.</li>
-<li>Click in the typing box, type <code>hello</code>, and press <b>Enter</b>.</li>
+<li>Start a <b>+ New session</b> as in Step 3, with the same settings, but this time choose your <b>project folder</b> (<i>Bakery</i>), not <i>Claude projects</i>. (It has to be a new session: Claude only reads a project's notes when the session is opened on that folder.)</li>
+<li>Type <code>hello</code> and press <b>Enter</b>.</li>
 <li><b>Check the reply.</b> It should start by naming your folder, like <i>"📁 You're in Bakery."</i> If it doesn't, ask <i>"Which folder are you working in?"</i> If the answer isn't your project folder, start a new session and choose again.</li>
 <li>Type <code>/setup</code> and press <b>Enter</b>. (Typing <code>/</code> pops up a menu; ignore it and keep typing.)</li>
 </ol>
+<div class="box"><b>How to tell you've got the right folder:</b> your project folder has a file called <code>CLAUDE.md</code> and a folder called <code>inbox</code> directly inside it.</div>
 
 <h3>During setup</h3>
 <p>Claude asks a handful of questions, one at a time. Answer by talking or typing. It sets up the snapshots, then asks:</p>
 <ul>
-<li>a <b>name</b> for the project, what it is, and whether it involves code;</li>
+<li>to confirm the project's <b>name</b> (it suggests the folder name), what it is, and whether it involves code;</li>
 <li>whether it's <b>marked or assessed work</b> (coursework, a dissertation) or has rules about using AI. If it is, Claude adds the study pack (see Part 2);</li>
 <li>whether you'll put in <b>real people's details or data</b>: emails, orders, invoices, family records, or datasets about people. Those all count, so say yes if you'll use any of them;</li>
 <li>for <b>one small thing</b> you could do on it right now. Then it helps you do it.</li>
@@ -166,6 +171,7 @@ ol li, ul li { margin-bottom: 3pt; }
 ├── Cookbook
 └── Family history</pre>
 <p>In any project, say <b>"new project"</b>. Claude asks what it is, makes the folder next to the others, offers to copy anything across ("bring my recipes and the style guide"), and tells you how to open it: <b>+ New session</b> → choose the new folder → Local, Manual → type <code>/setup</code>. It already knows you, so it only asks about the new project.</p>
+<p>You can also open a session on <b>Claude projects</b> and paste the sentence from Step 3 again.</p>
 <p>You <i>can</i> keep everything in one folder; it works. It just gets cluttered.</p>
 
 <h2>About you, and about the work</h2>
@@ -240,14 +246,14 @@ CLAUDE.md     Claude's standing orders for this project (read every session).</p
 <ul>
 <li>When you accept the "About me" extra (offered after a session that went well), Claude adds a section to <code>~/.claude/CLAUDE.md</code>, which applies in <b>every</b> project, including existing repos. It shows you the text first and never replaces existing content.</li>
 <li>A personal skill in <code>~/.claude/skills/</code> overrides a project skill of the same name. Claude checks for clashes with the kit's skills when it sets up "About me", and offers to rename.</li>
-<li>A blank copy of the kit is kept in <code>~/.claude/workspace-kit/</code> for "new project". Point it at a newer copy of the kit to refresh it.</li>
+<li>The kit is kept as a git clone in <code>~/.claude/workspace-kit/</code>; its <code>claude-workspace</code> folder is the blank template. "New project" updates it (<code>git pull --ff-only</code>) and copies only that folder, so every project starts with its own fresh history. Updating the kit never changes projects you already have.</li>
 </ul>
 
 <h2>If you write code</h2>
 <ul>
 <li><b>Permission mode:</b> once you trust it, <b>Accept edits</b> mode cuts the prompts a lot. The kit already lets Claude save snapshots and update its own notes without asking, and still asks before <code>git push</code>, <code>rm</code> and anything that throws work away.</li>
 <li><b>Big files and keys:</b> before every snapshot, Claude checks for files over 20 MB, folders of hundreds of new files (a dataset, say), and API keys written into code or notebooks. None of those get saved. A key that was ever committed or pasted into chat must be cancelled with the provider and replaced.</li>
-<li><b>Existing project?</b> Don't copy the kit over it. Unzip it elsewhere, open your project, and say: <i>"Bring in the workspace kit from [path]. Don't overwrite anything: merge CLAUDE.md, append to .gitignore, show me the changes first."</i> Then <code>/setup</code>.</li>
+<li><b>Existing project?</b> Don't copy the kit over it. Open your project and say: <i>"Bring in the workspace kit from ~/.claude/workspace-kit/claude-workspace (clone github.com/teedor/ai-workspace-kit there first if it's missing). Don't overwrite anything: merge CLAUDE.md, append to .gitignore, show me the changes first."</i> Then <code>/setup</code>.</li>
 <li><b>One person per folder.</b> In a team repo, keep personal rules in <code>CLAUDE.local.md</code>, and agree with the team before committing workspace files.</li>
 <li>Code keeps its own layout. "Handover" commits only workspace files. "Sign off" runs your tests, commits reviewed code, and asks before committing to <code>main</code>. The red team's checker runs code only against test data.</li>
 <li><code>.claude/settings.json</code> blocks Claude's file tools from reading <code>.env</code> and <code>.pem</code> files (including <code>.env.example</code>), and makes it ask before <code>git push</code>, <code>rm</code>, <code>git reset</code>, <code>git checkout</code> and similar, in Bash and PowerShell. It sets the starting permission mode to asking. These are guard rails, not a sandbox.</li>
@@ -261,7 +267,7 @@ CLAUDE.md     Claude's standing orders for this project (read every session).</p
 <pre><b>Mac:</b>      curl -fsSL https://claude.ai/install.sh | bash
 <b>Windows:</b>  irm https://claude.ai/install.ps1 | iex</pre>
 Open a new window and type <code>claude --version</code> to check it worked.</li>
-<li><b>Go to your project folder.</b> Mac: type <code>cd</code> and a space, drag the folder into the window, and press Enter. Windows: open the folder in File Explorer, type <code>powershell</code> in the address bar, and press Enter.</li>
+<li><b>Go to your folder</b>: <b>Claude projects</b> the first time (to paste the sentence from Step 3), your project folder after that. Mac: type <code>cd</code> and a space, drag the folder into the window, and press Enter. Windows: open the folder in File Explorer, type <code>powershell</code> in the address bar, and press Enter.</li>
 <li>Type <code>claude</code>. The first time, it opens your browser to sign in.</li>
 </ol>
 <p>Recent versions start the terminal in <b>auto</b> mode. The kit's settings ask for the asking mode instead; check the mode shown at the bottom, and press <kbd>Shift + Tab</kbd> to change it. Claude Code has its own dictation in the terminal: type <code>/voice</code>, then hold Space and talk. Your audio goes to Anthropic.</p>

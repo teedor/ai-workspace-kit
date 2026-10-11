@@ -16,11 +16,20 @@ dissertation, a codebase.
 
 ## Start here
 
-1. Read the guide: [`docs/Working with Claude - guide.pdf`](docs/) (the source is `docs/guide.html`).
-2. Get the kit: download this repository (**Code → Download ZIP**) and use the
-   `claude-workspace` folder inside it.
-3. Follow Part 1 of the guide. Setup takes about ten minutes once the app is
-   installed, and ends with one real piece of work done.
+1. Install the Claude app from **claude.com/download** and sign in (a paid plan
+   is needed). On Windows, also install Git from **git-scm.com** (the kit uses
+   it for snapshots), then restart the app.
+2. In your home folder, make an empty folder called **Claude projects**.
+3. In the app, open the **Code** tab and start a new session on that folder
+   (Environment: Local, Permission mode: Manual). Paste this (don't dictate it):
+   > Set me up with the AI Workspace Kit: clone github.com/teedor/ai-workspace-kit into ~/.claude/workspace-kit (or update it if it's already there, deleting nothing), then follow its INSTALL.md; if Git is missing, stop and tell me how to install it.
+4. Claude makes your first project folder and tells you how to open it and
+   type `/setup`.
+
+Work laptop blocks the download? Use **Code → Download ZIP**, unzip it in
+Downloads, and use the ZIP sentence in the guide's Step 3. The full
+walkthrough is in the guide:
+[`docs/Working with Claude - guide.pdf`](docs/) (source: `docs/guide.html`).
 
 ## What's in it
 
@@ -41,7 +50,8 @@ dissertation, a codebase.
 ## Repository layout
 
 ```
-claude-workspace/   the kit: copy it out, rename it after your project, open, /setup
+claude-workspace/   the kit: the blank template each project folder is copied from
+INSTALL.md          what Claude follows to make the first project folder
 docs/               the guide (HTML source and PDF)
 scripts/            build the PDF; pre-publish checks
 CLAUDE.md           instructions for AI sessions working on this repo
