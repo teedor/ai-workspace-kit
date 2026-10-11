@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIAGRAM TITLE</title>
+<!-- Preview for DIAGRAM FILE. Claude rebuilds this page whenever the diagram changes. -->
+<style>
+  body { font: 15px/1.5 system-ui, sans-serif; margin: 24px; color: #1d2430; background: #fff; }
+  .bar { margin-bottom: 16px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  button { font: inherit; padding: 6px 12px; border: 1px solid #8aa; border-radius: 6px; background: #f4f8fb; cursor: pointer; }
+  #status { color: #5a6878; }
+</style></head><body>
+<div class="bar">
+  <strong>DIAGRAM TITLE</strong>
+  <button id="png" disabled>Save as PNG</button>
+  <button id="svg" disabled>Save as SVG</button>
+  <span id="status">Drawing…</span>
+</div>
+<pre class="mermaid">
+MERMAID TEXT GOES HERE
+</pre>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.17.2/dist/mermaid.esm.min.mjs";
+  const name = "DIAGRAM NAME";
+  const status = document.getElementById("status");
+  // Plain SVG labels, so the picture can also be saved as a PNG.
+  mermaid.initialize({ startOnLoad: false, htmlLabels: false, flowchart: { htmlLabels: false } });
+  try { await mermaid.run(); status.textContent = ""; }
+  catch (e) { status.textContent = "Couldn't draw this diagram: " + e.message; }
+  const svgEl = () => document.querySelector(".mermaid svg");
+  const save = (blob, ext) => { const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name + "." + ext; a.click(); };
+  const svgText = () => { const s = svgEl().cloneNode(true); s.setAttribute("xmlns", "http://www.w3.org/2000/svg"); return new XMLSerializer().serializeToString(s); };
+  document.getElementById("svg").onclick = () => save(new Blob([svgText()], { type: "image/svg+xml" }), "svg");
+  document.getElementById("png").onclick = () => {
+    const box = svgEl().getBoundingClientRect(), scale = 2, img = new Image();
+    img.onload = () => {
+      const c = document.createElement("canvas"); c.width = box.width * scale; c.height = box.height * scale;
+      const g = c.getContext("2d"); g.fillStyle = "#fff"; g.fillRect(0, 0, c.width, c.height);
+      g.drawImage(img, 0, 0, c.width, c.height);
+      c.toBlob(b => b ? save(b, "png") : (status.textContent = "Couldn't make a PNG: try Save as SVG."), "image/png");
+    };
+    img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svgText());
+  };
+  if (svgEl()) { document.getElementById("png").disabled = false; document.getElementById("svg").disabled = false; }
+</script>
+</body></html>
