@@ -34,6 +34,11 @@ skip this; `/new-project` will fetch the kit instead.)
 
 ## 2. Git
 
+First, note which computer I'm on (Claude Code tells you the platform; if
+it's unclear, ask) and write **Computer:** Mac, Windows or Linux under "This
+project" in `CLAUDE.md`. From now on, give every instruction for that system
+only.
+
 Check `git --version` **first**: on a Mac it may pop up a box offering
 "command line developer tools". If so: "Click Install, wait until it
 finishes, then say done." On Windows, if git is missing, tell me how to

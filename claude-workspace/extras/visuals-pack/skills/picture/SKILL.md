@@ -34,8 +34,10 @@ the top of `notes/visuals-spend.md`. If AI pictures aren't set up (no
    Whatever I've chosen, check if a request looks like a slip (500 images
    when the conversation was about 5, say).
 5. **Log it first** in `notes/visuals-spend.md`, then run
-   `tools/make-image.sh <model> drafts/images/<name>-ai.png "<prompt>"`
-   once per image, and fill in the Result column.
+   `bash tools/make-image.sh <model> drafts/images/<name>-ai.png "<prompt>"`
+   once per image, and fill in the Result column. Run it yourself with the
+   Bash tool (on Windows that's Git Bash, which comes with Git for Windows),
+   never in PowerShell, and never ask me to run it.
 6. **If it fails,** show me what the script said, and say it may still have
    been charged (the Spend page in AI Studio shows it). Never retry without
    asking. If the key isn't found or is rejected, ask me to check `.env`
