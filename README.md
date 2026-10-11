@@ -23,6 +23,31 @@ and Codex (with a ChatGPT plan).
 > **Unofficial.** Not affiliated with or endorsed by Anthropic, Google,
 > OpenAI or GitHub.
 
+## Is this for you?
+
+It depends on the shape of the work, not the subject or who you are.
+
+**A good fit:** work that runs over weeks or months, that you come back to
+in fits and starts, that lives in files on a computer, and that needs to be
+right.
+
+**Less of a fit:** quick questions; shared online documents others edit at
+the same time (Google Docs, Teams); work done mostly on a phone or tablet;
+pupils', patients' or clients' details on a personal account.
+
+**Or the chat apps' Projects?** The Claude and ChatGPT chat apps both have
+Projects that keep your instructions and files, with no setup beyond naming
+one. If that's all you need, start there, or use both. This kit adds memory
+you own (ordinary files in your folder, with no export step), a ready-made
+next step even after weeks away, decisions kept with their reasons, saved
+versions to go back to, and an assistant that files what you drop in, marks
+what it checked, and queues its work for your sign-off.
+
+**The price:** a paid plan (Claude Pro or above, or a ChatGPT plan that
+includes Codex; Gemini CLI works with a free Google account), a computer, a
+little typed setup, and saying yes when the assistant asks before changing
+things.
+
 ## Talk, in one place
 
 Once it's installed, the simplest way to use this is a **terminal window

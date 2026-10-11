@@ -69,7 +69,10 @@ install Git for Windows, and wait.
 
 Suggest the folder name as the **Name** ("I'll call this Bakery: right?"),
 then ask for one or two sentences on what it is and who it's
-for, and whether it involves **code**. Write them into "This project" in
+for (e.g. "I'm writing my first novel, a crime story set in 1970s Belfast,
+for adults who like character-driven crime", or "I run a small bakery and
+use this for menus, supplier emails and planning"), and whether it
+involves **code**. Write them into "This project" in
 `CLAUDE.md` (fill in **Code in this project:** yes or no).
 
 Then ask: **"Is this something new, or something you've been working on for

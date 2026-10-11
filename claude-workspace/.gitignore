@@ -21,6 +21,7 @@ service-account*.json
 .DS_Store
 Thumbs.db
 .claude/settings.local.json
+CLAUDE.local.md
 
 # Working folders that programs rebuild themselves: never worth saving
 __pycache__/
