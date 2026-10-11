@@ -16,6 +16,7 @@ this project, and point out the clash so I can tidy one of them up.
 
 **Name:** *(set by `/setup`)*
 **Code in this project:** *(yes / no, set by `/setup`)*
+**Started:** *(new / already under way, set by `/setup`)*
 
 <!-- Fill this in, in your own words. A few lines is plenty. For example:
 "I'm writing my first novel, a crime story set in 1970s Belfast. Readers are
