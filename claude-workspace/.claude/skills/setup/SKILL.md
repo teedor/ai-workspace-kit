@@ -97,8 +97,12 @@ people (posts, photos, health records, survey answers), recordings, or
 anything covered by a licence, a contract or an ethics approval?"** Write the answer under "Personal details in this
 project" in `CLAUDE.md`. If yes, note which kinds; that living people get more
 care than the dead; that names, dates and places must be spelled exactly; and
-that anything you read is sent to Anthropic, so licensed or restricted data
-stays out of this folder unless its terms allow that.
+that anything you read is sent to Anthropic (with Gemini CLI or Codex, to
+Google or OpenAI: give the warning in that assistant's notes now), so
+licensed or restricted data stays out of this folder unless its terms allow
+that. If the details are about pupils, patients, clients or anyone I work
+for, tell me to check my employer's or school's data rules first: many
+don't allow personal AI accounts for them.
 
 ## 6. One real step
 

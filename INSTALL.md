@@ -26,10 +26,10 @@ template inside it at `~/.claude/workspace-kit/claude-workspace/`. Check that
 - **It was already there, and is a git clone:** it was just updated with
   `git pull --ff-only`. If that failed (offline, or the saved kit was edited),
   say so in one line and carry on with the copy that's there. If the update
-  changed `claude-workspace/.claude/settings.json`
-  (`git -C <kit> diff ORIG_HEAD HEAD -- claude-workspace/.claude/settings.json`),
-  stop and show them the change in plain English before going on: that file
-  controls what Claude may do without asking.
+  changed any of the files that control what the assistant may do without
+  asking (`git -C <kit> diff ORIG_HEAD HEAD -- claude-workspace/.claude/settings.json
+  claude-workspace/.gemini claude-workspace/.geminiignore claude-workspace/.codex/rules`),
+  stop and show them the change in plain English before going on.
 - **It was already there, but isn't a git clone** (an older or unzipped copy):
   ask, then rename it to `workspace-kit-old-YYYY-MM-DD` (today's date) and
   clone afresh. Never delete it.
@@ -68,11 +68,13 @@ never touch it: suggest another name.
 ## 4. Make the project folder
 
 Copy `~/.claude/workspace-kit/claude-workspace/` to a new folder with that name
-here. Include the hidden `.claude` folder and `.gitignore`. Then check, by
+here. Include the hidden folders and files (`.claude`, `.gemini`, `.codex`,
+`.gitignore`, `.geminiignore`). Then check, by
 listing files or testing they exist, **without opening any file inside the new
 folder** (opening one loads that project's rules into this session):
 
-- `<new folder>/.claude/skills/setup/SKILL.md` exists;
+- `<new folder>/.claude/skills/setup/SKILL.md` and `<new folder>/.geminiignore`
+  exist;
 - there is **no** `.git` in the new folder. The project starts its own fresh
   history when `/setup` runs. Never clone this repository into a project
   folder, and never copy anything from outside `claude-workspace/`.

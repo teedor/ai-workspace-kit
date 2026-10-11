@@ -290,18 +290,18 @@ Open a new window and type <code>claude --version</code> to check it worked.</li
 <p>The kit also works with Google's <b>Gemini CLI</b>, in a terminal. Each project folder carries a small adapter (<code>GEMINI.md</code>, a <code>.gemini</code> folder and <code>.geminiignore</code>), so the same rules and the same commands (<code>/start</code>, <code>/setup</code>, <code>/handover</code>…) work there.</p>
 <ul>
 <li><b>Install:</b> on a Mac with Homebrew, <code>brew install gemini-cli</code>; otherwise install Node.js 20 or later from <i>nodejs.org</i>, then <code>npm install -g @google/gemini-cli</code>. On Windows you also need Git for Windows, as in Step 2.</li>
-<li><b>Start:</b> open a terminal in your <b>Claude projects</b> folder (see "Prefer the terminal?" above), type <code>gemini</code>, choose <b>Sign in with Google</b> with a personal account (school and work accounts need extra Google Cloud set-up), and trust the folder when asked. Then paste the sentence from Step 3.</li>
-<li><b>Privacy:</b> on a free personal account, Google may use your prompts to improve its products, and people may read them. Type <code>/privacy</code> to choose. Paid plans aren't used that way.</li>
+<li><b>Start:</b> open a terminal in your <b>Claude projects</b> folder (see "Prefer the terminal?" above), type <code>gemini</code>, choose <b>Sign in with Google</b> with a personal account (school and work accounts need extra Google Cloud set-up), and trust the folder when asked. Then paste the sentence from Step 3. In your project folder later, choose <b>Acknowledge and Enable</b> when Gemini asks about new agents (that's the kit's read-only critic).</li>
+<li><b>Privacy:</b> on a free personal account, Google may use your prompts to improve its products, and people may read them. Type <code>/privacy</code> to choose.</li>
 <li><b>What's different:</b> the kit's safety settings are Claude Code's, so with Gemini they're rules it's told to follow rather than locks. Gemini still asks before changing files or running commands. The linked repos pack is Claude-only for now.</li>
 </ul>
 
 <h2>Using Codex (ChatGPT) instead</h2>
 <p>If you have a ChatGPT plan, OpenAI's <b>Codex</b> works too, in a terminal. Each project folder carries a small adapter for it (<code>AGENTS.md</code> and a <code>.codex</code> folder).</p>
 <ul>
-<li><b>Install:</b> Mac: <code>curl -fsSL https://chatgpt.com/codex/install.sh | sh</code>, or <code>brew install --cask codex</code>. Windows, in PowerShell: <code>powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"</code>.</li>
-<li><b>Start:</b> open a terminal in your <b>Claude projects</b> folder, type <code>codex</code>, choose <b>Sign in with ChatGPT</b> (Codex comes with Plus, Pro, Business, Edu and Enterprise plans), and <b>Trust and continue</b> when asked. Then paste the sentence from Step 3.</li>
+<li><b>Install:</b> Mac: <code>curl -fsSL https://chatgpt.com/codex/install.sh | sh</code>, or <code>brew install --cask codex</code>. Windows, in a terminal (see "Prefer the terminal?"): <code>powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"</code>.</li>
+<li><b>Start:</b> open a terminal in your <b>Claude projects</b> folder, type <code>codex</code>, choose <b>Sign in with ChatGPT</b> (Codex comes with Plus, Pro, Business, Edu and Enterprise plans), and <b>Trust and continue</b> when asked. In ChatGPT's settings, check whether OpenAI may use your conversations to improve its models, and turn that off if you'd rather it didn't. Then paste the sentence from Step 3.</li>
 <li><b>One difference to remember:</b> commands start with <code>$</code>, not <code>/</code>: <code>$setup</code>, <code>$start</code>, <code>$handover</code>.</li>
-<li><b>What's different:</b> as with Gemini, the kit's safety settings are rules Codex is told to follow rather than locks, and Codex still asks before stepping outside its sandbox. Check your ChatGPT data settings before bringing in other people's details. The linked repos pack is Claude-only for now.</li>
+<li><b>What's different:</b> inside the project folder, Codex can run commands without asking. The kit adds rules so it always asks before deleting, pushing, or anything that could throw work away, and asks before stepping outside the folder; the rest of the kit's safety settings are rules it's told to follow rather than locks. Check your ChatGPT data settings before bringing in other people's details. The linked repos pack is Claude-only for now.</li>
 </ul>
 
 <h2>Off-computer backup with GitHub</h2>

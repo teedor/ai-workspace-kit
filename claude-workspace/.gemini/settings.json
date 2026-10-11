@@ -14,5 +14,14 @@
       "run_shell_command(git ls-files)",
       "run_shell_command(git grep)"
     ]
+  },
+  "advanced": {
+    "excludedEnvVars": [
+      "DEBUG",
+      "DEBUG_MODE",
+      "GEMINI_IMAGE_KEY",
+      "GEMINI_API_KEY",
+      "GOOGLE_API_KEY"
+    ]
   }
 }

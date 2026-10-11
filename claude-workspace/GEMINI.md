@@ -33,11 +33,17 @@ with the differences below.
   before edits and commands anyway, unless I've changed your approval mode;
   keep to rule 8 yourself. `.geminiignore` stops your file tool reading
   `.env`, `.pem` and key files; your shell could still read them, so never
-  try.
+  try. Never run `env`, `printenv` or `set`, or print a variable, since
+  this folder's `.env` may be loaded into your environment. If `.env` has
+  a `GEMINI_API_KEY=` line (from an older version of the pictures pack),
+  tell me once to rename it to `GEMINI_IMAGE_KEY=` myself: that name could
+  switch your sign-in to billing that key.
 - **Trusting this folder.** This folder's settings (`.gemini/settings.json`,
   which lets you read `inbox/` and `private/`) and its commands only work
   once I've trusted it. If you can't read the inbox, or `/start` is
-  missing, tell me to type `/permissions trust`.
+  missing, tell me to type `/permissions trust`, then press **r** to
+  restart. The first time, Gemini also asks about new agents: tell me to
+  choose **Acknowledge and Enable**, or `@critic` won't load.
 - **Setup extras.** "Make the allowance last" is for Claude plans: skip it.
   Instead, if I mention running out, tell me `/stats model` shows today's
   limits and `/model` chooses the model.

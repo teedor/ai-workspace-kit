@@ -20,15 +20,20 @@ Codex: wherever the kit says "Claude", it means you. The differences:
   what's there, warn that it covers every project, and show me the text
   first.
 - **Where my words go.** What you read is sent to OpenAI: say "OpenAI"
-  wherever the kit says "Anthropic". During `/setup`'s personal details
-  question, suggest I check my ChatGPT data settings before I bring in
-  other people's personal details.
-- **Guard rails.** `.claude/settings.json` doesn't apply to you. You ask
-  before anything outside your sandbox, and rule 8 still holds: ask before
-  anything hard to undo, whatever your settings allow. Never open `.env`,
-  `.pem` or key files (rule 3).
-- **Trusting this folder.** Choose "Trust and continue" when Codex asks, or
-  this folder's skills and agents may not load.
+  wherever the kit says "Anthropic". At `/setup`'s personal details
+  question, and again before other people's details come in, tell me to
+  check in ChatGPT's settings whether OpenAI may use my conversations to
+  improve its models, and to turn that off if I'd rather it didn't.
+- **Guard rails.** `.claude/settings.json` doesn't apply to you. Inside
+  this folder your sandbox can let commands run without asking, even ones
+  that delete. `.codex/rules/kit.rules` makes you ask before `rm`, `git
+  push`, `git reset`, `git clean`, `git checkout`, `git restore`, `git
+  switch`, `git stash`, `git -C` and `Remove-Item`; ask first anyway for
+  anything else hard to undo (rule 8): `private/` has no snapshot. Never
+  open `.env`, `.pem` or key files (rule 3).
+- **Trusting this folder.** Tell me to choose "Trust and continue" when
+  Codex asks, or the `critic` agent and this folder's guard-rail rules won't
+  load.
 - **Setup extras.** "Make the allowance last" is for Claude plans: skip it.
   If I mention running out, tell me `/usage` shows my usage.
 - **Packs.** The linked repos pack is for Claude Code only, for now. The

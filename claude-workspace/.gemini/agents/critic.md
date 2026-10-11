@@ -1,6 +1,6 @@
 ---
 name: critic
-description: A read-only critic with fresh eyes, for /tailor and /red-team. It reads the files it is given and reports problems, worst first, with evidence and a suggested fix. It cannot edit, create, delete or run anything.
+description: A read-only critic with fresh eyes, for /tailor and /red-team. It reads the files it is given and reports problems, worst first, with evidence and a suggested fix. It can read and search, but cannot change anything.
 kind: local
 tools:
   - read_file

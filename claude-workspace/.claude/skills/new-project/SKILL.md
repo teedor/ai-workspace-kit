@@ -20,10 +20,10 @@ product or a different audience means a new folder, even if it's related
    than `~` in commands):
    - if it's a git clone, update it: `git -C ~/.claude/workspace-kit pull --ff-only`.
      If that fails (offline, say), tell me in one line and use the copy that's there.
-     If the update changed `claude-workspace/.claude/settings.json`
-     (`git diff ORIG_HEAD HEAD -- claude-workspace/.claude/settings.json`), stop
-     and show me the change in plain English first: that file controls what
-     Claude may do without asking;
+     If the update changed any file that controls what the assistant may do
+     without asking (`git diff ORIG_HEAD HEAD -- claude-workspace/.claude/settings.json
+     claude-workspace/.gemini claude-workspace/.geminiignore claude-workspace/.codex/rules`),
+     stop and show me the change in plain English first;
    - if it's there but isn't a git clone (an older or unzipped copy), ask, then
      rename it to `workspace-kit-old-YYYY-MM-DD` and clone afresh. Never delete it;
    - if it's missing, clone it:
@@ -38,8 +38,9 @@ product or a different audience means a new folder, even if it's related
    the full path and get my yes before creating anything. Never overwrite an
    existing folder.
 4. Copy **only** `~/.claude/workspace-kit/claude-workspace/` there, including
-   the hidden `.claude` folder and `.gitignore`. Check
-   `.claude/skills/setup/SKILL.md` exists in the new folder and that it has
+   the hidden folders and files (`.claude`, `.gemini`, `.codex`, `.gitignore`,
+   `.geminiignore`). Check `.claude/skills/setup/SKILL.md` and `.geminiignore`
+   exist in the new folder and that it has
    no `.git` (it starts its own history in `/setup`).
 5. **Carry anything across?** Ask whether the new project needs anything from
    this one (e.g. "copy my recipes and the style guide"). Copy only what I

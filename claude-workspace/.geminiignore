@@ -13,3 +13,18 @@ kaggle.json
 client_secret*.json
 secrets.toml
 .netrc
+*.key
+.npmrc
+.pypirc
+.git-credentials
+token.json
+
+# Folders programs rebuild themselves: not worth reading.
+node_modules/
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+wandb/
+mlruns/
+.cache/
