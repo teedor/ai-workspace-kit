@@ -42,5 +42,18 @@ one offer I can answer with a single word.
    going if I've said I'm tired.
 7. **"something else":** ask what, in one question. **"I've got longer":**
    offer the next two or three steps from `status.md`. **"low day":** follow
-   "Low days" in `CLAUDE.md`.
+   "Low days" below.
 8. Never ask more than one question at the start of a session.
+
+## Low days
+
+If I say "low day", "nothing in me" or "can't today" (now or at any point in
+a session), don't push the plan. Offer three things in one message, each
+tiny:
+1. Talk for two minutes about what's in your head on this, and I'll file it.
+2. Open <the First step's file> and just read it.
+3. One `·easy` step.
+
+Then: "Or close this. Nothing's lost, and the next step is written down."
+Anything I do goes in `done.md` like any other step. If I do nothing, record
+nothing.

@@ -23,6 +23,31 @@ and Codex (with a ChatGPT plan).
 > **Unofficial.** Not affiliated with or endorsed by Anthropic, Google,
 > OpenAI or GitHub.
 
+## Is this for you?
+
+**Probably yes** if you're one person doing a long piece of work in fits and
+starts (a dissertation, a book, a family history, a solo codebase), mostly
+at a computer, and you care about getting things right, knowing where they
+came from, and picking up easily after a gap.
+
+**Probably not** if you mostly work on your phone, your work lives in shared
+Google Docs or Teams files, you want quick answers rather than help with a
+long project, or the work involves other people's sensitive details and
+you'd be using a personal account.
+
+**Compared with the apps' own Projects:** the Claude and ChatGPT apps both
+have Projects that keep your instructions and files for a piece of work,
+with no setup. If "remember me and my project" is all you need, start there.
+This kit adds:
+- memory you own: plain files on your computer that you can read, correct,
+  roll back and take to another assistant;
+- a ready-made next step every time you come back, with no guilt about gaps;
+- decisions kept with their reasons, and snapshots you can go back to;
+- a record of where each claim came from, and of how AI was used;
+- an assistant that files things for you.
+
+The price: a computer, a little setup, and permission prompts along the way.
+
 ## Talk, in one place
 
 Once it's installed, the simplest way to use this is a **terminal window
