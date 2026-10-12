@@ -1,0 +1,8 @@
+description = "Build or refresh the list of what the software must do, and the route through it one stage at a time, from a brief, a requirements document, a board export (Azure DevOps, GitHub Projects, Jira) or by talking it through."
+prompt = """
+This is the /requirements command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/requirements/SKILL.md}
+
+{{args}}
+"""

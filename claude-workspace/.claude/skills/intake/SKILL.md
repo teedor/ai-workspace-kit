@@ -44,6 +44,7 @@ trustworthy. Two rules always come first:
    | A decision I've made | `decisions/decisions-log.md`, using the `/decide` method |
    | Samples of my work, or corrections | used to improve `notes/style-guide.md` |
    | An error message or bug report | a task in `status.md`, with the details in `notes/` |
+   | A requirements document, spec or board export, in a project with code | if the build pack is installed, `/requirements` turns it into the list; if not, offer the pack in one line (`extras/build-pack/`) |
 5. **Answer what it answers.** If it settles something in `notes/open-questions.md`,
    mark it answered (don't delete it).
 6. **Archive the originals** to `private/archive/YYYY-MM-DD/`.

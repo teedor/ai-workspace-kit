@@ -184,6 +184,9 @@ The full walkthrough is in the guide:
 - **A study pack** for assessed work: you write, the AI teaches and
   questions, and AI use is logged for your declaration. It includes viva
   practice, an honest sources register and, for ML projects, an experiment log.
+- **A build pack** for software: a list of what it must do (from a brief, a
+  board export or by talking), one stage planned at a time, checks written
+  before the code, and a fresh critic checking each stage against the list.
 
 ## Repository layout
 
@@ -193,8 +196,9 @@ claude-workspace/   the kit: the blank template each project folder is copied fr
                     and .geminiignore for Gemini CLI; AGENTS.md and .codex/
                     for Codex)
 INSTALL.md          what the assistant follows to make the first project folder
-claude-workspace/extras/  optional packs: study, visuals, linked repos
-docs/               the guide (HTML source and PDF), and the Copilot CLI plan
+claude-workspace/extras/  optional packs: study, visuals, linked repos, build
+docs/               the guide (HTML source and PDF), the Copilot CLI plan, and
+                    the build pack's design notes
 scripts/            build the PDF; pre-publish checks
 CLAUDE.md           instructions for AI sessions working on this repo
 ```
