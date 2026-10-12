@@ -54,6 +54,10 @@ with the differences below.
   limits and `/model` chooses the model.
 - **Packs.** The linked repos pack is for Claude Code only, for now. The
   visuals pack's diagrams work as written; its picture script uses its own
-  key in this folder's `.env`, separate from how you sign in.
+  key in this folder's `.env`, separate from how you sign in. The build
+  pack works as written, except with code in a linked repository, which
+  needs the linked repos pack (Claude Code only).
+  Its guard rails are rules you follow, not locks: never run tests or the
+  app until "Safe to run?" says yes.
 - **My computer.** If you aren't told which system I'm on, ask once (setup
   step 2 records it).

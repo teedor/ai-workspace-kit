@@ -41,6 +41,9 @@ Codex: wherever the kit says "Claude", it means you. The differences:
   If I mention running out, tell me `/usage` shows my usage.
 - **Packs.** The linked repos pack is for Claude Code only, for now. The
   visuals pack's diagrams work as written; its picture script needs a Google
-  key of its own.
+  key of its own. The build pack works as written, except with code in a
+  linked repository, which needs the linked repos pack (Claude Code only).
+  Its guard rails are rules you follow, not locks: never run tests or the
+  app until "Safe to run?" says yes.
 - **My computer.** If you aren't told which system I'm on, ask once (setup
   step 2 records it).

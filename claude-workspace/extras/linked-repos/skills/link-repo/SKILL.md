@@ -35,10 +35,12 @@ never load into our sessions.
      setting, never `/add-dir`, which would load that repository's own
      skills. It may need a new session to take effect.
    - Add to `permissions.deny`: `Read(//<path>/**/.env)`,
-     `Read(//<path>/**/.env.*)` and `Read(//<path>/**/*.pem)`, so you can't
-     read its secrets. On Windows, write paths as `//c/Users/<me>/...`.
+     `Read(//<path>/**/.env.*)`, `Read(//<path>/**/*.pem)`, and the same for
+     each other key-file pattern in this folder's `.claude/settings.json`
+     deny list, so you can't read its secrets. On Windows, write paths as
+     `//c/Users/<me>/...`.
    - Tell me: "Anything I read there is sent to Anthropic. I'm blocked from
-     its .env and .pem files; if it keeps keys anywhere else, tell me and
+     its .env, .pem and other key files; if it keeps keys anywhere else, tell me and
      I'll block those too."
 5. **Mode.** Read-only unless I say otherwise. For read-only, also add
    `Edit(//<path>/**)` to `deny`, and tell me plainly that this stops your

@@ -18,7 +18,8 @@ Go through `review-queue.md` with me, one `NEEDS REVIEW` item at a time:
      `finished/`, update its "Where" in `review-queue.md`, then save a git
      snapshot ("Signed off: <item>").
    - **Code:** first run the project's tests or checks if it has any (see
-     `notes/style-guide.md`). If they fail, say so and stop. Commit on the
+     `notes/style-guide.md`; with the build pack, `notes/codebase.md`, and
+     only if its "Safe to run?" says yes). If they fail, say so and stop. Commit on the
      current branch, approved or changed items only. If that's `main` or `master` in a project shared with
      others, ask first, and offer a separate branch instead.
 5. If I corrected you, add the lesson to `notes/style-guide.md`.

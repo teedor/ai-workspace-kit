@@ -20,6 +20,7 @@
       "Edit(./ideas/**)",
       "Edit(./decisions/**)",
       "Edit(./notes/**)",
+      "Edit(./plans/**)",
       "Bash(git ls-files:*)",
       "Bash(git grep:*)",
       "PowerShell(git ls-files *)",
@@ -54,7 +55,21 @@
       "Read(**/*.pem)",
       "Read(**/kaggle.json)",
       "Read(**/secrets.toml)",
-      "Read(**/client_secret*.json)"
+      "Read(**/client_secret*.json)",
+      "Read(**/*.p12)",
+      "Read(**/*.pfx)",
+      "Read(**/id_rsa*)",
+      "Read(**/credentials*.json)",
+      "Read(**/service-account*.json)",
+      "Read(**/.netrc)",
+      "Read(**/*.key)",
+      "Read(**/.npmrc)",
+      "Read(**/.pypirc)",
+      "Read(**/.git-credentials)",
+      "Read(**/token.json)",
+      "Read(**/local.settings.json)",
+      "Read(**/wp-config.php)",
+      "Read(**/*.tfstate)"
     ]
   }
 }

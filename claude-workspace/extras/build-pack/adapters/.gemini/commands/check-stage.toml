@@ -1,0 +1,8 @@
+description = "Check a finished stage of the build against what it was meant to do, with a fresh critic comparing the code with the requirements rather than the task list, then give me a few things to try by hand."
+prompt = """
+This is the /check-stage command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/check-stage/SKILL.md}
+
+{{args}}
+"""

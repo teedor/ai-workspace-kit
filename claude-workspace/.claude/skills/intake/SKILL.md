@@ -14,6 +14,9 @@ trustworthy. Two rules always come first:
 
 1. **List what's there** (name and type) before touching anything. If it's empty, say so and stop.
 2. **Read everything.** Don't guess at a file's contents from its name.
+   (One exception: if a file looks like an employer's or client's spec or
+   board export and `notes/ai-policy.md` doesn't cover it, ask before
+   reading it; see the requirements row in step 4.)
    **Big things** (over 20 MB, or a folder of hundreds of files): don't read
    it all. The same goes for a file with thousands of records (a family-tree
    GEDCOM file, a long spreadsheet). Look at a sample, then ask me where it
@@ -44,6 +47,7 @@ trustworthy. Two rules always come first:
    | A decision I've made | `decisions/decisions-log.md`, using the `/decide` method |
    | Samples of my work, or corrections | used to improve `notes/style-guide.md` |
    | An error message or bug report | a task in `status.md`, with the details in `notes/` |
+   | A requirements document, spec or board export, in a project with code | **before reading it**, if it may be an employer's or client's and `notes/ai-policy.md` doesn't cover it, ask whether it's allowed with this AI account; if not, leave it unread and ask me to move it out. Then, if the build pack is installed, `/requirements` turns it into the list. If not, and it's not during `/setup` or for assessed work, offer the pack once, in one line (`extras/build-pack/`): it counts as the session's one offer, and a no goes in "Declined suggestions" |
 5. **Answer what it answers.** If it settles something in `notes/open-questions.md`,
    mark it answered (don't delete it).
 6. **Archive the originals** to `private/archive/YYYY-MM-DD/`.

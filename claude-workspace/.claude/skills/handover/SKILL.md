@@ -62,7 +62,7 @@ under "Open threads" as a question for next time.
      README.md .gitignore status.md handover.md done.md review-queue.md notes
      ideas decisions drafts finished .claude/skills .claude/settings.json
      .claude/agents GEMINI.md .gemini .geminiignore AGENTS.md .codex extras`,
-     plus whichever of `experiments literature logbook data/README.md` exist).
+     plus whichever of `experiments literature logbook data/README.md plans` exist).
      **If "Rules for this work" says `/handover` saves code too,** also save
      the other changed files, as "WIP: <session>"; their review status stays
      in `review-queue.md`. Otherwise list other changed files under Open threads ("uncommitted: src/train.py.

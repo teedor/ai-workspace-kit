@@ -56,6 +56,11 @@ you write, Claude teaches and questions, and AI use is logged.
 for free. AI-made pictures are optional and cost money, and Claude always
 tells you the cost first.
 
+**Building software from a brief or a backlog?** Say "set up the build
+pack": the pack in `extras/build-pack/` keeps the list of what it must do
+(from a document, a board export, or by talking), plans one stage at a
+time, and checks each stage against the list, not the task list.
+
 **Work in other git repositories?** Say "link a repo": the pack in
 `extras/linked-repos/` keeps a register of them, read-only by default. Their
 code stays outside this folder. (Claude Code only, for now.)

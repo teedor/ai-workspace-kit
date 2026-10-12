@@ -1,0 +1,8 @@
+description = "Plan the next stage of the build in detail (what I'll be able to do when it's finished, what must be true, and small tasks, each with a check), asking me only about how things should work, not the technology."
+prompt = """
+This is the /stage command from this workspace's kit. Follow these instructions for this folder, as the assistant they describe (they say "Claude"; that means you). If I added anything after the command, it's below them.
+
+@{.claude/skills/stage/SKILL.md}
+
+{{args}}
+"""
