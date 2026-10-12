@@ -42,6 +42,6 @@ Codex: wherever the kit says "Claude", it means you. The differences:
 - **Packs.** The linked repos pack is for Claude Code only, for now. The
   visuals pack's diagrams work as written; its picture script needs a Google
   key of its own. The build pack works as written, except with code in a
-  linked repository (that needs the linked repos pack).
+  linked repository, which needs the linked repos pack (Claude Code only).
 - **My computer.** If you aren't told which system I'm on, ask once (setup
   step 2 records it).

@@ -21,8 +21,13 @@ without losing the kit's freedom to change direction:
 
 ## What it borrowed from spec-driven tools
 
-Mostly cheap prompt discipline, not machinery. Sources: GSD Core
-(github.com/open-gsd/gsd-core, commit b747aca) and the archived GSD repo.
+Mostly cheap prompt discipline, not machinery. The main source is GSD
+("Get Shit Done", now GSD Core: github.com/open-gsd/gsd-core, commit
+b747aca, and the archived github.com/gsd-build/get-shit-done), with smaller
+ideas from GitHub Spec Kit (github.com/github/spec-kit: verdicts against
+requirement IDs, "unrequested" changes, previewing a sync before applying
+it), Superpowers (github.com/obra/superpowers: watch the test fail), and
+Kiro's EARS style ("When…, …") for "must be true" statements.
 
 - Requirements as testable one-line statements with IDs, mapped to stages,
   with an "out of scope" list that keeps its reasons.
@@ -78,6 +83,38 @@ The main changes:
 - **Not for assessed work**: it has Claude drafting requirements, design
   choices, code and tests that may be marked.
 
+## How novel is it?
+
+A prior-art scan on 2026-10-12 (spec-driven tools: GSD, Spec Kit, Kiro,
+BMAD, OpenSpec, Superpowers, Task Master, Agent OS, CCPM; board-to-agent
+integrations such as Copilot on Azure Boards, Jira and Linear; and
+"second brain" kits for non-developers) found:
+
+- **The mechanisms aren't new.** Planning one stage at a time,
+  goal-backward verification that hunts stubs and mocks, watching tests
+  fail first, human acceptance testing, fresh-context reviewers, a shared
+  core with adapters per tool, and "the board is the master" all exist
+  already. GSD alone covers most of what this pack does, with far more
+  machinery.
+- **The combination looks uncommon.** No other kit found pairs a
+  plain-English workspace for any kind of work with a build workflow for
+  people who aren't developers. Spec-driven tools are written for
+  developers, and the non-developer kits are notes vaults.
+- **So does the board approach.** Importing from a file export, keyed by the
+  board's own IDs, into a dated snapshot that diffs on re-import, with the
+  board staying the master and nothing written back, wasn't found
+  elsewhere. The closest are Spec Kit community extensions for GitHub
+  issues and Jira.
+- **The stance as a set:** drafts until signed off, evidence tags, no
+  streaks or guilt, low days, commit at sign-off, no closing keywords,
+  "Safe to run?", hand-checks on made-up data, and inline work rather than
+  agent swarms.
+
+Where it's weaker: its rules are prose, not enforced code (GSD has a CLI,
+Kiro has hooks); the board sync is one-way and manual; and the ecosystem is
+tiny. The honest pitch is "a careful, plain-English way to build from a
+brief, inside a workspace that also runs the rest of your work".
+
 ## Board facts relied on
 
 - Azure Boards: a query's actions menu has **Export to CSV**, with the
@@ -102,17 +139,55 @@ The main changes:
   (code.claude.com/docs/en/settings.md, data-usage.md). `/requirements`,
   `/stage` and `/check-stage` don't clash with built-in commands; `/import`
   does (commands.md).
-- Not confirmed: Jira's CSV export details (Atlassian's sites were
-  unreachable), so the pack only says "its own export to CSV, if it has
-  one".
+- Commit mentions: Azure Repos links a commit to work item `#123`
+  mentioned in its message ("Commit mention linking", on by default), and an
+  Azure DevOps pull request can complete its linked items when merged
+  (`docs/repos/git/repository-settings.md`,
+  `docs/repos/git/complete-pull-requests.md`). Hence board IDs stay out of
+  commit messages unless the repository's convention uses them.
+- Not confirmed: Jira's CSV export details and its "smart commits"
+  (Atlassian's sites were unreachable). The pack only says "its own export
+  to CSV, if it has one", and keeps "#" and a word away from Jira keys as a
+  precaution.
+
+## Second review round
+
+Five more fresh critics (a non-programmer, a developer at work with Azure
+DevOps, a security and data-protection reviewer, a consistency checker, a
+fact-checker) reviewed the built pack. Main changes:
+
+- "Safe to run?" is answered per repository, for tests and the app
+  separately, only in the person's words; "I don't know" means no, and
+  Claude offers to make it safe. Edits to `notes/codebase.md` ask.
+- Setting names come from example files and code, never from files that
+  hold secrets. The kit's deny list now matches `.geminiignore`, plus
+  `local.settings.json`, `wp-config.php` and `*.tfstate`, and linked
+  repositories get the same patterns.
+- The policy check happens before an export is read, not after.
+- Team repositories: never the workspace itself; one story per stage, on
+  its own branch, committed per task, with a pull request; "done" means
+  the team's definition of done; reviewers' comments become fix tasks.
+- `/requirements` works in parts across sittings, starts existing code with
+  "what have I got?" (the code, and whose name each account is in), saves
+  the inherited code once, and previews any re-import before applying it.
+- `/check-stage` gives each requirement a verdict (proven, there but
+  unproven, partly, missing), flags unrequested changes, stops at gaps, and
+  limits hand-checks to five.
+- `/handover` now saves `plans/`; `/signoff` uses the pack's test commands
+  only when safe; the intake offer respects the one-offer and no-setup
+  rules; board and deploy commands ask.
 
 ## Follow-ups for the core kit (not done here)
 
-Raised by the critics, independent of the pack:
 - `permissions.disableBypassPermissionsMode: "disable"` in the kit's
-  settings (it works from any settings file).
-- Deny rules for common credential files (`credentials.json`,
-  `serviceAccountKey.json`, `wp-config.php`).
+  settings (it works from any settings file). A policy choice for the
+  maintainer: it would also stop experienced users choosing bypass mode.
+- Enforce the pack's two most important rules with Claude Code hooks
+  rather than prose: block commit messages with closing words before a
+  board ID, and ask before test commands when "Safe to run?" isn't yes.
 - A connection-string pattern (`://user:password@`) in `/handover`'s key
   check.
 - `/signoff` asking before committing to `main` in solo projects too.
+- Linked repositories: let read-only git commands through without a
+  prompt, to cut approval fatigue (needs checking against how ask and
+  allow rules combine).

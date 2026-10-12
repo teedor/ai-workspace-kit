@@ -18,6 +18,9 @@ secrets.toml
 .pypirc
 .git-credentials
 token.json
+local.settings.json
+wp-config.php
+*.tfstate
 
 # Folders programs rebuild themselves: not worth reading.
 node_modules/

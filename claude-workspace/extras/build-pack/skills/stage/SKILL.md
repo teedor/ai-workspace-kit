@@ -7,6 +7,9 @@ Plan one stage: the next one on the route in `notes/requirements.md`, or the
 one I name. Follow the build pack's rules
 (`extras/build-pack/claude-section.md`).
 
+**Assessed work** (the study pack is installed): stop, and say in one line
+that the build pack isn't used for assessed work.
+
 ## 1. Read quietly
 
 `notes/requirements.md`, `notes/codebase.md`, `decisions/decisions-log.md`,
@@ -21,11 +24,14 @@ At most three questions, **one at a time** (unless my style guide says I
 like them in a batch), about how the work happens, never about technology:
 "Can someone book two dogs into one slot?", "How late can people cancel?"
 - Technical choices (frameworks, file layout, how data is stored) go under
-  "Claude may choose" in the stage file, written down, not asked.
-- **Except:** a new database table or changed data structure, a new
-  library or outside service, anything about logins or who can see what,
-  anything that costs money, and anything that sends data out. Ask about
-  those in plain words, with what each option means for me.
+  "Claude may choose" in the stage file, written down, not asked. If I'm a
+  developer (my style guide or global file says so, or I ask), show me that
+  list and wait for my yes before task 1.
+- **Except:** a change to the database's structure or to something other
+  code relies on, a new library or outside service, anything about logins
+  or who can see what, anything that costs money, and anything that sends
+  data out. Ask about those in plain words, with what each option means
+  for me.
 - Record each answer that settles something with `/decide`.
 
 ## 3. Write the stage file
@@ -37,7 +43,8 @@ like them in a batch), about how the work happens, never about technology:
 
 **Requirements:** <IDs>
 **Status:** building
-**Started at:** <current commit, short form>
+**Repository:** this folder, or <linked repository> on branch <name>
+**Started at:** <that repository's current commit, short form>
 
 ## Must be true when it's finished
 - <a statement I could try by hand, in plain words> (<ID>)
@@ -50,6 +57,9 @@ like them in a batch), about how the work happens, never about technology:
 
 ## Not in this stage
 - <anything nearby that's deliberately left for later>
+
+## Known gaps
+- (none: anything left undone goes here only with my yes, and why)
 
 ## Tasks
 
@@ -67,20 +77,25 @@ filled in when they come up.)
 ```
 
 - Two to three "must be true" statements per requirement, each one I could
-  try myself.
+  try myself, ideally "When <something happens>, <what I see>". Start from
+  the requirement's own "must be true" points in `notes/requirements.md`.
 - Size each task to fit one typical session ("How I tend to work" in
   `status.md`); no task touching more than about five files.
 - For the first stage of new code, the first task is the simplest version
   that works from start to finish.
+- **In a linked repository:** make the stage's branch from an up-to-date
+  main branch, named the repository's way, after my yes (rule 8 covers
+  `git -C`).
 - Every check must be able to fail: never "it runs" or "no errors" on its
   own. If "Safe to run?" in `notes/codebase.md` isn't yes yet, write the
   checks anyway and say they'll wait for that answer.
 
 ## 4. One fresh look before I see it
 
-Ask the **`critic`** sub-agent (in `.claude/agents/`) to check the stage
-file against `notes/requirements.md`, `decisions/decisions-log.md` and
-`notes/codebase.md`. Its role: "a plan checker". Ask it:
+Ask the **`critic`** sub-agent (in `.claude/agents/`; it uses a little of
+my allowance) to check the stage file against `notes/requirements.md`,
+`decisions/decisions-log.md` and `notes/codebase.md`. Its role: "a plan
+checker". Ask it:
 - Is every requirement and decision for this stage carried out by some task?
 - Does any wording quietly shrink the work ("for now", "placeholder",
   "stub", "simplified", "mock", "hard-coded")?
@@ -99,7 +114,8 @@ decisions. Don't read out the tasks unless I ask.
 
 ## 6. Finish
 
-- `status.md`: the current goal becomes this stage.
+- `status.md`: the current goal becomes this stage. In
+  `notes/requirements.md`, set its requirements' status to "stage NN".
 - `handover.md`: the First step is task 1, in the usual form (a verb, the
   exact file, no decisions needed).
 - Add the stage file to `review-queue.md` (made by Claude; what to check:

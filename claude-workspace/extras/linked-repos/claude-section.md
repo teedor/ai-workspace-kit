@@ -12,7 +12,10 @@ not marked unlinked, and keep it up to date with `/link-repo`.
    and tell me.
 2. **Reach it with `git -C <path> …`,** never by `cd`-ing into it, so this
    workspace's own git commands can't land there by mistake. Claude asks
-   before every `git -C` command.
+   before every `git -C` command. The one exception: with the build pack,
+   a read-write repository's tests or app may run in a subshell,
+   `(cd "<path>" && <command>)`, preferring a tool's own path option where
+   it has one, and never with a git command inside.
 3. **Read-only** (the default): read, search, explain, and run git commands
    that only look (`status`, `log`, `diff`, `show`, `branch --list`,
    `fetch`). At the start of a session, say if the copy is behind its

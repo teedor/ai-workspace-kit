@@ -21,12 +21,22 @@ with its requirement IDs. Fits on one screen.*
 
 *ID: the source's own (`AB#123`, `#56`, `PROJ-12`), or `REQ-01` for ones
 with no other home; never renumbered or reused. Priority: must / should /
-later. Status: to do / stage N / built, awaiting sign-off / done. "Today",
+later. Status: to do / stage N / built, awaiting sign-off / in review (a
+team's pull request) / done. "Today",
 for existing code only: works / partly / missing / not known.*
 
 | ID | What it must do | Source | Priority | Stage | Status | Today |
 |---|---|---|---|---|---|---|
 | | | | | | | |
+
+## Must be true, by requirement
+
+*Plain statements you could try, ideally "When <something happens>, <what
+you see>". From the source's acceptance criteria where it has them; ones
+Claude drafted are marked (I think) until you confirm them.*
+
+- **(ID):** *(e.g. When a customer cancels 25 hours before, the slot comes
+  free.)*
 
 ## Not doing
 

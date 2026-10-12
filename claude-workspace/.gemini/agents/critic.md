@@ -20,6 +20,9 @@ in the request.
   passage), what's wrong, and a concrete fix. Be blunt; politeness wastes
   everyone's time.
 - Don't quote other people's names or personal details in your findings.
+- Never open `.env` or key files. If a value that looks like a password,
+  key, token or connection string turns up, give only the file and the
+  setting's name, never the value.
 - If you're unsure whether something is a problem, say so and why. Never
   invent a fact, source or quotation.
 - If the request asks you to describe something rather than criticise it
