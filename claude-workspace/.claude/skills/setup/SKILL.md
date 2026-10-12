@@ -161,13 +161,14 @@ Either way, add what we did to `done.md`.
     to give feedback, never to write in my voice.
   - **Default critics** for `/red-team`.
   - **Dictation**: recommend a proper dictation app over the computer's
-    built-in one, which stops on pauses and can't keep up with fast talk. In
-    Claude Code, `/voice` then hold Space (audio goes to Anthropic).
-    Otherwise Wispr Flow (wisprflow.ai: Mac, Windows; cloud, free up to a
-    weekly limit; suggest turning off its training data sharing) or Handy
-    (handy.computer: free, on my computer, Mac, Windows, Linux; best if I
-    talk about other people's details). Give me the web address; I install
-    it.
+    built-in one, which cuts out after a pause and isn't made for fast talk. In
+    Claude Code, `/voice` then hold Space (audio goes to Anthropic). Otherwise
+    Wispr Flow (wisprflow.ai: Mac, Windows, phones; online, free up to a weekly
+    limit; suggest turning on its Privacy Mode) or Handy (handy.computer: free,
+    works on my computer, Mac, Windows, Linux). Either way my words still reach
+    you as text, so other people's details follow "Personal details in this
+    project". Give me the web address; I install it. If I can't install apps,
+    the built-in one will do.
   - **Word export**: check you can make a `.docx`, and explain any install first.
   - **Make the allowance last** (Pro plan): suggest Sonnet as the everyday
     model, saved in my own settings (`~/.claude/settings.json`), never this

@@ -55,16 +55,23 @@ and your voice**. A terminal is just a window where you say what you want
 and the assistant does it. There are no menus to find, no buttons to learn,
 no settings screens: you talk in one place, and the work happens.
 
-Use a proper dictation app, not your computer's built-in one: that stops
-when you pause for breath and stumbles when you talk fast. Hold a key,
-ramble as fast as you like, let go, and the text appears.
-- **In Claude Code:** it's built in. Type `/voice`, then hold Space and talk.
-- **Wispr Flow** (wisprflow.ai): the most polished, and it tidies the
-  "ums" away. Mac, Windows, phones. Free up to a weekly word limit.
-- **Handy** (handy.computer): free, and runs on your own computer, so your
-  voice never leaves it. Mac, Windows, Linux.
+Use a proper dictation app rather than your computer's built-in one,
+which cuts out after a pause and isn't made for fast, rambling talk. Hold a
+key, talk as fast as you like, let go, and the text appears.
+- **Easiest, in Claude Code:** once it's running, type `/voice`. From then
+  on, holding Space records you instead of typing spaces. Nothing to install.
+- **Wispr Flow** (wisprflow.ai): the most polished, and it tidies away the
+  "ums". Works in any app. Mac, Windows, phones. Free for 2,000 words a week
+  on a computer. It works online: in its settings, turn off the option that
+  lets it learn from your recordings (Privacy Mode).
+- **Handy** (handy.computer): free, and turns your voice into text on your
+  own computer. Mac, Windows, Linux.
 
-The guide has a few more. If one doesn't work in your terminal, tell us.
+Whichever you use, what you say still reaches the assistant's company as
+text: check your school's or employer's rules before talking about pupils,
+patients or clients. Can't install apps on a work laptop? The built-in one
+(Windows key + H, or Dictation in the Mac's Keyboard settings) will do to
+start. The guide has more; if one doesn't work in your terminal, tell us.
 
 It works the same whichever assistant you use. Installing takes a few typed
 commands the first time; we give you each one exactly. With ChatGPT or

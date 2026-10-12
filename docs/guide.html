@@ -140,10 +140,11 @@ ol li, ul li { margin-bottom: 3pt; }
 <p>On a day when you've got nothing in you, say <b>"low day"</b>. Claude offers three tiny things: talk for two minutes about what's on your mind, just open the file and read it, or one easy step. Or close it: the next step is written down for whenever you're back. There are no streaks and no "days since". It only keeps a record of what got done.</p>
 
 <h2>Talk, don't type</h2>
-<p><b>The biggest tip in this guide.</b> Use your computer's dictation for almost everything you say to Claude. Most people speak about three times faster than they type, so you give Claude far more to go on, and get much better work back. <b>Be as messy as you like</b>: ramble, change your mind halfway through, say "um, no, actually…". Claude untangles it.</p>
+<p><b>The biggest tip in this guide.</b> Talk, using dictation, for almost everything you say to Claude. Most people speak about three times faster than they type, so you give Claude far more to go on, and get much better work back. <b>Be as messy as you like</b>: ramble, change your mind halfway through, say "um, no, actually…". Claude untangles it.</p>
 <ul>
-<li><b>Use a proper dictation app, not your computer's built-in one.</b> The built-in ones stop when you pause for breath and stumble when you talk fast. A good app lets you hold a key, ramble, let go, and the text appears.</li>
-<li><b>Wispr Flow</b> (<i>wisprflow.ai</i>, Mac and Windows) is the easiest start: free up to a weekly word limit. <b>Handy</b> (<i>handy.computer</i>) is free and keeps your voice on your computer. More choices, and Claude Code's own dictation, are in "Dictation apps" in Part 2.</li>
+<li><b>Use a proper dictation app rather than your computer's built-in one.</b> The built-in ones cut out after a pause and aren't made for fast, rambling talk. A good app lets you hold a key, talk, let go, and the text appears.</li>
+<li><b>Wispr Flow</b> (<i>wisprflow.ai</i>) is the easiest start in the Claude app: free for 2,000 words a week on a computer. <b>Handy</b> (<i>handy.computer</i>) is free and turns your voice into text on your own computer. In a terminal, Claude Code has its own. See "Dictation apps" in Part 2, including what to switch off.</li>
+<li><b>Can't install apps on a work laptop?</b> The built-in one will do to start: on a Mac, System Settings → Keyboard → Dictation; on Windows, <kbd>Windows key + H</kbd>.</li>
 <li><b>Spell out names, numbers and dates</b>, or type them. Dictation mangles these, and Claude can't always guess.</li>
 </ul>
 
@@ -234,16 +235,18 @@ ol li, ul li { margin-bottom: 3pt; }
 <li><b>"Let's go with…"</b>: Claude records the decision and why. If it replaces an older one, the old one is marked "replaced", never deleted, so you can see why you changed your mind.</li>
 </ul>
 
+<div style="break-inside: avoid">
 <h2>Dictation apps</h2>
-<p>Your computer's built-in dictation is a last resort: it stops when you pause, and doesn't keep up with fast, natural talk. Any of these is better. Each one works by holding a key while you talk.</p>
+<p>Your computer's built-in dictation is a last resort: it cuts out after a pause and isn't made for fast, natural talk. Any of these is better. Each one works by holding a key while you talk.</p>
 <table>
 <tr><th style="width:22%">App</th><th>What it is</th></tr>
-<tr><td><b>Claude Code's own</b><br><code>/voice</code></td><td>Built into Claude Code in a terminal: type <code>/voice</code> once, then hold Space and talk. Nothing to install, and it doesn't use your Claude allowance. Your audio goes to Anthropic. Terminal only.</td></tr>
-<tr><td><b>Wispr Flow</b><br><i>wisprflow.ai</i></td><td>The most polished: it tidies away the "ums" and works in any app, terminals included. Mac, Windows, iPhone, Android. Free up to 2,000 words a week; paid for unlimited. Works in the cloud: in its settings, turn off sharing your data to train its models.</td></tr>
-<tr><td><b>Handy</b><br><i>handy.computer</i></td><td>Free and open source. Runs entirely on your computer, so your voice never leaves it: a good choice if you talk about other people's details. Mac, Windows, Linux. Plain transcription, without the tidying, which Claude doesn't need anyway.</td></tr>
+<tr><td><b>Claude Code's own</b><br><code>/voice</code></td><td>Built into Claude Code in a terminal: type <code>/voice</code> once, then hold Space and talk. From then on, holding Space records you instead of typing spaces. Nothing to install, and it doesn't use your Claude allowance. Needs a Claude account sign-in. Your audio goes to Anthropic. Not in the Claude app.</td></tr>
+<tr><td><b>Wispr Flow</b><br><i>wisprflow.ai</i></td><td>The most polished: it tidies away the "ums" and works in any app, terminals included. Mac, Windows, iPhone, Android. Free for 2,000 words a week on a computer (phones have their own limit); paid for unlimited. Works online, and by default it may learn from your recordings: in its settings, turn on Privacy Mode.</td></tr>
+<tr><td><b>Handy</b><br><i>handy.computer</i></td><td>Free. Turns your voice into text entirely on your computer, so no recording goes anywhere. Mac, Windows, Linux. Plain transcription, without the tidying, which Claude doesn't need anyway.</td></tr>
 <tr><td><b>Superwhisper</b><br><i>superwhisper.com</i></td><td>Mac, Windows, iPhone. A free version runs on your computer; the paid one adds more models, some in the cloud.</td></tr>
 </table>
-<p><b>Codex</b> has no dictation of its own in the terminal, so use one of the apps. <b>Gemini CLI</b> has an experimental voice mode you have to switch on; an app is simpler. Prices and limits change: check the app's own site.</p>
+</div>
+<p>Whichever you use, the words themselves still reach Claude (or ChatGPT, or Gemini) as text, so check your school's or employer's rules before talking about pupils, patients or clients. <b>Codex</b>'s <code>/voice</code> is a spoken conversation, not dictation, so use one of the apps. <b>Gemini CLI</b> has an experimental voice mode you have to switch on; an app is simpler. Prices and limits change: check the app's own site.</p>
 
 <h2>What's in a project folder</h2>
 <pre>status.md     Where things stand: current goal, next steps, dates.
