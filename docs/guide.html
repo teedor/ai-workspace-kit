@@ -142,11 +142,10 @@ ol li, ul li { margin-bottom: 3pt; }
 <h2>Talk, don't type</h2>
 <p><b>The biggest tip in this guide.</b> Use your computer's dictation for almost everything you say to Claude. Most people speak about three times faster than they type, so you give Claude far more to go on, and get much better work back. <b>Be as messy as you like</b>: ramble, change your mind halfway through, say "um, no, actually…". Claude untangles it.</p>
 <ul>
-<li><b>Mac:</b> System Settings → Keyboard → turn on Dictation. Then use the shortcut shown there (often the 🌐/Fn key twice, or the microphone key) wherever you'd type.</li>
-<li><b>Windows:</b> press <kbd>Windows key + H</kbd>.</li>
+<li><b>Use a proper dictation app, not your computer's built-in one.</b> The built-in ones stop when you pause for breath and stumble when you talk fast. A good app lets you hold a key, ramble, let go, and the text appears.</li>
+<li><b>Wispr Flow</b> (<i>wisprflow.ai</i>, Mac and Windows) is the easiest start: free up to a weekly word limit. <b>Handy</b> (<i>handy.computer</i>) is free and keeps your voice on your computer. More choices, and Claude Code's own dictation, are in "Dictation apps" in Part 2.</li>
 <li><b>Spell out names, numbers and dates</b>, or type them. Dictation mangles these, and Claude can't always guess.</li>
 </ul>
-<p>Better dictation apps are listed in Part 2.</p>
 
 <h2>Everyday use</h2>
 <ul>
@@ -235,13 +234,16 @@ ol li, ul li { margin-bottom: 3pt; }
 <li><b>"Let's go with…"</b>: Claude records the decision and why. If it replaces an older one, the old one is marked "replaced", never deleted, so you can see why you changed your mind.</li>
 </ul>
 
-<h2>Better dictation apps</h2>
+<h2>Dictation apps</h2>
+<p>Your computer's built-in dictation is a last resort: it stops when you pause, and doesn't keep up with fast, natural talk. Any of these is better. Each one works by holding a key while you talk.</p>
 <table>
 <tr><th style="width:22%">App</th><th>What it is</th></tr>
-<tr><td><b>Wispr Flow</b><br><i>wisprflow.ai</i></td><td>Popular and polished. Hold a key, talk, and tidy text appears in any app. Mac, Windows, iPhone. Free up to 2,000 words a week; paid for unlimited. Works in the cloud, so check its privacy settings.</td></tr>
-<tr><td><b>Superwhisper</b><br><i>superwhisper.com</i></td><td>Mac, Windows, iPhone. Free and paid versions. Some of its speech models run entirely on your computer, so your voice never leaves it; check which one you're using.</td></tr>
+<tr><td><b>Claude Code's own</b><br><code>/voice</code></td><td>Built into Claude Code in a terminal: type <code>/voice</code> once, then hold Space and talk. Nothing to install, and it doesn't use your Claude allowance. Your audio goes to Anthropic. Terminal only.</td></tr>
+<tr><td><b>Wispr Flow</b><br><i>wisprflow.ai</i></td><td>The most polished: it tidies away the "ums" and works in any app, terminals included. Mac, Windows, iPhone, Android. Free up to 2,000 words a week; paid for unlimited. Works in the cloud: in its settings, turn off sharing your data to train its models.</td></tr>
+<tr><td><b>Handy</b><br><i>handy.computer</i></td><td>Free and open source. Runs entirely on your computer, so your voice never leaves it: a good choice if you talk about other people's details. Mac, Windows, Linux. Plain transcription, without the tidying, which Claude doesn't need anyway.</td></tr>
+<tr><td><b>Superwhisper</b><br><i>superwhisper.com</i></td><td>Mac, Windows, iPhone. A free version runs on your computer; the paid one adds more models, some in the cloud.</td></tr>
 </table>
-<p>Windows' built-in voice typing also uses an online service. Whichever you use, your words reach Claude as text anyway.</p>
+<p><b>Codex</b> has no dictation of its own in the terminal, so use one of the apps. <b>Gemini CLI</b> has an experimental voice mode you have to switch on; an app is simpler. Prices and limits change: check the app's own site.</p>
 
 <h2>What's in a project folder</h2>
 <pre>status.md     Where things stand: current goal, next steps, dates.
@@ -297,7 +299,7 @@ Open a new window and type <code>claude --version</code> to check it worked.</li
 <li><b>Go to your folder</b>: <b>Claude projects</b> the first time (to paste the sentence from Step 3), your project folder after that. Mac: type <code>cd</code> and a space, drag the folder into the window, and press Enter. Windows: open the folder in File Explorer, type <code>powershell</code> in the address bar, and press Enter.</li>
 <li>Type <code>claude</code>. The first time, it opens your browser to sign in.</li>
 </ol>
-<p>Recent versions start the terminal in <b>auto</b> mode. The kit's settings ask for the asking mode instead; check the mode shown at the bottom, and press <kbd>Shift + Tab</kbd> to change it. Claude Code has its own dictation in the terminal: type <code>/voice</code>, then hold Space and talk. Your audio goes to Anthropic.</p>
+<p>Recent versions start the terminal in <b>auto</b> mode. The kit's settings ask for the asking mode instead; check the mode shown at the bottom, and press <kbd>Shift + Tab</kbd> to change it. Claude Code has its own dictation in the terminal: type <code>/voice</code>, then hold Space and talk (see "Dictation apps" in Part 2).</p>
 <p>Claude Code has built-in commands such as <code>/resume</code>, so the kit's skills are named <code>/start</code> and <code>/signoff</code> to avoid clashes.</p>
 
 <h2>Using Gemini CLI instead</h2>

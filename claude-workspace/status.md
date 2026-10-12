@@ -46,8 +46,14 @@ one any time ("set up About me").*
   this is assessed work, use samples only to give feedback, never to write in
   my voice.
 - **Default critics** for `/red-team`.
-- **Dictation:** Mac, System Settings → Keyboard → Dictation, using the
-  shortcut shown there; Windows, Windows key + H.
+- **Dictation:** recommend a proper dictation app over the computer's
+  built-in one, which stops on pauses and can't keep up with fast talk. In
+  Claude Code, `/voice` then hold Space (audio goes to Anthropic).
+  Otherwise Wispr Flow (wisprflow.ai: Mac, Windows; cloud, free up to a
+  weekly limit; suggest turning off its training data sharing) or Handy
+  (handy.computer: free, on my computer, Mac, Windows, Linux; best if I
+  talk about other people's details). Give me the web address; I install
+  it.
 - **Word export:** check you can make a `.docx`, and explain any install first.
 - **Make the allowance last** (Pro plan): offer it unprompted only if I've
   mentioned hitting my limit or use Claude most days; otherwise wait to be

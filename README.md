@@ -53,11 +53,18 @@ things.
 Once it's installed, the simplest way to use this is a **terminal window
 and your voice**. A terminal is just a window where you say what you want
 and the assistant does it. There are no menus to find, no buttons to learn,
-no settings screens: you talk in one place, and the work happens. Use your computer's
-own dictation (Mac: System Settings → Keyboard → Dictation, then the
-shortcut shown there; Windows: Windows key + H), or, in Claude Code, type
-`/voice`. We haven't yet tried dictation in every terminal: if yours
-doesn't take it, tell us.
+no settings screens: you talk in one place, and the work happens.
+
+Use a proper dictation app, not your computer's built-in one: that stops
+when you pause for breath and stumbles when you talk fast. Hold a key,
+ramble as fast as you like, let go, and the text appears.
+- **In Claude Code:** it's built in. Type `/voice`, then hold Space and talk.
+- **Wispr Flow** (wisprflow.ai): the most polished, and it tidies the
+  "ums" away. Mac, Windows, phones. Free up to a weekly word limit.
+- **Handy** (handy.computer): free, and runs on your own computer, so your
+  voice never leaves it. Mac, Windows, Linux.
+
+The guide has a few more. If one doesn't work in your terminal, tell us.
 
 It works the same whichever assistant you use. Installing takes a few typed
 commands the first time; we give you each one exactly. With ChatGPT or
