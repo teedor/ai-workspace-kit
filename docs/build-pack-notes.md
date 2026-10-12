@@ -22,7 +22,7 @@ without losing the kit's freedom to change direction:
 ## What it borrowed from spec-driven tools
 
 Mostly cheap prompt discipline, not machinery. The main source is GSD
-("Get Shit Done", now GSD Core: github.com/open-gsd/gsd-core, commit
+(now GSD Core: github.com/open-gsd/gsd-core, commit
 b747aca, and the archived github.com/gsd-build/get-shit-done), with smaller
 ideas from GitHub Spec Kit (github.com/github/spec-kit: verdicts against
 requirement IDs, "unrequested" changes, previewing a sync before applying
@@ -126,8 +126,8 @@ brief, inside a workspace that also runs the rest of your work".
   "Closes #10" (or fix, resolve and their forms) reaches the default branch
   (`.../linking-a-pull-request-to-an-issue.md`). Azure Boards moves a work
   item when merged text has "Fixes AB#123" or a state name before the ID
-  (`docs/boards/github/link-to-from-github.md`). Hence the pack's "Work
-  items:" line.
+  (`docs/boards/github/link-to-from-github.md`). Hence the pack's rule
+  against closing words next to board IDs.
 - Read-only connections: GitHub's MCP server has `--read-only`
   (github/github-mcp-server README). Azure DevOps's hosted MCP server takes
   an `X-MCP-Readonly` header; its local server has no read-only switch, and

@@ -17,12 +17,14 @@ with its requirement IDs. Fits on one screen.*
 
 1. *(e.g. Customers can see free slots and book one: AB#101, AB#102)*
 
+**Later:** *(stages not placed on the route yet)*
+
 ## The list
 
 *ID: the source's own (`AB#123`, `#56`, `PROJ-12`), or `REQ-01` for ones
 with no other home; never renumbered or reused. Priority: must / should /
 later. Status: to do / stage N / built, awaiting sign-off / in review (a
-team's pull request) / done. "Today",
+team's pull request) / done / replaced (D-number). "Today",
 for existing code only: works / partly / missing / not known.*
 
 | ID | What it must do | Source | Priority | Stage | Status | Today |

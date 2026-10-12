@@ -42,9 +42,8 @@ Ask, if it isn't obvious. One or more of these:
     columns ID, Work Item Type, Title, State, Iteration Path, Parent,
     Changed Date, Description and Acceptance Criteria; then the **…**
     (actions) menu → **Export to CSV**.
-  - GitHub Projects: in the view, show the fields you need, then the
-    **View** menu next to the search bar → **Export view data**, which saves
-    the view as a `.tsv` file.
+  - GitHub Projects: in the view, show the fields you need, then the view's
+    menu → **Export view data**, which saves the view as a `.tsv` file.
   - Jira, or any other board: its own export to CSV, if it has one.
 
   Leave out people columns ("Assigned to", "Assignees", "Created by") and
@@ -99,10 +98,10 @@ template:
    describe the codebase for `notes/codebase.md`. Its role: "a newcomer
    writing a two-to-three-page map". Give it the folder listing (leave out
    folders like `node_modules`) and the README. Tell it to take setting
-   names from example files and the code that reads them, never to open
-   `.env`, `appsettings.*.json`, `local.settings.json`, `wp-config.php` or
-   key and credential files, and to report only a file and setting name if
-   a password, key or connection string turns up. Write its map into
+   names from sample configs, the README's setup section and the code that
+   reads them; never to open `.env` files (`.env.example` included) or key
+   and credential files; and to report only a file and setting name if a
+   password, key or connection string turns up. Write its map into
    `notes/codebase.md`, with today's commit.
 4. **Safe to run?** Ask about **Tests** and **Running the app**, in plain
    words, one at a time (section 3 of the full rules, "Running things

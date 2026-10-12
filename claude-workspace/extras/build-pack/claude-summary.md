@@ -16,13 +16,15 @@ Always:
 - Nothing runs until "Safe to run?" in `notes/codebase.md` says yes, in my
   words; made-up data only. Never open files that commonly hold keys.
 - Code in this folder: no branches; commit at sign-off. Never write to a
-  board; leave board IDs out of commit messages unless the repository's
-  convention uses them. Going live always asks.
+  board; leave board IDs out of commit messages, pull requests and branch
+  names unless the repository's convention uses them and I've agreed.
+  Going live always asks.
 - At `/start`: if a task in the current stage file is marked started, say
   in "Last time" where it stopped, and finish that first.
 - On a low day: swap `/start`'s option 2 for "Read one requirement and say
   if it's still right".
-- After `/signoff` approves a stage: mark it signed off, its requirements
-  done, and set the First step to planning the next stage.
+- After `/signoff` approves a stage: mark it signed off (in a linked
+  repository, in review), its requirements done (or in review), and set
+  the First step to planning the next stage.
 - Talk my way: requirements in words, not IDs, unless I use the IDs. No
   counts of what's left.

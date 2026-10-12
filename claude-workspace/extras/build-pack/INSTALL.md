@@ -37,12 +37,13 @@ the session's one offer, and a no goes in "Declined suggestions" in
      `Bash(gh issue:*)`, `Bash(gh project:*)`, `Bash(gh pr merge:*)`,
      `Bash(az boards:*)`, `Bash(az repos pr:*)`, `Bash(npm publish:*)`,
      `Bash(vercel:*)`, `Bash(npx vercel:*)`, `Bash(netlify deploy:*)`,
-     `Bash(firebase deploy:*)`, and the same as `PowerShell(gh issue *)`
+     `Bash(npx netlify deploy:*)`, `Bash(firebase deploy:*)`,
+     `Bash(npx firebase deploy:*)`, and the same as `PowerShell(gh issue *)`
      and so on.
 
-   Tell me in one plain line: "I'll ask you before changing the safety
-   answers, and before anything that touches your board or puts the
-   software live."
+   Tell me in one plain line: "I'll ask you before any change to the notes
+   on how the code runs (they hold the safety answers), and before anything
+   that touches your board or puts the software live."
 5. **Code in this project.** If "Code in this project" in `CLAUDE.md` says
    no, change it to yes, and tell me.
 6. **Where the code is.** If it's in a linked repository (`repos.md`), it

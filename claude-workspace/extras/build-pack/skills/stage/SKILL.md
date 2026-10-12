@@ -84,8 +84,8 @@ filled in when they come up.)
 - For the first stage of new code, the first task is the simplest version
   that works from start to finish.
 - **In a linked repository:** make the stage's branch from an up-to-date
-  main branch, named the repository's way, after my yes (rule 8 covers
-  `git -C`).
+  main branch, named the repository's way, after my yes (every `git -C`
+  command asks: rule 2 of the linked repos rules).
 - Every check must be able to fail: never "it runs" or "no errors" on its
   own. If "Safe to run?" in `notes/codebase.md` isn't yes yet, write the
   checks anyway and say they'll wait for that answer.

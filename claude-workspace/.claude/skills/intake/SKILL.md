@@ -14,6 +14,9 @@ trustworthy. Two rules always come first:
 
 1. **List what's there** (name and type) before touching anything. If it's empty, say so and stop.
 2. **Read everything.** Don't guess at a file's contents from its name.
+   (One exception: if a file looks like an employer's or client's spec or
+   board export and `notes/ai-policy.md` doesn't cover it, ask before
+   reading it; see the requirements row in step 4.)
    **Big things** (over 20 MB, or a folder of hundreds of files): don't read
    it all. The same goes for a file with thousands of records (a family-tree
    GEDCOM file, a long spreadsheet). Look at a sample, then ask me where it
